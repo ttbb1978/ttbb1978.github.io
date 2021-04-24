@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+<CENTER><FONT color=white style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 30px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">欢迎来到田兵个人网站</FONT></CENTER>
 
-You can use the [editor on GitHub](https://github.com/ttbb1978/ttbb1978.github.io/edit/tb01/index.md) to maintain and preview the content for your website in Markdown files.
+<CENTER><FONT color=Green style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 20px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">tianbingyx@163.com</FONT></CENTER>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<img src="https://6109666.s21i.faiusr.com/2/ABUIABACGAAgmuixqwUolZuDhAYwggE4ggE.jpg.webp" width="130" height="130">     <img src="http://q1.qlogo.cn/g?b=qq&nk=2358429597&s=640" width="130" height="130">      <a href="javascript:location.reload();">音乐</a>
 
-### Markdown
+<img src="https://api.66mz8.com/api/rand.portrait.php?type=女" width="300" height="300"> <img src="https://api.66mz8.com/api/rand.portrait.php?type=男" width="300" height="300">  <img src="https://api.66mz8.com/api/rand.portrait.php?type=动漫" width="300" height="300">
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+看到这里你还可以点击  [在线小视频](https://www.lefu.men/dy)
 
-```markdown
-Syntax highlighted code block
+### 放下，忘记和珍惜/李思圆
+    
+ 在这个世上，每个人无论处在怎样的年龄，身在怎样的境遇，有着怎样的经历，都会面对许多麻烦和困难。
+   
+ 其实大多数时候，我们之所以会感到烦恼，并非由外因导致，是你的心态和状态，决定和影响了你的情绪。
 
-# Header 1
-## Header 2
-### Header 3
+### 联系方式
 
-- Bulleted
-- List
+ 欢迎进入[站长QQ空间](https://user.qzone.qq.com/765931440)或者[秘书QQ空间](https://user.qzone.qq.com/2358429597)我们很高兴与你联系......
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ttbb1978/ttbb1978.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+ <center>扣扣：765931440</center>
+ 
+ <center>邮箱：tianbingyx@163.com</center>
+ 
+ <center>地址：四川省德阳市旌阳区</center>
+ 
+<audio autoplay="autoplay">
+<source src="https://api.uomg.com/api/rand.music?sort=热歌榜" type="audio/mpeg">
+</audio>
