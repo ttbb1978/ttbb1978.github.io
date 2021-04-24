@@ -34,11 +34,13 @@
 
  欢迎进入[站长QQ空间](https://user.qzone.qq.com/765931440)或者[秘书QQ空间](https://user.qzone.qq.com/2358429597)我们很高兴与你联系......
 
-<CENTER><FONT color=Orange style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 12px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">扣扣：765931440</FONT></CENTER>
+—————————————————————————————————————————————————————————
+
+<CENTER><FONT color=Orange style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">扣扣：765931440</FONT></CENTER>
  
- <CENTER><FONT color=Orange style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 12px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">邮箱：tianbingyx@163.com</FONT></CENTER>
+ <CENTER><FONT color=Orange style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">邮箱：tianbingyx@163.com</FONT></CENTER>
  
- <CENTER><FONT color=Orange style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 12px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">地址：四川省德阳市旌阳区</FONT></CENTER>
+ <CENTER><FONT color=Orange style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">地址：四川省德阳市旌阳区</FONT></CENTER>
 
 <audio autoplay="autoplay">
 <source src="https://api.uomg.com/api/rand.music?sort=热歌榜" type="audio/mpeg">
