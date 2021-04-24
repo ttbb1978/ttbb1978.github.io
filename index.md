@@ -6,6 +6,8 @@
 
 <img src="https://api.66mz8.com/api/rand.portrait.php?type=女" width="300" height="300"> <img src="https://api.66mz8.com/api/rand.portrait.php?type=男" width="300" height="300">  <img src="https://api.66mz8.com/api/rand.portrait.php?type=动漫" width="300" height="300">
 
+![1](https://t7.baidu.com/it/u=1134732403,2664330444&fm=193&f=GIF)
+
 看到这里你还可以点击  [在线小视频](https://www.lefu.men/dy)
 
 #### 放下，忘记和珍惜/李思圆
