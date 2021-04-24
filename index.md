@@ -18,7 +18,7 @@
 
  欢迎进入[站长QQ空间](https://user.qzone.qq.com/765931440)或者[秘书QQ空间](https://user.qzone.qq.com/2358429597)我们很高兴与你联系......
 
- <center>扣扣：765931440</center>
+ <center>QQ：765931440</center>
  
  <center>邮箱：tianbingyx@163.com</center>
  
