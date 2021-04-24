@@ -1,4 +1,4 @@
-<img src="http://raw.githubusercontent.com/ttbb1978/ttbb1978.github.io/tb01/3851.png"
+<img src="http://raw.githubusercontent.com/ttbb1978/ttbb1978.github.io/tb01/3851.png"width="666" height="130"> 
 
 <CENTER><FONT color=black style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 30px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">欢迎来到田兵个人网站</FONT></CENTER>
 
