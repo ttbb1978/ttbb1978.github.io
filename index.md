@@ -2,7 +2,7 @@
 
 <CENTER><FONT color=DarkSlateGray style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 20px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">tianbingyx@163.com</FONT></CENTER>
 
-———————————————————————————————————————————————————————————————
+—————————————————————————————————————————————————————————
 
 <img src="https://6109666.s21i.faiusr.com/2/ABUIABACGAAgmuixqwUolZuDhAYwggE4ggE.jpg.webp" width="130" height="130">     <img src="https://q1.qlogo.cn/g?b=qq&nk=2358429597&s=640" width="130" height="130">      <a href="javascript:location.reload();">音乐</a>
 
