@@ -4,9 +4,9 @@
 
 <img src="https://6109666.s21i.faiusr.com/2/ABUIABACGAAgmuixqwUolZuDhAYwggE4ggE.jpg.webp" width="130" height="130">     <img src="http://q1.qlogo.cn/g?b=qq&nk=2358429597&s=640" width="130" height="130">      <a href="javascript:location.reload();">音乐</a>
 
-<img src="https://api.66mz8.com/api/rand.portrait.php?type=女" width="300" height="300"> <img src="https://api.66mz8.com/api/rand.portrait.php?type=男" width="300" height="300">  <img src="https://api.66mz8.com/api/rand.portrait.php?type=动漫" width="300" height="300">
+#### 网页头像
 
-![1](https://t7.baidu.com/it/u=1134732403,2664330444&fm=193&f=GIF)
+<img src="https://api.66mz8.com/api/rand.portrait.php?type=女" width="300" height="300"> <img src="https://api.66mz8.com/api/rand.portrait.php?type=男" width="300" height="300"> <img src="https://api.66mz8.com/api/rand.portrait.php?type=动漫" width="300" height="300">
 
 看到这里你还可以点击  [在线小视频](https://www.lefu.men/dy)
 
