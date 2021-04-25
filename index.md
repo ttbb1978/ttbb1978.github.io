@@ -12,7 +12,7 @@
 
 <img src="https://api.66mz8.com/api/rand.portrait.php?type=女" width="315" height="315"> <img src="https://api.66mz8.com/api/rand.portrait.php?type=男" width="315" height="315"> <img src="https://api.66mz8.com/api/rand.portrait.php?type=动漫" width="315" height="315">
 
-看到这里你还可以点击  [在线小视频](https://www.lefu.men/dy)
+看到这里你还可以点击 [在线小视频](https://www.lefu.men/dy) 工具 [在线工具库](https://tool.oschina.net/)
 
 ### 【放下，忘记和珍惜    文/李思圆】
    
