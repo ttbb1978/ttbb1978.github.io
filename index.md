@@ -6,7 +6,7 @@
 
 ### 站长相关
 
-<img src="https://6109666.s21i.faiusr.com/2/ABUIABACGAAgmuixqwUolZuDhAYwggE4ggE.jpg.webp" width="100" height="100">    <img src="https://q1.qlogo.cn/g?b=qq&nk=2358429597&s=640" width="100" height="100">   <img src="https://q1.qlogo.cn/g?b=qq&nk=2197968519&s=640" width="100" height="100">   <a href="javascript:location.reload();">音乐</a>
+<img src="https://6109666.s21i.faiusr.com/2/ABUIABACGAAgmuixqwUolZuDhAYwggE4ggE.jpg.webp" width="90" height="90">    <img src="https://q1.qlogo.cn/g?b=qq&nk=2358429597&s=640" width="90" height="90">   <img src="https://q1.qlogo.cn/g?b=qq&nk=2197968519&s=640" width="90" height="90">   <a href="javascript:location.reload();">音乐</a>
 
 ### 网页头像
 
