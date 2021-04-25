@@ -45,5 +45,5 @@
 <CENTER><FONT color=DimGray style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">【网站版权 归田兵个人网站所有 2021©】</FONT></CENTER>
 
 <audio autoplay="autoplay">
-<source src="https://api.uomg.com/api/rand.music?sort=热歌榜" type="audio/mpeg">
+<source src="https://api.uomg.com/api/rand.music?sort=抖音榜" type="audio/mpeg">
 </audio>
