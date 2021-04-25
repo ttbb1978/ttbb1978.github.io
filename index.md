@@ -38,13 +38,11 @@
 
 —————————————————————————————————————————————————————————————
 
-<CENTER><FONT color=Blue style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">扣扣：765931440</FONT></CENTER>
+<CENTER><FONT color=DimGray style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">扣扣：765931440  邮箱：tianbingyx@163.com</FONT></CENTER>
  
- <CENTER><FONT color=Blue style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">邮箱：tianbingyx@163.com</FONT></CENTER>
- 
- <CENTER><FONT color=Blue style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">地址：四川省德阳市旌阳区</FONT></CENTER>
+ <CENTER><FONT color=DimGray style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">地址：四川省德阳市旌阳区</FONT></CENTER>
 
-<CENTER><FONT color=Blue style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">【2021© 网站版权归田兵个人网站所有】</FONT></CENTER>
+<CENTER><FONT color=DimGray style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">【2021© 网站版权归田兵个人网站所有】</FONT></CENTER>
 
 <audio autoplay="autoplay">
 <source src="https://api.uomg.com/api/rand.music?sort=热歌榜" type="audio/mpeg">
