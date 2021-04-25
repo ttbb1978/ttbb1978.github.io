@@ -10,7 +10,7 @@
 
 ### 网页头像
 
-<img src="https://api.66mz8.com/api/rand.portrait.php?type=女" width="310" height="310"> <img src="https://api.66mz8.com/api/rand.portrait.php?type=男" width="310" height="310"> <img src="https://api.66mz8.com/api/rand.portrait.php?type=动漫" width="310" height="310">
+<img src="https://api.66mz8.com/api/rand.portrait.php?type=女" width="315" height="315"> <img src="https://api.66mz8.com/api/rand.portrait.php?type=男" width="315" height="315"> <img src="https://api.66mz8.com/api/rand.portrait.php?type=动漫" width="315" height="315">
 
 看到这里你还可以点击  [在线小视频](https://www.lefu.men/dy)
 
