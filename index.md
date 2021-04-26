@@ -14,7 +14,7 @@
 
 <img src="https://api.uomg.com/api/rand.img1?sort=二次元" width="" height="">
 
-<img src="https://api.uomg.com/api/rand.img1?sort=背景" width="" height="">
+<img src="https://api.uomg.com/api/rand.img1?sort=动漫" width="" height="">
 
 休闲娱乐 [在线小视频](https://www.lefu.men/dy) 站长推荐 [在线工具库](https://tool.oschina.net/)
 
