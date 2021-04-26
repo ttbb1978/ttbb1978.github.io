@@ -10,7 +10,7 @@
 
 ### 网页头像
 
-<img src="https://api.66mz8.com/api/rand.portrait.php?type=女" width="315" height="315"> <img src="https://api.66mz8.com/api/rand.portrait.php?type=男" width="315" height="315"> <img src="https://api.66mz8.com/api/rand.portrait.php?type=动漫" width="315" height="315">
+<img src="https://api.uomg.com/api/rand.img2?sort=美女" width="" height=""> <img src="https://api.uomg.com/api/rand.img2?sort=二次元" width="" height="">
 
 休闲娱乐 [在线小视频](https://www.lefu.men/dy) 站长推荐 [在线工具库](https://tool.oschina.net/)
 
