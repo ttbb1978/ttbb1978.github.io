@@ -38,11 +38,11 @@
 
 ----------
 
-<p class="title text-center">QQ：765931440  QQ：2358429597</p></div>
+<p class="title text-center">QQ：765931440  QQ：2358429597</p>
 
-<p class="title text-center">地址：四川省德阳市旌阳区</p></div>
+<p class="title text-center">地址：四川省德阳市旌阳区</p>
 
-<p class="title text-center">【网站版权归田兵个人所有 2021©】</p></div>
+<p class="title text-center">【网站版权归田兵个人所有 2021©】</p>
 
 <audio autoplay="autoplay">
 <source src="https://api.uomg.com/api/rand.music?sort=热歌榜" type="audio/mpeg">
