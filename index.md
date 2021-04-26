@@ -12,9 +12,6 @@
 
 <img src="https://api.uomg.com/api/rand.img1?sort=美女" width="" height="">
 
-<img src="https://api.uomg.com/api/rand.img1?sort=二次元" width="" height="">
-
-<img src="https://api.uomg.com/api/rand.img1?sort=动漫" width="" height="">
 
 休闲娱乐 [在线小视频](https://www.lefu.men/dy) 站长推荐 [在线工具库](https://tool.oschina.net/)
 
@@ -24,11 +21,15 @@
  
 其实大多数时候，我们之所以会感到烦恼，并非由外因导致，是你的心态和状态，决定和影响了你的情绪。
 
+<img src="https://api.uomg.com/api/rand.img1?sort=二次元" width="" height="">
+
 ### 不让父母担心，就是最好的孝顺    文/李思圆
  
 在你心里，什么才是真正的孝顺？是读书时成绩优异、工作时飞黄腾达？还是你衣锦还乡，给他们最好的物质生活？
  
 其实，都不是。自己做了父母以后才会发现，照顾好自己，让父母少一分牵挂，少一分担心，少一分不安，才是对他们最好的回报。
+
+<img src="https://api.uomg.com/api/rand.img1?sort=动漫" width="" height="">
 
 ### 人到中年，学会怂一点    文/作者未知
 
