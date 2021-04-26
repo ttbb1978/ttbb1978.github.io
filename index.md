@@ -37,13 +37,9 @@
  欢迎进入[站长QQ空间](https://user.qzone.qq.com/765931440)或者[秘书QQ空间](https://user.qzone.qq.com/2358429597)我们很高兴与你联系成为朋友一起探讨人生......
 
 ----------
-
 <p class="title text-center">QQ：765931440  QQ：2358429597</p>
-
 <p class="title text-center">地址：四川省德阳市旌阳区</p>
-
 <p class="title text-center">【网站版权归田兵个人所有 2021©】</p>
-
 <audio autoplay="autoplay">
 <source src="https://api.uomg.com/api/rand.music?sort=热歌榜" type="audio/mpeg">
 </audio>
