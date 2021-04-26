@@ -42,7 +42,7 @@
  
  <CENTER><FONT color=DimGray style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">地址：四川省德阳市旌阳区</FONT></CENTER>
 
-<CENTER><FONT color=DimGray style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">【网站版权归站长田兵所有 2021©】</FONT></CENTER>
+    【网站版权归站长田兵所有 2021©】
 
 <audio autoplay="autoplay">
 <source src="https://api.uomg.com/api/rand.music?sort=热歌榜" type="audio/mpeg">
