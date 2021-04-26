@@ -38,11 +38,11 @@
 
 ----------
 
-<CENTER><FONT color=DimGray style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">QQ：765931440  QQ：2358429597</FONT></CENTER>
- 
- <CENTER><FONT color=DimGray style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">地址：四川省德阳市旌阳区</FONT></CENTER>
+<p class="title text-center">QQ：765931440  QQ：2358429597</p></div>
 
-<CENTER><FONT color=DimGray style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">【网站版权归田兵个人所有 2021©】</FONT>
+<p class="title text-center">地址：四川省德阳市旌阳区</p></div>
+
+<p class="title text-center">【网站版权归田兵个人所有 2021©】</p></div>
 
 <audio autoplay="autoplay">
 <source src="https://api.uomg.com/api/rand.music?sort=热歌榜" type="audio/mpeg">
