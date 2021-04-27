@@ -28,13 +28,15 @@
  
 其实，都不是。自己做了父母以后才会发现，照顾好自己，让父母少一分牵挂，少一分担心，少一分不安，才是对他们最好的回报。
 
-<img src="https://api.vvhan.com/api/view" width="" height="">
+<img src="https://api.vvhan.com/api/view?type=汽车"" height="">
 
 ### 人到中年，学会怂一点    文/作者未知
 
 过了大山大水，心就静了；见过了生离死别，脾气就怂了。走过半辈子，早就明白得失功过只在一念之间。
 
 中年人只是懂得了责任与担当，学会了宽容与大度。到这时，人要学会“怂一点”！
+
+<img src="https://api.vvhan.com/api/view?type=背景"" height="">
 
 ### 联系方式
 
