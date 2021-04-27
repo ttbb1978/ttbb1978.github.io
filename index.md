@@ -36,13 +36,15 @@
 
 <img src="https://api.uomg.com/api/rand.img1?sort=汽车" width="" height="">
 
-联系方式【QQ：765931440   QQ：2358429597】
+合作联系方式：
 
-欢迎进入[站长QQ空间](https://user.qzone.qq.com/765931440)或者[秘书QQ空间](https://user.qzone.qq.com/2358429597)我们很高兴与你联系成为朋友一起探讨人生......
+QQ：765931440 QQ：2358429597
+
+欢迎进入[站长QQ空间](https://user.qzone.qq.com/765931440)或者[秘书QQ空间](https://user.qzone.qq.com/2358429597)我们很高兴与你联系，成为合作伙伴......
 
 ----------
 
-<CENTER><FONT color=Black style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">地址：四川省德阳市旌阳区</FONT></CENTER>
+<CENTER><FONT color=Black style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">网站地址：四川省德阳市旌阳区</FONT></CENTER>
 
 <CENTER><FONT color=Black style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">【网站版权归田兵个人所有  2021©】</FONT></CENTER>
 
