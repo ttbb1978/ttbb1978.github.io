@@ -12,7 +12,7 @@
 
 <font color="#9ACD32"><h4>放下，忘记和珍惜    文/李思圆</h4></font>
 
-<div id="box"><table width="80%" height="100%"><tr><td align="center"><img src="https://api.uomg.com/api/rand.img1?sort=美女" /></td></tr></table></div>
+<div id="box"><table width="50%" height="100%"><tr><td align="center"><img src="https://api.uomg.com/api/rand.img1?sort=美女" /></td></tr></table></div>
 
 在这个世上，每个人无论处在怎样的年龄，身在怎样的境遇，有着怎样的经历，都会面对许多麻烦和困难。
  
