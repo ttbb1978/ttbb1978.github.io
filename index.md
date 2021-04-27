@@ -34,9 +34,9 @@
 
 中年人只是懂得了责任与担当，学会了宽容与大度。到这时，人要学会“怂一点”！
 
-<img src="https://api.uomg.com/api/rand.img1?sort=汽车" width="" height="">
+### 合作联系方式
 
-合作联系方式：
+<img src="https://api.uomg.com/api/rand.img1?sort=汽车" width="" height="">
 
 站长QQ：765931440 秘书QQ：2358429597
 
