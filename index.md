@@ -12,7 +12,7 @@
 
 <font color="#9ACD32"><h4>放下，忘记和珍惜    文/李思圆</h4></font>
 
-<img src="https://api.uomg.com/api/rand.img1?sort=美女" width="" height="">
+<img src="https://api.uomg.com/api/rand.img1?sort=美女" width="480" height="">
 
 在这个世上，每个人无论处在怎样的年龄，身在怎样的境遇，有着怎样的经历，都会面对许多麻烦和困难。
  
@@ -20,7 +20,7 @@
 
 <font color="#9ACD32"><h4>不让父母担心，就是最好的孝顺    文/李思圆</h4></font>
 
-<img src="https://api.uomg.com/api/rand.img1?sort=二次元" width="" height="">
+<img src="https://api.uomg.com/api/rand.img1?sort=二次元" width="480" height="">
 
 在你心里，什么才是真正的孝顺？是读书时成绩优异、工作时飞黄腾达？还是你衣锦还乡，给他们最好的物质生活？
  
@@ -28,7 +28,7 @@
 
 <font color="#9ACD32"><h4>人到中年，学会怂一点    文/作者未知</h4></font>
 
-<img src="https://api.uomg.com/api/rand.img1?sort=动漫" width="" height="">
+<img src="https://api.uomg.com/api/rand.img1?sort=动漫" width="480" height="">
 
 过了大山大水，心就静了；见过了生离死别，脾气就怂了。走过半辈子，早就明白得失功过只在一念之间。
 
@@ -36,7 +36,7 @@
 
 <font color="##9ACD32"><h4>合作联系方式</h4></font>
 
-<img src="https://api.uomg.com/api/rand.img1?sort=汽车" width="" height="">
+<img src="https://api.uomg.com/api/rand.img1?sort=汽车" width="480" height="">
 
 <font color="##9ACD32">站长QQ：765931440 秘书QQ：2358429597</font>
 
