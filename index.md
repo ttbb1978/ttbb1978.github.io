@@ -36,7 +36,7 @@
 
 中年人只是懂得了责任与担当，学会了宽容与大度。到这时，人要学会“怂一点”！
 
-<img src="https://api.uomg.com/api/rand.avatar?sort=%E5%8A%A8%E6%BC%AB%E5%A5%B3" width="" height="">
+<img src="https://api.uomg.com/api/rand.img1?sort=动漫" width="" height="">
 
 ### 联系方式
 
