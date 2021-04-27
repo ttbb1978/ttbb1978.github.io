@@ -12,7 +12,6 @@
 
 <img src="https://api.uomg.com/api/rand.img1?sort=美女" width="" height="">
 
-
 休闲娱乐 [在线小视频](https://www.lefu.men/dy) 站长推荐 [在线工具库](https://tool.oschina.net/)
 
 ### 放下，忘记和珍惜    文/李思圆
@@ -29,7 +28,7 @@
  
 其实，都不是。自己做了父母以后才会发现，照顾好自己，让父母少一分牵挂，少一分担心，少一分不安，才是对他们最好的回报。
 
-<img src="https://api.uomg.com/api/rand.img1?sort=动漫" width="" height="">
+<img src="https://api.vvhan.com/api/view" width="" height="">
 
 ### 人到中年，学会怂一点    文/作者未知
 
