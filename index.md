@@ -1,6 +1,6 @@
 <CENTER><FONT color=YellowGreen White style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 30px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">欢迎来到田兵个人网站</FONT></CENTER>     
 
-<CENTER><FONT color=Bisque style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 20px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">E-mail:tianbingyx@163.com</FONT></CENTER>
+<CENTER><FONT color=Black style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 20px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">E-mail:tianbingyx@163.com</FONT></CENTER>
 
 ----------
 
