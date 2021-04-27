@@ -36,9 +36,9 @@
 
 <img src="https://api.uomg.com/api/rand.img1?sort=汽车" width="" height="">
 
-#### 联系方式【QQ：765931440   QQ：2358429597】
+联系方式【QQ：765931440   QQ：2358429597】
 
- 欢迎进入[站长QQ空间](https://user.qzone.qq.com/765931440)或者[秘书QQ空间](https://user.qzone.qq.com/2358429597)我们很高兴与你联系成为朋友一起探讨人生......
+欢迎进入[站长QQ空间](https://user.qzone.qq.com/765931440)或者[秘书QQ空间](https://user.qzone.qq.com/2358429597)我们很高兴与你联系成为朋友一起探讨人生......
 
 ----------
 
