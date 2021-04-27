@@ -36,7 +36,7 @@
 
 <img src="https://api.uomg.com/api/rand.img1?sort=汽车" width="640" height="">
 
-<font color="#9ACD32"><h4>合作联系方式</h4></font>
+<font color="#9ACD32"><h4>合作联系</h4></font>
 
 站长QQ：765931440 秘书QQ：2358429597
 
@@ -46,7 +46,7 @@
 
 <CENTER><FONT color=Black style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">网站版权 | 归田兵个人所有  2021©</FONT></CENTER>
 
-<CENTER><FONT color=Black style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">网站地址：四川省德阳市旌阳区杨嘉镇</FONT></CENTER>
+<CENTER><FONT color=Black style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">地址 | 四川省德阳市旌阳区杨嘉镇</FONT></CENTER>
 
 <audio autoplay="autoplay">
 <source src="https://api.uomg.com/api/rand.music?sort=热歌榜" type="audio/mpeg">
