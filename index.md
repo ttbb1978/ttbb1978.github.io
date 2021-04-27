@@ -34,11 +34,11 @@
 
 中年人只是懂得了责任与担当，学会了宽容与大度。到这时，人要学会“怂一点”！
 
-<font color="##9ACD32"><h4>合作联系方式</h4></font>
+<font color="#9ACD32"><h4>合作联系方式</h4></font>
 
 <img src="https://api.uomg.com/api/rand.img1?sort=汽车" width="480" height="">
 
-<font color="##9ACD32">站长QQ：765931440 秘书QQ：2358429597</font>
+<font color="#9ACD32">站长QQ：765931440 秘书QQ：2358429597</font>
 
 欢迎进入[站长QQ空间](https://user.qzone.qq.com/765931440)或者[秘书QQ空间](https://user.qzone.qq.com/2358429597)我们很高兴与你联系，成为合作伙伴......
 
