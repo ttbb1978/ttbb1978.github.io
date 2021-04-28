@@ -1,4 +1,4 @@
-<div id="box"><table width="100%" height="100%"><img src="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/tb!86.jpg" /></div>
+<div id="box"><table width="100%" height="100%"><img src="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/2021.jpg" /></div>
 
 <font color="#8A2BE2"><h4>站长相关</h4></font>
 
