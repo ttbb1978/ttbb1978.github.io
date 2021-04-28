@@ -1,4 +1,4 @@
-<div id="box"><table width="100%" height="100%"><tr><td align="center"><img src="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/tb!85.jpg" /></td></tr></table></div
+<div id="box"><table width="100%" height="100%"><tr><td align="center"><img src="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/tb!85.jpg" /></td></tr></table></div>
 
 <CENTER><FONT color=YellowGreen White style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 30px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">欢迎来到田兵个人网站</FONT></CENTER>     
 
