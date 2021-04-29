@@ -1,4 +1,4 @@
-<img src="https://iph.href.lu/800x120?text=欢迎来到田兵个人网站&fg=ffffff&bg=8fce00" width="" height="">    
+<img src="https://iph.href.lu/985x120?text=欢迎来到田兵个人网站&fg=ffffff&bg=8fce00" width="" height="">    
 
 <CENTER><FONT color=Black style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 20px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">E-mail:tianbingyx@163.com</FONT></CENTER>
 
