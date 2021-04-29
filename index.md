@@ -38,7 +38,7 @@
 
 <font color="#9ACD32"><h4>合作联系</h4></font>
 
-邮箱:tianbingyx@163.com
+投稿邮箱:tianbingyx@163.com
 
 站长QQ：765931440 秘书QQ：2358429597
 
