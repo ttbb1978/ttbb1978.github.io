@@ -12,7 +12,9 @@
 
 <img src="https://api.uomg.com/api/rand.img1?sort=美女" width="" height="">
 
-<img src="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/a1.png" width="" height=""> <font color="#9ACD32"><h4>csgo  s1mple灵敏度设置 文/田中秋</h4></font>
+<img src="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/a1.png" width="" height="">
+
+<font color="#9ACD32"><h4>csgo  s1mple灵敏度设置 文/田中秋</h4></font>
 
 dpi：400
 
