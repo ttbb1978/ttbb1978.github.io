@@ -12,25 +12,23 @@
 
 <img src="https://api.uomg.com/api/rand.img1?sort=美女" width="" height="">
 
-<img src="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/a1.png" width="" height="">
-
 <font color="#9ACD32"><h4>csgo  s1mple灵敏度设置 文/田中秋</h4></font>
 
-dpi：400
+    dpi：400
 
-鼠标hz：1000
+    鼠标hz：1000
 
-灵敏度：3.09
+    灵敏度：3.09
 
-开镜灵敏度：1.00
+    开镜灵敏度：1.00
 
-垂直灵敏度：-1.00
+    垂直灵敏度：-1.00
 
-水平灵敏度：-1.50
+    水平灵敏度：-1.50
 
-4：3拉伸
+    4：3拉伸
 
-1280*960
+    1280*960
 
 <font color="#9ACD32"><h4>放下，忘记和珍惜    文/李思圆</h4></font>
 
