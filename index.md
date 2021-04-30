@@ -37,7 +37,7 @@
  
 其实，都不是。自己做了父母以后才会发现，照顾好自己，让父母少一分牵挂，少一分担心，少一分不安，才是对他们最好的回报。
 
-<img src="https://api.vvhan.com/api/girl?type=https" width="640" height="">
+<img src="https://api.vvhan.com/api/girl?type=https" width="" height="">
 
 <font color="#9ACD32"><h4>人到中年，学会怂一点    文/作者未知</h4></font>
 
