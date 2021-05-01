@@ -57,9 +57,9 @@
 
 ----------
 
-<CENTER><FONT color=Black style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">版权所有：归田兵个人所有  2021©</FONT></CENTER>
+<CENTER><FONT color=Black style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">`版权所有：归田兵个人所有  2021©`</FONT></CENTER>
 
-<CENTER><FONT color=Black style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">网站地址：四川省德阳市旌阳区</FONT></CENTER>
+<CENTER><FONT color=Black style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">`网站地址：四川省德阳市旌阳区`</FONT></CENTER>
 
 <audio autoplay="autoplay">
 <source src="https://api.uomg.com/api/rand.music?sort=热歌榜" type="audio/mpeg">
