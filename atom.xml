@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ttbb1978.github.io</id>
-    <title>Gridea</title>
-    <updated>2021-05-04T10:08:51.175Z</updated>
+    <title>欢迎来到田兵个人网站</title>
+    <updated>2021-05-04T10:13:19.688Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ttbb1978.github.io"/>
     <link rel="self" href="https://ttbb1978.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>E-mail:tianbingyx@163.com</subtitle>
     <logo>https://ttbb1978.github.io/images/avatar.png</logo>
     <icon>https://ttbb1978.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, Gridea</rights>
+    <rights>All rights reserved 2021, 欢迎来到田兵个人网站</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://ttbb1978.github.io/post/hello-gridea/</id>
