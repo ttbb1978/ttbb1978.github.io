@@ -6,7 +6,7 @@
 
 <font color="#9ACD32"><h4>站长相关</h4></font>
 
-<img src="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/error_tb.jpg" width="90" height="90">  <img src="https://q1.qlogo.cn/g?b=qq&nk=2358429597&s=640" width="90" height="90">  <img src="http://q1.qlogo.cn/g?b=qq&nk=2197968519&s=640" width="90" height="90">  <a href="javascript:location.reload();">音乐</a>
+<img src="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/error_tb.jpg" width="90" height="90">  <img src="https://q1.qlogo.cn/g?b=qq&nk=2358429597&s=640" width="90" height="90">  <img src="http://mrw.so/5I69mX" width="90" height="90">  <a href="javascript:location.reload();">音乐</a>
 
 休闲娱乐 [在线小视频](https://www.lefu.men/dy) 站长推荐 [在线工具库](https://tool.oschina.net/)
 
