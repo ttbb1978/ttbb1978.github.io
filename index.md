@@ -1,4 +1,4 @@
-<CENTER><FONT color=YellowGreen White style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 30px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">欢迎来到田兵个人网站</FONT></CENTER>   
+﻿<CENTER><FONT color=YellowGreen White style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 30px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">欢迎来到田兵个人网站</FONT></CENTER>   
 
 <CENTER><FONT color=Black style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 20px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">E-mail:tianbingyx@163.com</FONT></CENTER>
 
@@ -22,6 +22,28 @@
     水平灵敏度：-1.50
     4：3拉伸
     1280*960
+
+<font color="#9ACD32"><h4>人生真相   2021/5</h4></font>
+
+乞丐并不会妒忌百万富翁，但是他肯定会妒忌收入更高的乞丐。——罗素
+
+要么庸俗，要么孤独——叔本华
+
+人生而自由，却无往不在枷锁中。——卢梭
+
+我发现，一个人在放弃给别人留好印象的负担之后，原来心里会如此踏实。——严歌苓
+
+人表达的永远不是他所说的内容，而是渴望被理解的心情。——苏更生
+
+自由意味着责任，正因为如此，多数人都惧怕自由。——萧伯纳
+
+一个男人发现他在变老，是因为他开始像他的父亲。——马尔克斯
+
+自由不是让你想做什么就做什么，自由是教你不想做什么，就可以不做什么。——康德
+
+使人疲惫的不是远方的高山，而是鞋子里的一粒沙子。——伏尔泰
+
+有一天，当回顾自己走过的路时，你会发现这些奋斗不息的岁月，才是最美好的人生。——弗洛伊德
 
 <font color="#9ACD32"><h4>放下，忘记和珍惜    文/李思圆</h4></font>
 
