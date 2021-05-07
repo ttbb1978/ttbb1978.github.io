@@ -3,7 +3,6 @@
 <CENTER><FONT color=Black style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 20px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">E-mail:tianbingyx@163.com</FONT></CENTER>
 
 ----------
-<br>
 <center>
 <script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
 <script>ishan()</script>
