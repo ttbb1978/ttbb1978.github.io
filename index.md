@@ -3,6 +3,12 @@
 <CENTER><FONT color=Black style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 20px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">E-mail:tianbingyx@163.com</FONT></CENTER>
 
 ----------
+<br>
+<center>
+<script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
+<script>ishan()</script>
+</center>
+<br>
 
 <font color="#9932CC"><h4>站长相关</h4></font>
 
@@ -14,13 +20,6 @@
 <a href="javascript:location.reload();">换首音乐</a></p>
 
 <p>休闲娱乐 <a href="https://www.lefu.men/dy">在线小视频</a> 站长推荐 <a href="https://tool.oschina.net/">在线工具库</a></p>
-
-<center>
-<script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
-<script>ishan()</script>
-</center>
-
-<br>
 
 <p><img src="https://api.vvhan.com/api/bing?type=1" width="" height="" /></p>
 
