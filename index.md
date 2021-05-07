@@ -17,16 +17,6 @@
 
 <p><img src="https://api.uomg.com/api/rand.img1?sort=美女" width="" height="" /></p>
 
-<font color="#9932CC"><h4>csgo  s1mple灵敏度设置 文/田中秋</h4></font>
-
-<p>鼠标hz：1000 / 灵敏度：3.09</p>
-
-<p>开镜灵敏度：1.00 / 垂直灵敏度：-1.00</p>
-
-<p>水平灵敏度：-1.50 / 4：3拉伸 / 1280*960</p>
-
-<p><img src="https://api.vvhan.com/api/bing?type=1" width="" height="" /></p>
-
 <font color="#9932CC"><h4>现实人生   2021/5/6</h4></font>
 
 <p>乞丐并不会妒忌百万富翁，但是他肯定会妒忌收入更高的乞丐。</p>
@@ -34,6 +24,8 @@
 <p>要么庸俗，要么孤独。</p>
 
 <p>人表达的永远不是他所说的内容，而是渴望被理解的心情。</p>
+
+<p><img src="https://api.vvhan.com/api/bing?type=1" width="" height="" /></p>
 
 <p>一个男人发现他在变老，是因为他开始像他的父亲。</p>
 
