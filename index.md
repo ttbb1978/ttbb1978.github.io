@@ -10,7 +10,7 @@
 
 <p>休闲娱乐 <a href="https://www.lefu.men/dy">在线小视频</a> 站长推荐 <a href="https://tool.oschina.net/">在线工具库</a></p>
 
-<p><img src="https://api.uomg.com/api/rand.img1?sort=美女" width="75%" height="" /></p>
+<p><img src="https://api.uomg.com/api/rand.img1?sort=美女" width="" height="" /></p>
 
 <font color="#9932CC"><h4>csgo  s1mple灵敏度设置 文/田中秋</h4></font>
 
@@ -28,25 +28,25 @@
 
 <p>1280*960</p>
 
-<font color="#9932CC"><h4>人生真相   2021/5/6</h4></font>
+<font color="#9932CC"><h4>现实人生   2021/5/6</h4></font>
 
-<p>乞丐并不会妒忌百万富翁，但是他肯定会妒忌收入更高的乞丐。<font color="#9932CC"> 文/罗素</font></p>
+<p>乞丐并不会妒忌百万富翁，但是他肯定会妒忌收入更高的乞丐。</p>
 
-<p>要么庸俗，要么孤独。<font color="#9932CC"> 文/叔本华</font></p>
+<p>要么庸俗，要么孤独。</p>
 
-<p>人生而自由，却无往不在枷锁中。<font color="#9932CC"> 文/卢梭</font></p>
+<p>人生而自由，却无往不在枷锁中。</p>
 
-<p>我发现，一个人在放弃给别人留好印象的负担之后，原来心里会如此踏实。<font color="#9932CC"> 文/严歌苓</font></p>
+<p>我发现，一个人在放弃给别人留好印象的负担之后，原来心里会如此踏实。</p>
 
-<p>人表达的永远不是他所说的内容，而是渴望被理解的心情。<font color="#9932CC"> 文/苏更生</font></p>
+<p>人表达的永远不是他所说的内容，而是渴望被理解的心情。</p>
 
-<p>自由意味着责任，正因为如此，多数人都惧怕自由。<font color="#9932CC"> 文/萧伯纳</font></p>
+<p>自由意味着责任，正因为如此，多数人都惧怕自由。</p>
 
-<p>一个男人发现他在变老，是因为他开始像他的父亲。<font color="#9932CC"> 文/马尔克斯</font></p>
+<p>一个男人发现他在变老，是因为他开始像他的父亲。</p>
 
-<p>使人疲惫的不是远方的高山，而是鞋子里的一粒沙子。<font color="#9932CC"> 文/伏尔泰</font></p>
+<p>使人疲惫的不是远方的高山，而是鞋子里的一粒沙子。</p>
 
-<p>有一天，当回顾自己走过的路时，你会发现这些奋斗不息的岁月，才是最美好的人生。<font color="#9932CC"> 文/弗洛伊德</font></p>
+<p>有一天，当回顾自己走过的路时，你会发现这些奋斗不息的岁月，才是最美好的人生。</p>
 
 <font color="#9932CC"><h4>放下，忘记和珍惜    文/李思圆</h4></font>
 
@@ -54,7 +54,7 @@
 
 <p>其实大多数时候，我们之所以会感到烦恼，并非由外因导致，是你的心态和状态，决定和影响了你的情绪。</p>
 
-<p><img src="https://api.uomg.com/api/rand.img1?sort=二次元" width="75%" height="" /></p>
+<p><img src="https://api.uomg.com/api/rand.img1?sort=二次元" width="" height="" /></p>
 
 <font color="#9932CC"><h4>不让父母担心，就是最好的孝顺    文/李思圆</h4></font>
 
@@ -62,7 +62,7 @@
 
 <p>其实，都不是。自己做了父母以后才会发现，照顾好自己，让父母少一分牵挂，少一分担心，少一分不安，才是对他们最好的回报。</p>
 
-<p><img src="https://api.uomg.com/api/rand.img1?sort=动漫" width="75%" height="" /></p>
+<p><img src="https://api.uomg.com/api/rand.img1?sort=动漫" width="" height="" /></p>
 
 <font color="#9932CC"><h4>人到中年，学会怂一点    文/作者未知</h4></font>
 
@@ -70,7 +70,7 @@
 
 <p>中年人只是懂得了责任与担当，学会了宽容与大度。到这时，人要学会“怂一点”！</p>
 
-<p><img src="https://api.vvhan.com/api/bing?type=" width="75%" height="" /></p>
+<p><img src="https://api.vvhan.com/api/bing?type=" width="" height="" /></p>
 
 <font color="#9932CC"><h4>合作联系方式</h4></font>
 
