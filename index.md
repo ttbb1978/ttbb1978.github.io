@@ -6,7 +6,12 @@
 
 <font color="#9932CC"><h4>站长相关</h4></font>
 
-<p><img src="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/error_tb.jpg" width="100" height="100" />  <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2358429597&amp;s=640" width="100" height="100" />  <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2197968519&amp;s=640" width="100" height="100" />  <a href="javascript:location.reload();">音乐</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/error_tb.jpg" width="100" height="100" />  <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2358429597&amp;s=640" width="100" height="100" />  <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2197968519&amp;s=640" width="100" height="100" />
+
+<p>
+</p>
+
+<a href="javascript:location.reload();">换首音乐</a></p>
 
 <p>休闲娱乐 <a href="https://www.lefu.men/dy">在线小视频</a> 站长推荐 <a href="https://tool.oschina.net/">在线工具库</a></p>
 
