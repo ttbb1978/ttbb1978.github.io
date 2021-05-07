@@ -25,6 +25,8 @@
 <script type="text/javascript" src="https://api.vvhan.com/api/xh?type=js">
 </script><script>ishan()</script>
 
+<br>
+
 <p><img src="https://api.vvhan.com/api/bing?type=1" width="" height="" /></p>
 
 <font color="#9932CC"><h4>现实人生   2021/5/6</h4></font>
