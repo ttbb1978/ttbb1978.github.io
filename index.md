@@ -21,7 +21,7 @@
 <p>休闲娱乐 <a href="https://www.lefu.men/dy">在线小视频</a> 站长推荐 <a href="https://tool.oschina.net/">在线工具库</a></p>
 
 <font color="#9932CC"><h4>娱乐幽默</h4></font>
-<br>
+
 <script type="text/javascript" src="https://api.vvhan.com/api/xh?type=js">
 </script><script>ishan()</script>
 <br>
