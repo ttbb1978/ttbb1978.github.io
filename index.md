@@ -7,7 +7,6 @@
 <script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
 <script>ishan()</script>
 </center>
-<br>
 
 <font color="#9932CC"><h4>站长相关</h4></font>
 
