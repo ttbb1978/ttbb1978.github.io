@@ -4,7 +4,7 @@
 
 ----------
 
-<font color="#9932CC"><h4>群成员发布（QQ群：386113172）</h4></font>
+<font color="#9932CC"><h4>成员发布（QQ群：386113172）</h4></font>
 
 <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=765931440&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2358429597&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2409495157&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2321689620&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=3147383943&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=1040458166&amp;s=640" width="50" height="50" />
 
