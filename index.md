@@ -18,14 +18,14 @@
 
 <p>休闲娱乐 <a href="https://www.lefu.men/dy">在线小视频</a> 站长推荐 <a href="https://tool.oschina.net/">在线工具库</a></p>
 
+<p><img src="https://api.vvhan.com/api/bing?type=1" width="" height="" /></p>
+
+<br>
+
 <font color="#9932CC"><h4>娱乐幽默</h4></font>
 
 <script type="text/javascript" src="https://api.vvhan.com/api/xh?type=js">
 </script><script>ishan()</script>
-
-<br>
-
-<p><img src="https://api.vvhan.com/api/bing?type=1" width="" height="" /></p>
 
 <p><img src="https://api.uomg.com/api/rand.img1?sort=二次元" width="" height="" /></p>
 
