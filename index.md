@@ -28,7 +28,7 @@
 
 <p><img src="https://api.vvhan.com/api/bing?type=1" width="" height="" /></p>
 
-<font color="#9932CC"><h4>群成员发布内容（QQ群：386113172）</h4></font>
+<font color="#9932CC"><h4>群成员发布（QQ群：386113172）</h4></font>
 
 <p>乞丐并不会妒忌百万富翁，但是他肯定会妒忌收入更高的乞丐。</p>
 
