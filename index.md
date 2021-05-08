@@ -30,8 +30,6 @@
 
 <font color="#9932CC"><h4>合作联系方式</h4></font>
 
-<p>邮箱:tianbingyx@163.com</p>
-
 <p>站长QQ：765931440 秘书QQ：2358429597</p>
 
 <p>欢迎进入<a href="https://user.qzone.qq.com/765931440">站长QQ空间</a>或者<a href="https://user.qzone.qq.com/2358429597">秘书QQ空间</a>我们很高兴与你联系，成为合作伙伴……</p>
