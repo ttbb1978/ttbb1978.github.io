@@ -42,14 +42,6 @@
 
 <p><img src="https://api.uomg.com/api/rand.img1?sort=二次元" width="" height="" /></p>
 
-<font color="#9932CC"><h4>人到中年，学会怂一点    文/作者未知</h4></font>
-
-<p>过了大山大水，心就静了；见过了生离死别，脾气就怂了。走过半辈子，早就明白得失功过只在一念之间。</p>
-
-<p>中年人只是懂得了责任与担当，学会了宽容与大度。到这时，人要学会“怂一点”！</p>
-
-<p><img src="https://api.vvhan.com/api/bing?type=" width="" height="" /></p>
-
 <font color="#9932CC"><h4>合作联系方式</h4></font>
 
 <p>邮箱:tianbingyx@163.com</p>
