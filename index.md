@@ -3,21 +3,20 @@
 <CENTER><FONT color=Black style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 20px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">E-mail:tianbingyx@163.com</FONT></CENTER>
 
 ----------
-<center>
-<script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
-<script>ishan()</script>
-</center>
 
 <font color="#9932CC"><h4>群成员发布（QQ群：386113172）</h4></font>
 
 <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=765931440&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2358429597&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2409495157&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2321689620&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=3147383943&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=1040458166&amp;s=640" width="50" height="50" />
 
-<p>......</p>
+<center>
+<script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
+<script>ishan()</script>
+</center>
 
 <p>
 </p>
 
-<a href="javascript:location.reload();">换首音乐</a></p>
+<a href="javascript:location.reload();">换首音乐</a>
 
 <p>休闲娱乐 <a href="https://www.lefu.men/dy">在线小视频</a> 站长推荐 <a href="https://tool.oschina.net/">在线工具库</a></p>
 
