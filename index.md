@@ -26,7 +26,7 @@
 
 <br>
 
-<p><img src="https://api.uomg.com/api/rand.img1?sort=二次元" width="" height="" /></p>
+<p><img src="https://api.vvhan.com/api/acgimg?type=" width="" height="" /></p>
 
 <font color="#9932CC"><h4>合作联系方式</h4></font>
 
