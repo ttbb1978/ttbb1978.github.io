@@ -11,16 +11,13 @@
 <script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
 <script>ishan()</script>
 
-<p>
-</p>
+<p></p>
 
 <a href="javascript:location.reload();">换首音乐</a>
 
 <p>休闲娱乐 <a href="https://www.lefu.men/dy">在线小视频</a> 站长推荐 <a href="https://tool.oschina.net/">在线工具库</a></p>
 
 <p><img src="https://api.vvhan.com/api/bing?type=1" width="" height="" /></p>
-
-<br>
 
 <font color="#9932CC"><h4>娱乐幽默</h4></font>
 
