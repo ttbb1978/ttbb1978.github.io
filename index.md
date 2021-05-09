@@ -1,4 +1,6 @@
-<style>body {background-color: #708090}</style>
+<style>body {background-color: #c0c0c0}</style>
+
+<script src='https://api.vvhan.com/api/snow'></script>
 
 <CENTER><FONT color=YellowGreen White style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 30px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">欢迎来到田兵个人网站</FONT></CENTER>   
 
