@@ -1,4 +1,4 @@
-<style>body {background-color: #f0f0f0}</style>
+<style>body {background-color: #339999}</style>
 
 <script src='https://api.vvhan.com/api/snow'></script>
 
