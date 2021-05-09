@@ -38,7 +38,7 @@
 
 ----------
 
-<CENTER><FONT color=Black style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">版权：田兵个人所有  2021©</FONT></CENTER>
+<center>版权：田兵个人所有  2021©</center>
 
-<CENTER><FONT color=Black style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 15px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">网站地址：四川省德阳市旌阳区</FONT></CENTER>
+<center>网站地址：四川省德阳市旌阳区</center>
 
