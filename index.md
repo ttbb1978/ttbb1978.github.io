@@ -26,12 +26,10 @@
 
 <p><img src="https://api.vvhan.com/api/acgimg?type=" width="" height="" /></p>
 
-<font color="#9932CC"><h4>每日必看</h4></font>
+<font color="#9932CC"><h4>每日一看</h4></font>
 
 <script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
 <script>ishan()</script>
-
-<font color="#9932CC"><h4>今日天气</h4></font>
 
 <img src="https://api.vvhan.com/api/ip?s=">
 
