@@ -43,7 +43,7 @@
 
 ----------
 
-<center><h5>版权：田兵个人所有  2021©</h5></center>
+<center>版权：田兵个人所有  2021©</center>
 
-<center><h5>网站地址：四川省德阳市旌阳区</h5></center>
+<center>网站地址：四川省德阳市旌阳区</center>
 
