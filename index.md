@@ -9,10 +9,7 @@
 
 <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=765931440&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2358429597&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2409495157&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2321689620&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=3147383943&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=1040458166&amp;s=640" width="50" height="50" />
 
-<script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
-<script>ishan()</script>
-
-<p></p>
+待定区域......
 
 <a href="javascript:location.reload();">刷新内容</a>
 
@@ -28,6 +25,11 @@
 <br>
 
 <p><img src="https://api.vvhan.com/api/acgimg?type=" width="" height="" /></p>
+
+<font color="#9932CC"><h4>每日必看</h4></font>
+
+<script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
+<script>ishan()</script>
 
 <font color="#9932CC"><h4>今日天气</h4></font>
 
