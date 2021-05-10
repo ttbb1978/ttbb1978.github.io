@@ -29,9 +29,11 @@
 
 <p><img src="https://api.vvhan.com/api/acgimg?type=" width="" height="" /></p>
 
+<font color="#9932CC"><h4>今日天气</h4></font>
+
 <img src="https://api.vvhan.com/api/ip?s=">
 
-<font color="#9932CC"><h4>合作联系方式</h4></font>
+<font color="#9932CC"><h4>联系方式</h4></font>
 
 <p>站长QQ：765931440 秘书QQ：2358429597</p>
 
