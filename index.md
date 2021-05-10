@@ -28,10 +28,10 @@
 
 <font color="#9932CC"><h4>每日一看</h4></font>
 
-<br>
-
 <script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
 <script>ishan()</script>
+
+<br>
 
 <img src="https://api.vvhan.com/api/ip?s=">
 
