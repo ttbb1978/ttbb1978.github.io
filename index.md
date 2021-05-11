@@ -37,15 +37,9 @@
 
 <font color="#9932CC"><h3>联系方式</h3></font>
 
-<p>站长QQ：765931440 秘书QQ：2358429597</p>
+<p>站长QQ：765931440</p>
 
 <p>欢迎进入<a href="https://user.qzone.qq.com/765931440">站长QQ空间</a>我们很高兴与你联系，成为合作伙伴……</p>
-
-----------
-
-<center>版权：田兵个人所有   2021©</center>
-
-<center>地址：四川省德阳市旌阳区</center>
 
 <center><font color="#9932CC"><span><i class="fa fa-cog fa-spin"></i></span> 已运行
 							<span id="aa"></span>
@@ -70,3 +64,10 @@
 								show_date_time();
 							</script></font></center>
 
+
+
+----------
+
+<center>版权：田兵个人所有   2021©</center>
+
+<center>地址：四川省德阳市旌阳区</center>
