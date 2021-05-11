@@ -43,7 +43,11 @@
 
 ----------
 
-<center><font color="#3333ff"><span><i class="fa fa-cog fa-spin"></i></span> 网站运行
+<center>版权：田兵个人所有  2021©</center>
+
+<center>网站地址：四川省德阳市旌阳区</center>
+
+<center><font color="#3333ff"><span><i class="fa fa-cog fa-spin"></i></span> 网站已运行
 							<span id="aa"></span>
 							<script language=javascript>
 								//document.write(""); 
@@ -65,8 +69,4 @@
 								}
 								show_date_time();
 							</script></font></center>
-
-<center>版权：田兵个人所有  2021©</center>
-
-<center>网站地址：四川省德阳市旌阳区</center>
 
