@@ -43,7 +43,7 @@
 
 ----------
 
-<center><span><i class="fa fa-cog fa-spin"></i></span> 网站运行
+<center><font color="#3333ff"><span><i class="fa fa-cog fa-spin"></i></span> 网站运行
 							<span id="aa"></span>
 							<script language=javascript>
 								//document.write(""); 
@@ -64,7 +64,7 @@
 										"秒 ";
 								}
 								show_date_time();
-							</script></center>
+							</script></font></center>
 
 <center>版权：田兵个人所有  2021©</center>
 
