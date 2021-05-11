@@ -11,7 +11,7 @@
 
 待定区域......
 
-<a href="javascript:location.reload();"><h3>刷新内容</h3></a>
+<a href="javascript:location.reload();">刷新内容</a>
 
 <p>休闲娱乐 <a href="https://www.lefu.men/dy">在线小视频</a> 站长推荐 <a href="https://tool.oschina.net/">在线工具库</a></p>
 
