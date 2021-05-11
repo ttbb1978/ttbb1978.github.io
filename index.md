@@ -17,19 +17,19 @@
 
 <p><img src="https://api.vvhan.com/api/bing?type=" width="" height="" /></p>
 
-<font color="#9932CC"><h3>娱乐幽默</h3></font>
+<font color="#9932CC"><h3>每日一看</h3></font>
 
-<script type="text/javascript" src="https://api.vvhan.com/api/xh?type=js">
-</script><script>ishan()</script>
+<script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
+<script>ishan()</script>
 
 <br>
 
 <p><img src="https://api.vvhan.com/api/acgimg?type=" width="" height="" /></p>
 
-<font color="#9932CC"><h3>每日一看</h3></font>
+<font color="#9932CC"><h3>娱乐幽默</h3></font>
 
-<script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
-<script>ishan()</script>
+<script type="text/javascript" src="https://api.vvhan.com/api/xh?type=js">
+</script><script>ishan()</script>
 
 <br>
 
