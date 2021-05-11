@@ -35,6 +35,29 @@
 
 <img src="https://api.vvhan.com/api/ip?s=">
 
+<center><span><i class="fa fa-cog fa-spin"></i></span> 网站已运行
+							<span id="aa"></span>
+							<script language=javascript>
+								//document.write(""); 
+								function show_date_time() {
+									window.setTimeout("show_date_time()", 1000);
+									timeold = ((new Date()).getTime() - (new Date("04/24/2021 00:00:00")).getTime());
+									sectimeold = timeold / 1000
+									secondsold = Math.floor(sectimeold);
+									msPerDay = 24 * 60 * 60 * 1000
+									e_daysold = timeold / msPerDay
+									daysold = Math.floor(e_daysold);
+									e_hrsold = (e_daysold - daysold) * 24;
+									hrsold = Math.floor(e_hrsold);
+									e_minsold = (e_hrsold - hrsold) * 60;
+									minsold = Math.floor((e_hrsold - hrsold) * 60);
+									seconds = Math.floor((e_minsold - minsold) * 60);
+									aa.innerHTML = "" + daysold + "天 " + hrsold + "小时 " + minsold + "分 " + seconds +
+										"秒 ";
+								}
+								show_date_time();
+							</script></center>
+
 <font color="#9932CC"><h4>联系方式</h4></font>
 
 <p>站长QQ：765931440 秘书QQ：2358429597</p>
