@@ -43,7 +43,7 @@
 
 ----------
 
-<center><span><i class="fa fa-cog fa-spin"></i></span> 网站已运行
+<center><span><i class="fa fa-cog fa-spin"></i></span> 网站运行
 							<span id="aa"></span>
 							<script language=javascript>
 								//document.write(""); 
