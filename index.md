@@ -47,7 +47,7 @@
 
 <center>网站地址：四川省德阳市旌阳区</center>
 
-<center><font color="#3333ff"><span><i class="fa fa-cog fa-spin"></i></span> 网站已运行
+<center><font color="#3333ff"><span><i class="fa fa-cog fa-spin"></i></span> 网站运行
 							<span id="aa"></span>
 							<script language=javascript>
 								//document.write(""); 
