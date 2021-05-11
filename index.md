@@ -35,6 +35,14 @@
 
 <img src="https://api.vvhan.com/api/ip?s=">
 
+<font color="#9932CC"><h4>联系方式</h4></font>
+
+<p>站长QQ：765931440 秘书QQ：2358429597</p>
+
+<p>欢迎进入<a href="https://user.qzone.qq.com/765931440">站长QQ空间</a>或者<a href="https://user.qzone.qq.com/2358429597">秘书QQ空间</a>我们很高兴与你联系，成为合作伙伴……</p>
+
+----------
+
 <center><span><i class="fa fa-cog fa-spin"></i></span> 网站已运行
 							<span id="aa"></span>
 							<script language=javascript>
@@ -57,14 +65,6 @@
 								}
 								show_date_time();
 							</script></center>
-
-<font color="#9932CC"><h4>联系方式</h4></font>
-
-<p>站长QQ：765931440 秘书QQ：2358429597</p>
-
-<p>欢迎进入<a href="https://user.qzone.qq.com/765931440">站长QQ空间</a>或者<a href="https://user.qzone.qq.com/2358429597">秘书QQ空间</a>我们很高兴与你联系，成为合作伙伴……</p>
-
-----------
 
 <center>版权：田兵个人所有  2021©</center>
 
