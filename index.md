@@ -11,7 +11,7 @@
 
 待定区域......
 
-<a href="javascript:location.reload();">刷新内容</a>
+<a href="javascript:location.reload();"><h3>刷新内容</h3></a>
 
 <p>休闲娱乐 <a href="https://www.lefu.men/dy">在线小视频</a> 站长推荐 <a href="https://tool.oschina.net/">在线工具库</a></p>
 
@@ -43,11 +43,11 @@
 
 ----------
 
-<center>版权：田兵个人所有  2021©</center>
+<center>版权：田兵个人所有   2021©</center>
 
-<center>网站地址：四川省德阳市旌阳区</center>
+<center>地址：四川省德阳市旌阳区</center>
 
-<center><font color="#3333ff"><span><i class="fa fa-cog fa-spin"></i></span> 已运行
+<center><font color="#9932CC"><span><i class="fa fa-cog fa-spin"></i></span> 已运行
 							<span id="aa"></span>
 							<script language=javascript>
 								//document.write(""); 
