@@ -5,7 +5,7 @@
 
 ----------
 
-<font color="#9932CC"><h4>成员发布（QQ群：386113172）</h4></font>
+<font color="#9932CC"><h3>成员发布（QQ群：386113172）</h3></font>
 
 <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=765931440&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2358429597&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2409495157&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2321689620&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=3147383943&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=1040458166&amp;s=640" width="50" height="50" />
 
@@ -17,7 +17,7 @@
 
 <p><img src="https://api.vvhan.com/api/bing?type=" width="" height="" /></p>
 
-<font color="#9932CC"><h4>娱乐幽默</h4></font>
+<font color="#9932CC"><h3>娱乐幽默</h3></font>
 
 <script type="text/javascript" src="https://api.vvhan.com/api/xh?type=js">
 </script><script>ishan()</script>
@@ -26,7 +26,7 @@
 
 <p><img src="https://api.vvhan.com/api/acgimg?type=" width="" height="" /></p>
 
-<font color="#9932CC"><h4>每日一看</h4></font>
+<font color="#9932CC"><h3>每日一看</h3></font>
 
 <script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
 <script>ishan()</script>
@@ -35,11 +35,11 @@
 
 <img src="https://api.vvhan.com/api/ip?s=">
 
-<font color="#9932CC"><h4>联系方式</h4></font>
+<font color="#9932CC"><h3>联系方式</h3></font>
 
 <p>站长QQ：765931440 秘书QQ：2358429597</p>
 
-<p>欢迎进入<a href="https://user.qzone.qq.com/765931440">站长QQ空间</a>或者<a href="https://user.qzone.qq.com/2358429597">秘书QQ空间</a>我们很高兴与你联系，成为合作伙伴……</p>
+<p>欢迎进入<a href="https://user.qzone.qq.com/765931440">站长QQ空间</a>我们很高兴与你联系，成为合作伙伴……</p>
 
 ----------
 
