@@ -72,7 +72,7 @@
 
 ------
 
-<strong><center>版权归田兵个人所有 2021© <br>创建地址：四川省 德阳市 旌阳区<br></center></strong>
+<strong><center>版权归田兵个人所有 2021© <br>创建地址：四川省 德阳市 旌阳区</center></strong>
 
 <audio autoplay="autoplay">
 <source src="https://api.uomg.com/api/rand.music?sort=热歌榜" type="audio/mpeg">
