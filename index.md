@@ -5,15 +5,11 @@
 
 <title>田兵个人网站</title>
 
-<br>
-
 <center><font size="" color="#99cc00"><h1>欢 &nbsp;迎 &nbsp;来 &nbsp;到 &nbsp;田 &nbsp;兵 &nbsp;个 &nbsp;人 &nbsp;网 &nbsp;站</h1></font>  
 
 <font size="" color="#cacaca"><h3>E-mail:tianbingyx@163.com</h3></font></center>
 
 ------
-
-<table border="1px" cellpadding="300" cellspacing="200" style="height:265px;border-left-style:solid; border-bottom-style:none;border-right-style:none;border-top-style:none">
 
 <font color="#cacaca"><h3>成员发布（QQ群：386113172）</h3></font>
 
@@ -76,7 +72,7 @@
 
 ------
 
-<strong><center>版权归田兵个人所有 2021© <br>创建地址：四川省 德阳市 旌阳区<br><br></center></strong>
+<strong><center>版权归田兵个人所有 2021© <br>创建地址：四川省 德阳市 旌阳区<br></center></strong>
 
 <audio autoplay="autoplay">
 <source src="https://api.uomg.com/api/rand.music?sort=热歌榜" type="audio/mpeg">
