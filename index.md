@@ -5,9 +5,6 @@
 
 <title>田兵个人网站</title>
 
-<center><font size="" color="#99cc00"><h1>欢 &nbsp;迎 &nbsp;来 &nbsp;到 &nbsp;田 &nbsp;兵 &nbsp;个 &nbsp;人 &nbsp;网 &nbsp;站</h1></font></center>
-
-<center><font size="" color="#cacaca"><h3>E-mail:tianbingyx@163.com</h3></font></center>
 
 ------
 
