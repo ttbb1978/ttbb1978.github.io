@@ -15,7 +15,7 @@
 
 <img src="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/error_tb.jpg" width="100" height="100" />&nbsp;<img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2358429597&amp;s=100" width="100" height="100" />&nbsp;<img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2409495157&amp;s=100" width="100" height="100" />&nbsp;<img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2321689620&amp;s=100" width="100" height="100" />&nbsp;<img src="https://q1.qlogo.cn/g?b=qq&amp;nk=1040458166&amp;s=100" width="100" height="100" />
 
-<br><a href="javascript:location.reload();"><font size="" color="#66ccff"><h3>刷新内容</h3></font></a>
+<br><a href="javascript:location.reload();"><font size="" color="#66ccff">刷新内容</font></a>
 
 <p>休闲娱乐 <a href="https://www.lefu.men/dy"><font size="" color="#ff9900">在线小视频</font></a> 站长推荐 <a href="https://gh.api.99988866.xyz/"><font size="" color="#ff9900">GitHub文件加速</font></a></p>
 
