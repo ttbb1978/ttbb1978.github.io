@@ -1,5 +1,5 @@
 
-<style>body {background-color: #4d4d26}</style>
+<style>body {background-color: #25686b}</style>
 
 <script src='https://api.vvhan.com/api/snow'></script>
 
@@ -9,35 +9,37 @@
 
 ----------
 
-<font color="#cacaca"><h3>成员发布（QQ群：386113172）</h3></font>
+<font color="#99cc00"><h3>成员发布（QQ群：386113172）</h3></font>
 
 <img src="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/error_tb.jpg" width="60" height="60"/> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2358429597&amp;s=640" width="60" height="60"/> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2409495157&amp;s=640" width="60" height="60"/> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2321689620&amp;s=640" width="60" height="60"/> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=1040458166&amp;s=640" width="60" height="60"/>
+<style type="text/css">
+	
+</style>
+<a href="javascript:location.reload();"><font size="" color="#99ccff">刷新内容</font></a>
 
-<a href="javascript:location.reload();">刷新内容</a>
-
-<p>休闲娱乐 <a href="https://www.lefu.men/dy">在线小视频</a> 站长推荐 <a href="https://tool.oschina.net/">在线工具库</a></p>
+<p>休闲娱乐 <a href="https://www.lefu.men/dy"><font size="" color="#99ccff">在线小视频</font></a> 站长推荐 <a href="https://tool.oschina.net/"><font size="" color="#99ccff">在线工具库</font></a></p>
 
 <p><img src="https://api.vvhan.com/api/bing?type=" width="" height="" /></p>
 
-<font color="#cacaca"><h3>每日一看</h3></font>
+<font color="#99cc00"><h3>每日一看</h3></font>
 
-<script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
-<script>ishan()</script>
+<font size="" color="#c0c0c0"><script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
+<script>ishan()</script></font>
 <br>
 <p><img src="https://api.vvhan.com/api/acgimg?type=" width="" height="" /></p>
 
-<font color="#cacaca"><h3>娱乐幽默</h3></font>
+<font color="#99cc00"><h3>娱乐幽默</h3></font>
 
-<script type="text/javascript" src="https://api.vvhan.com/api/xh?type=js">
-</script><script>ishan()</script>
+<font size="" color="#cacaca"><script type="text/javascript" src="https://api.vvhan.com/api/xh?type=js">
+</script><script>ishan()</script></font>
 <br><br>
 <img src="https://api.vvhan.com/api/ip?s=">
 
-<font color="#cacaca"><h3>联系方式</h3></font>
+<font color="#99cc00"><h3>联系方式</h3></font>
 
 <p>站长QQ：765931440</p>
 
-<p>欢迎进入<a href="https://user.qzone.qq.com/765931440">站长QQ空间</a>我们很高兴与你联系，成为合作伙伴……</p>
+<p>欢迎进入<a href="https://user.qzone.qq.com/765931440"><font size="" color="#99ccff">站长QQ空间</font></a>我们很高兴与你联系，成为合作伙伴……</p>
 
 <center><font color="#ffffff"><span><i class="fa fa-cog fa-spin"></i></span> 已运行
 							<span id="aa"></span>
