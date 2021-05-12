@@ -1,0 +1,247 @@
+<html lang="zh-Hans">
+<style>
+    html, body {
+        width: 100%;
+        margin: 0;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        min-height: 100%;
+        padding: 50px;
+        box-sizing: border-box;
+    }
+
+    p {
+        word-break: break-all;
+    }
+
+    @media (max-width: 500px) {
+        h1 {
+            margin-top: 80px;
+        }
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block {
+        display: block;
+        position: relative;
+    }
+
+    .url {
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        position: relative;
+        width: 300px;
+        border: none;
+        border-bottom: 1px solid #bfbfbf;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    .bar {
+        content: '';
+        height: 2px;
+        width: 100%;
+        bottom: 0;
+        position: absolute;
+        background: #00bfb3;
+        transition: 0.2s ease transform;
+        -moz-transition: 0.2s ease transform;
+        -webkit-transition: 0.2s ease transform;
+        transform: scaleX(0);
+    }
+
+    .url:focus ~ .bar {
+        transform: scaleX(1);
+    }
+
+    .btn {
+        line-height: 38px;
+        background-color: #00bfb3;
+        color: #fff;
+        white-space: nowrap;
+        text-align: center;
+        font-size: 14px;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+        padding: 5px;
+        width: 160px;
+        margin: 30px 0;
+    }
+
+    .tips, .example {
+        color: #7b7b7b;
+        position: relative;
+        align-self: flex-start;
+        margin-left: 7.5em;
+    }
+
+    .tips > p:first-child::before {
+        position: absolute;
+        left: -3em;
+        content: 'PS：';
+        color: #7b7b7b
+    }
+
+    .example > p:first-child::before {
+        position: absolute;
+        left: -7.5em;
+        content: '合法输入示例：';
+        color: #7b7b7b
+    }
+</style>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script>
+        function toSubmit(e) {
+            e.preventDefault()
+            window.open('/' + document.getElementsByName('q')[0].value);
+            return false
+        }
+    </script>
+    <title>田兵个人网站</title>
+</head>
+<meta charset="UTF-8"><title>test</title><style>body {margin: 0 auto;width: <!-- 1000px -->;height: ; }</style>
+</head>
+ 
+
+<script type="text/javascript">
+      //图片自适应
+        $(function () {
+            var imglist = document.getElementsByTagName("img");
+            // $("img").attr('style', '');
+            //安卓4.0+等高版本不支持window.screen.width，安卓2.3.3系统支持
+            var _width;
+            doDraw();
+
+
+            window.onresize = function () {
+                //捕捉屏幕窗口变化，始终保证图片根据屏幕宽度合理显示
+                doDraw();
+            }
+
+
+            function doDraw() {
+            	//window.innerWidth 为当前屏幕的宽度
+            	//70为图片两边到屏幕边缘的空白距离，可根据实际情况进行调节
+                _width = window.innerWidth-70;
+                for (var i = 0, len = imglist.length; i < len; i++) {
+                    DrawImage(imglist[i], _width);
+                }
+            }
+            function DrawImage(ImgD, _width) {
+                var image = new Image();
+                image.src = ImgD.src;
+                image.onload = function () {
+                    //限制，只对宽高都大于30的图片做显示处理，换成你想要的宽度。
+                    if (image.width > 30 && image.height > 30) {
+                        if (image.width > _width) {
+                            ImgD.style.width = "";
+                            ImgD.style.height = "";
+                            ImgD.width = _width;
+                            // 高度按比例缩小
+                            ImgD.height = (image.height * _width) / image.width;
+                        } else {
+                            ImgD.style.width = "";
+                            ImgD.style.height = "";
+                            ImgD.width = image.width;
+                            ImgD.height = image.height;
+                        }
+                    }
+                }
+            }
+        })
+    </script>
+
+
+
+
+<center><font size="" color="#99cc00"><h1>欢迎来到田兵个人网站</h1></font>  
+
+<font size="" color="#808080"><h3>E-mail:tianbingyx@163.com</h3></font></center>
+
+<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#c0c0c0 SIZE=3>
+
+<table border="1px" cellpadding="300" cellspacing="200" style="height:265px;border-left-style:solid; border-bottom-style:none;border-right-style:none;border-top-style:none">
+
+<font color="#9932CC"><h3>成员发布（QQ群：386113172）</h3></font>
+
+<img src="https://q1.qlogo.cn/g?b=qq&amp;nk=765931440&amp;s=100" width="100" height="100" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2358429597&amp;s=100" width="100" height="100" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2409495157&amp;s=100" width="100" height="100" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2321689620&amp;s=100" width="100" height="100" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=1040458166&amp;s=100" width="100" height="100" />
+
+<br><br><a href="javascript:location.reload();"><h3>刷新内容</h3></a>
+
+<p>休闲娱乐 <a href="https://www.lefu.men/dy">在线小视频</a> 站长推荐 <a href="https://gh.api.99988866.xyz/">GitHub文件加速</a></p>
+
+<p><img src="https://api.vvhan.com/api/bing?type=" width="1320" height="" /></p>
+
+<font color="#9932CC"><h3>每日一看</h3></font>
+
+<script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
+<script>ishan()</script>
+
+<br>
+
+<p><img src="https://api.vvhan.com/api/acgimg?type=" width="1320" height="" /></p>
+
+<font color="#9932CC"><h3>娱乐幽默</h3></font>
+
+<script type="text/javascript" src="https://api.vvhan.com/api/xh?type=js">
+</script><script>ishan()</script>
+
+<br><br>
+
+<img src="https://api.vvhan.com/api/ip?s=">
+
+<font color="#9932CC"><h3>联系方式</h3></font>
+
+<p>站长QQ：765931440</p>
+
+<p>欢迎进入<a href="https://user.qzone.qq.com/765931440">站长QQ空间</a>我们很高兴与你联系，成为合作伙伴……</p>
+
+</center>
+
+<center><font color="#660099"><span><i class="fa fa-cog fa-spin"></i></span> 已运行
+							<span id="aa"></span>
+							<script language=javascript>
+								//document.write(""); 
+								function show_date_time() {
+									window.setTimeout("show_date_time()", 1000);
+									timeold = ((new Date()).getTime() - (new Date("04/24/2021 00:00:00")).getTime());
+									sectimeold = timeold / 1000
+									secondsold = Math.floor(sectimeold);
+									msPerDay = 24 * 60 * 60 * 1000
+									e_daysold = timeold / msPerDay
+									daysold = Math.floor(e_daysold);
+									e_hrsold = (e_daysold - daysold) * 24;
+									hrsold = Math.floor(e_hrsold);
+									e_minsold = (e_hrsold - hrsold) * 60;
+									minsold = Math.floor((e_hrsold - hrsold) * 60);
+									seconds = Math.floor((e_minsold - minsold) * 60);
+									aa.innerHTML = "" + daysold + "天 " + hrsold + "小时 " + minsold + "分 " + seconds +
+										"秒 ";
+								}
+								show_date_time();
+							</script></font></center>
+
+
+
+<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#c0c0c0 SIZE=3>
+
+<strong><center>版权归田兵个人所有 2021© <br>创建地址：四川省 德阳市 旌阳区</center></strong>
+
+</html>
