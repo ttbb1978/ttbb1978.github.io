@@ -1,11 +1,11 @@
 
-<style>body {background-color: #708090}</style>
+<style>body {background-color: #4d4d26}</style>
 
 <script src='https://api.vvhan.com/api/snow'></script>
 
 <CENTER><FONT color=YellowGreen White style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 30px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">欢迎来到田兵个人网站</FONT></CENTER>   
 
-<CENTER><FONT color=Black style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 20px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">E-mail:tianbingyx@163.com</FONT></CENTER>
+<CENTER><FONT color=#c0c0c0 style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 20px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">E-mail:tianbingyx@163.com</FONT></CENTER>
 
 ----------
 
@@ -23,14 +23,14 @@
 
 <script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
 <script>ishan()</script>
-
+<br>
 <p><img src="https://api.vvhan.com/api/acgimg?type=" width="" height="" /></p>
 
 <font color="#cacaca"><h3>娱乐幽默</h3></font>
 
 <script type="text/javascript" src="https://api.vvhan.com/api/xh?type=js">
 </script><script>ishan()</script>
-
+<br><br>
 <img src="https://api.vvhan.com/api/ip?s=">
 
 <font color="#cacaca"><h3>联系方式</h3></font>
