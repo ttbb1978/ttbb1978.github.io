@@ -7,9 +7,7 @@
 
 <font color="#9932CC"><h3>成员发布（QQ群：386113172）</h3></font>
 
-<img src="https://q1.qlogo.cn/g?b=qq&amp;nk=765931440&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2358429597&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2409495157&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2321689620&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=3147383943&amp;s=640" width="50" height="50" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=1040458166&amp;s=640" width="50" height="50" />
-
-待定区域......
+<img src="https://q1.qlogo.cn/g?b=qq&amp;nk=765931440&amp;s=640" width="60" height="60" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2358429597&amp;s=640" width="60" height="60" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2409495157&amp;s=640" width="60" height="60" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2321689620&amp;s=640" width="60" height="60" /> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=1040458166&amp;s=640" width="60" height="60" />
 
 <a href="javascript:location.reload();">刷新内容</a>
 
@@ -68,6 +66,6 @@
 
 ----------
 
-<center>版权：田兵个人所有   2021©</center>
+<center>版权归田兵个人所有 2021©</center>
 
-<center>地址：四川省德阳市旌阳区</center>
+<center>创建地址：四川省 德阳市 旌阳区</center>
