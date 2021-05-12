@@ -11,7 +11,7 @@
 
 <font size="" color="#cacaca"><h3>E-mail:tianbingyx@163.com</h3></font></center>
 
-<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#99cc00 SIZE=2>
+------
 
 <table border="1px" cellpadding="300" cellspacing="200" style="height:265px;border-left-style:solid; border-bottom-style:none;border-right-style:none;border-top-style:none">
 
@@ -49,8 +49,6 @@
 
 <p>欢迎进入<a href="https://user.qzone.qq.com/765931440"><font size="" color="#ff9900"> 站长QQ空间 </font></a> 我们很高兴与你联系，成为合作伙伴……</p>
 
-</center>
-
 <center><font color="#ffffff"><span><i class="fa fa-cog fa-spin"></i></span> 已运行
 							<span id="aa"></span>
 							<script language=javascript>
@@ -76,7 +74,7 @@
 
 
 
-<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#99cc00 SIZE=2>
+------
 
 <strong><center>版权归田兵个人所有 2021© <br>创建地址：四川省 德阳市 旌阳区<br><br></center></strong>
 
