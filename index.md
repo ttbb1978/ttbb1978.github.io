@@ -7,7 +7,7 @@
 
 ----------
 
-<font size="" color="#808080"><h3>成员发布（群：386113172）</h3></font>
+<font size="" color="#ffffff"><h3>成员发布（群：386113172）</h3></font>
 
 <img src="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/error_tb.jpg" width="60" height="60"/> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2358429597&amp;s=640" width="60" height="60"/> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2409495157&amp;s=640" width="60" height="60"/> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2321689620&amp;s=640" width="60" height="60"/> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=1040458166&amp;s=640" width="60" height="60"/>
 <style type="text/css">
@@ -34,7 +34,7 @@
 <br>
 <img src="https://api.vvhan.com/api/ip?s=">
 
-<font size="" color="##ffffff"><h3>联系方式</h3></font>
+<font size="" color="#ffffff"><h3>联系方式</h3></font>
 
 <p>站长QQ：765931440</p>
 
