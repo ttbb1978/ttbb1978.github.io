@@ -35,7 +35,7 @@
 
 <font size="" color="#ffffff"><h3>下载区域</h3></font>
 
-<a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/Base64%E7%BC%96%E7%A0%81.apk">下载手机版Base64</a>&nbsp; <a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/Base64%E7%BC%96%E7%A0%81.rar">下载电脑版Base64</a>
+<a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/Base64%E7%BC%96%E7%A0%81.apk">手机版Base64</a>&nbsp; <a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/Base64%E7%BC%96%E7%A0%81.rar">电脑版Base64</a>
 
 <font size="" color="#ffffff"><h3>联系方式</h3></font>
 
