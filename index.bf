@@ -1,7 +1,7 @@
 
 <style>body {background-color: #ffffff}</style>
 
-<center><h1><font color="#3300ff">欢 迎 来 到</font><font color="#9933cc"> 田 兵 个 人 网 站</font></h1></center> 
+<center><h1><font color="#3300ff">欢迎来到</font><font color="#9933cc">田兵个人网站</font></h1></center> 
 
 <center><h3><font size="" color="#ff3300">E-mail:tianbingyx@163.com</font></h3></center>
 
