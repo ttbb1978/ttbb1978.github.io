@@ -1,5 +1,5 @@
 
-<style>body {background-color: #ffffff}</style>
+<style>body {background-color: #8f8db6}</style>
 
 <CENTER><FONT color=YellowGreen style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 30px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">欢迎来到田兵个人网站</FONT></CENTER>   
 
