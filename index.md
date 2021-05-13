@@ -1,7 +1,7 @@
 
-<style>body {background-color: #ffffff}</style>
+<style>body {background-color: #F5F5DC}</style>
 
-<CENTER><FONT color=DodgerBlue style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 30px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">欢迎来到田兵个人网站</FONT></CENTER>   
+<CENTER><FONT color=YellowGreen style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 30px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">欢迎来到田兵个人网站</FONT></CENTER>   
 
 <CENTER><FONT color=Gray style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 20px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">E-mail:tianbingyx@163.com</FONT></CENTER>
 
@@ -39,7 +39,7 @@
 
 <p>欢迎进入<a href="https://user.qzone.qq.com/765931440">站长QQ空间</a>我们很高兴与你联系，成为合作伙伴……</p>
 
-<center><font color="#008000"><span><i class="fa fa-cog fa-spin"></i></span> 已运行
+<center><font color="#808080"><span><i class="fa fa-cog fa-spin"></i></span> 已运行
 							<span id="aa"></span>
 							<script language=javascript>
 								//document.write(""); 
