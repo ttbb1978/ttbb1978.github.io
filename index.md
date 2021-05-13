@@ -16,7 +16,7 @@
 <a href="javascript:location.reload();">刷新内容</a>
 
 休闲娱乐<a href="https://www.lefu.men/dy">在线小视频</a> 站长推荐<a href="https://gh.api.99988866.xyz/">GitHub加速</a>
-<br><br><a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/Base64%E7%BC%96%E7%A0%81.apk">下载Base64</a>
+<br><br><a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/Base64%E7%BC%96%E7%A0%81.apk">下载手机版Base64</a>&nbsp; <a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/Base64%E7%BC%96%E7%A0%81.rar">下载电脑版Base64</a>
 
 <p><img src="https://api.vvhan.com/api/bing?type=" width="" height="" /></p>
 
