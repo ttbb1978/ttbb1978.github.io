@@ -15,7 +15,7 @@
 
 <a href="javascript:location.reload();">刷新内容</a>
 
-休闲娱乐<a href="https://www.lefu.men/dy">在线小视频</a> 站长推荐<a href="https://gh.api.99988866.xyz/">GitHub加速</a>
+休闲娱乐<a href="https://www.lefu.men/dy">在线小视频</a> 站长推荐<a href="https://tool.lu/">在线小工具</a>
 
 <p><img src="https://api.vvhan.com/api/bing?type=" width="" height="" /></p>
 
