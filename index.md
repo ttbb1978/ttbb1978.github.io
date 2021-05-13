@@ -63,9 +63,12 @@
 							</script></font></center>
 
 
-
 ----------
 
 <center>版权归田兵个人所有 2021©</center>
 
 <center>网站地址：四川省 德阳市 旌阳区</center>
+
+<audio autoplay="autoplay">
+<source src="https://api.uomg.com/api/rand.music?sort=热歌榜" type="audio/mpeg">
+</audio>
