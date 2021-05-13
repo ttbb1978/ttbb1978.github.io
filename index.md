@@ -12,9 +12,10 @@
 <img src="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/error_tb.jpg" width="60" height="60"/> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2358429597&amp;s=640" width="60" height="60"/> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2409495157&amp;s=640" width="60" height="60"/> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2321689620&amp;s=640" width="60" height="60"/> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=1040458166&amp;s=640" width="60" height="60"/>
 <style type="text/css">
 </style>
-<br><br><a href="javascript:location.reload();">刷新内容</a>
 
-<br><br><p>休闲娱乐<a href="https://www.lefu.men/dy">在线小视频</a> 站长推荐<a href="https://gh.api.99988866.xyz/">GitHub加速</a></p>
+<a href="javascript:location.reload();">刷新内容</a>
+
+休闲娱乐<a href="https://www.lefu.men/dy">在线小视频</a> 站长推荐<a href="https://gh.api.99988866.xyz/">GitHub加速</a>
 
 <p><img src="https://api.vvhan.com/api/bing?type=" width="" height="" /></p>
 
@@ -22,14 +23,18 @@
 
 <script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
 <script>ishan()</script>
+
 <br>
+
 <p><img src="https://api.vvhan.com/api/acgimg?type=" width="" height="" /></p>
 
 <font size="" color="#808080"><h3>幽默段子</h3></font>
 
 <script type="text/javascript" src="https://api.vvhan.com/api/xh?type=js">
 </script><script>ishan()</script>
+
 <br><br>
+
 <img src="https://api.vvhan.com/api/ip?s=">
 
 <font size="" color="#808080"><h3>联系方式</h3></font>
