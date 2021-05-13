@@ -24,16 +24,12 @@
 <script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
 <script>ishan()</script>
 
-<br>
-
 <p><img src="https://api.vvhan.com/api/acgimg?type=" width="" height="" /></p>
 
 <font size="" color="#808080"><h3>幽默段子</h3></font>
 
 <script type="text/javascript" src="https://api.vvhan.com/api/xh?type=js">
 </script><script>ishan()</script>
-
-<br><br>
 
 <img src="https://api.vvhan.com/api/ip?s=">
 
