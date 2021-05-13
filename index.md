@@ -1,47 +1,44 @@
 
-<style>body {background-color: #647784}</style>
+<style>body {background-color: #ffffff}</style>
 
-<script src='https://api.vvhan.com/api/snow'></script>
+<CENTER><FONT color=DodgerBlue style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 30px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">欢迎来到田兵个人网站</FONT></CENTER>   
 
-<CENTER><FONT color=Gold style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 30px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">欢迎来到田兵个人网站</FONT></CENTER>   
-
-<CENTER><FONT color=Gainsboro style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 20px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">E-mail:tianbingyx@163.com</FONT></CENTER>
+<CENTER><FONT color=Gray style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 20px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">E-mail:tianbingyx@163.com</FONT></CENTER>
 
 ----------
 
-<font color="#FFD700"><h3>成员发布（群：386113172）</h3></font>
+<font size="" color="#808080"><h3>成员发布（群：386113172）</h3></font>
 
 <img src="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/error_tb.jpg" width="60" height="60"/> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2358429597&amp;s=640" width="60" height="60"/> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2409495157&amp;s=640" width="60" height="60"/> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2321689620&amp;s=640" width="60" height="60"/> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=1040458166&amp;s=640" width="60" height="60"/>
 <style type="text/css">
-	
 </style>
-<a href="javascript:location.reload();"><font size="" color="#00ccff">刷新内容</font></a>
+<br><br><a href="javascript:location.reload();">刷新内容</a>
 
-<p>休闲娱乐 <a href="https://www.lefu.men/dy"><font size="" color="#00ccff">在线小视频</font></a> 站长推荐 <a href="https://tool.oschina.net/"><font size="" color="#00ccff">在线工具库</font></a></p>
+<br><br><p>休闲娱乐<a href="https://www.lefu.men/dy">在线小视频</a> 站长推荐<a href="https://gh.api.99988866.xyz/">GitHub加速</a></p>
 
 <p><img src="https://api.vvhan.com/api/bing?type=" width="" height="" /></p>
 
-<font color="#FFD700"><h3>每日阅读</h3></font>
+<font size="" color="#808080"><h3>每日阅读</h3></font>
 
-<font size="" color="#c0c0c0"><script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
-<script>ishan()</script></font>
+<script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
+<script>ishan()</script>
 <br>
 <p><img src="https://api.vvhan.com/api/acgimg?type=" width="" height="" /></p>
 
-<font color="#FFD700"><h3>幽默段子</h3></font>
+<font size="" color="#808080"><h3>幽默段子</h3></font>
 
-<font size="" color="#cacaca"><script type="text/javascript" src="https://api.vvhan.com/api/xh?type=js">
-</script><script>ishan()</script></font>
+<script type="text/javascript" src="https://api.vvhan.com/api/xh?type=js">
+</script><script>ishan()</script>
 <br><br>
 <img src="https://api.vvhan.com/api/ip?s=">
 
-<font color="#FFD700"><h3>联系方式</h3></font>
+<font size="" color="#808080"><h3>联系方式</h3></font>
 
 <p>站长QQ：765931440</p>
 
-<p>欢迎进入<a href="https://user.qzone.qq.com/765931440"><font size="" color="#00ccff">站长QQ空间</font></a>我们很高兴与你联系，成为合作伙伴……</p>
+<p>欢迎进入<a href="https://user.qzone.qq.com/765931440">站长QQ空间</font></a>我们很高兴与你联系，成为合作伙伴……</p>
 
-<center><font color="#ffffff"><span><i class="fa fa-cog fa-spin"></i></span> 已运行
+<center><font color="#008000"><span><i class="fa fa-cog fa-spin"></i></span> 已运行
 							<span id="aa"></span>
 							<script language=javascript>
 								//document.write(""); 
