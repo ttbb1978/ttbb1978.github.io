@@ -45,7 +45,7 @@
 								//document.write(""); 
 								function show_date_time() {
 									window.setTimeout("show_date_time()", 1000);
-									timeold = ((new Date()).getTime() - (new Date("04/24/2021 00:00:00")).getTime());
+									timeold = ((new Date()).getTime() - (new Date("04/24/2021 18:00:00")).getTime());
 									sectimeold = timeold / 1000
 									secondsold = Math.floor(sectimeold);
 									msPerDay = 24 * 60 * 60 * 1000
