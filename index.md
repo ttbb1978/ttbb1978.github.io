@@ -13,7 +13,7 @@
 
 <a href="javascript:location.reload();">刷新内容</a>
 
-休闲娱乐<a href="https://www.lefu.men/dy">&nbsp;&nbsp;&nbsp;在线小视频</a>&nbsp;&nbsp;&nbsp;站长推荐<a href="https://gh.api.99988866.xyz/">&nbsp;&nbsp;&nbsp;GitHub文件加速</a>
+休闲娱乐<a href="https://www.lefu.men/dy">&nbsp;&nbsp;在线小视频</a>&nbsp;&nbsp;站长推荐<a href="https://gh.api.99988866.xyz/">&nbsp;&nbsp;GitHub文件加速</a>
 
 <p><img src="https://api.vvhan.com/api/bing?type=" width="" height="" /></p>
 
@@ -31,7 +31,7 @@
 <br>
 <img src="https://api.vvhan.com/api/ip?s=">
 
-文件下载&nbsp;&nbsp;&nbsp;<a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/Base64%E7%BC%96%E7%A0%81.apk">手机版Base64</a>&nbsp;&nbsp;&nbsp; <a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/Base64%E7%BC%96%E7%A0%81.rar">电脑版Base64</a>
+文件下载&nbsp;&nbsp;<a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/Base64%E7%BC%96%E7%A0%81.apk">手机版Base64</a>&nbsp;&nbsp;<a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/Base64%E7%BC%96%E7%A0%81.rar">电脑版Base64</a>
 
 <font size="" color="#cc00ff"><h3>联系方式</h3></font>
 
