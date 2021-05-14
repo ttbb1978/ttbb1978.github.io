@@ -1,8 +1,8 @@
 
 <style>body {background-color: #ffffff}</style>
 
-<center><h2><font color="#66cc00">欢迎来到田兵个人网站</font></h2></center> 
-<center><h4><font size="" color="#808080">E-mail:tianbingyx@163.com</font></h4></center>
+<center><h1><font color="#66cc00">欢迎来到田兵个人网站</font></h1></center> 
+<center>E-mail:tianbingyx@163.com</center>
 
 ----------
 
