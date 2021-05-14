@@ -1,9 +1,7 @@
 
-<style>body {background-color: #ffffff}</style>
+<CENTER><FONT color=YellowGreen style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 30px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">欢迎来到田兵个人网站</FONT></CENTER>   
 
-<center><h1><font color="#66cc00">欢迎来到田兵个人网站</font></h1></center> 
-
-<center><h3>E-mail:tianbingyx@163.com<h3></center>
+<CENTER><FONT color=DarkGray style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 20px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">E-mail:tianbingyx@163.com</FONT></CENTER>
 
 ----------
 
@@ -15,7 +13,7 @@
 
 <a href="javascript:location.reload();">刷新内容</a>
 
-休闲娱乐<a href="https://www.lefu.men/dy">在线小视频</a> 站长推荐<a href="https://gh.api.99988866.xyz/">GitHub文件加速</a>
+休闲娱乐<a href="https://www.lefu.men/dy">在线小视频</a> 站长推荐<a href="https://gh.api.99988866.xyz/">GitHub加速</a>
 
 <p><img src="https://api.vvhan.com/api/bing?type=" width="" height="" /></p>
 
@@ -35,7 +33,7 @@
 
 <font size="" color="#cc00ff"><h3>下载区域</h3></font>
 
-<a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/Base64%E7%BC%96%E7%A0%81.apk">手机版Base64</a>&nbsp; <a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/Base64%E7%BC%96%E7%A0%81.rar">电脑版Base64</a>
+<a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/Base64%E7%BC%96%E7%A0%81.apk">手机版Base64</a>&nbsp;&nbsp;&nbsp; <a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/Base64%E7%BC%96%E7%A0%81.rar">电脑版Base64</a>
 
 <font size="" color="#cc00ff"><h3>联系方式</h3></font>
 
@@ -43,7 +41,7 @@
 
 <p>欢迎进入<a href="https://user.qzone.qq.com/765931440">站长QQ空间</a>我们很高兴与你联系，成为合作伙伴……</p>
 
-<center><font color="#ff0000"><span><i class="fa fa-cog fa-spin"></i></span> 已运行
+<center><font color="#ff3300"><span><i class="fa fa-cog fa-spin"></i></span> 已运行
 							<span id="aa"></span>
 							<script language=javascript>
 								//document.write(""); 
