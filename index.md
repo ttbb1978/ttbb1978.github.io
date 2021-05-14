@@ -31,7 +31,7 @@
 <br>
 <img src="https://api.vvhan.com/api/ip?s=">
 
-文件下载&nbsp;&nbsp;<a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/Base64%E7%BC%96%E7%A0%81.apk">手机版Base64</a>&nbsp;&nbsp;<a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/Base64%E7%BC%96%E7%A0%81.rar">电脑版Base64</a>
+下载专区&nbsp;&nbsp;<a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/Base64%E7%BC%96%E7%A0%81.apk">手机版Base64</a>&nbsp;&nbsp;<a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/Base64%E7%BC%96%E7%A0%81.rar">电脑版Base64</a>
 
 <font size="" color="#cc00ff"><h3>联系方式</h3></font>
 
