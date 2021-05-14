@@ -5,7 +5,7 @@
 
 ----------
 
-<font size="" color="#cc00ff"><h3>成员发布（群：386113172）</h3></font>
+<font size="" color="#cc00ff"><h3>成员发布（群:386113172）</h3></font>
 
 <img src="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/error_tb.jpg" width="60" height="60"/> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2358429597&amp;s=640" width="60" height="60"/> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2409495157&amp;s=640" width="60" height="60"/> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=2321689620&amp;s=640" width="60" height="60"/> <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=1040458166&amp;s=640" width="60" height="60"/>
 <style type="text/css">
@@ -35,7 +35,7 @@
 
 <font size="" color="#cc00ff"><h3>联系方式</h3></font>
 
-<p>站长QQ：765931440</p>
+<p>站长QQ:765931440</p>
 
 <p>欢迎进入<a href="https://user.qzone.qq.com/765931440">&nbsp;&nbsp;站长QQ空间</a>&nbsp;&nbsp;我们很高兴与你联系，成为合作伙伴……</p>
 
