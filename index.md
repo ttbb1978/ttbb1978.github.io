@@ -13,7 +13,7 @@
 
 <a href="javascript:location.reload();">刷新内容</a>
 
-休闲娱乐<a href="https://www.lefu.men/dy">&nbsp;&nbsp;在线小视频</a>&nbsp;&nbsp;站长推荐<a href="https://gh.api.99988866.xyz/">&nbsp;&nbsp;GitHub文件加速</a>
+休闲娱乐<a href="https://www.lefu.men/dy">&nbsp;&nbsp;在线小视频</a>&nbsp;&nbsp;站长推荐<a href="https://gh.api.99988866.xyz/">&nbsp;&nbsp;GitHub加速</a>
 
 <p><img src="https://api.vvhan.com/api/bing?type=" width="" height="" /></p>
 
@@ -37,7 +37,7 @@
 
 <p>站长QQ：765931440</p>
 
-<p>欢迎进入<a href="https://user.qzone.qq.com/765931440">站长QQ空间</a>我们很高兴与你联系，成为合作伙伴……</p>
+<p>欢迎进入<a href="https://user.qzone.qq.com/765931440">&nbsp;&nbsp;站长QQ空间</a>&nbsp;&nbsp;我们很高兴与你联系，成为合作伙伴……</p>
 
 <center><font color="#ff3300"><span><i class="fa fa-cog fa-spin"></i></span> 已运行
 							<span id="aa"></span>
