@@ -3,7 +3,7 @@
 
 <CENTER><FONT color=DarkGray style="FILTER: blur(add=1,direction=40,strength=10); FONT-SIZE: 20px; FONT-WEIGHT: bolder; POSITION: relative; WIDTH: 500px">E-mail:tianbingyx@163.com</FONT></CENTER>
 
-<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#99cc00 SIZE=2>
+------
 
 <font size="" color="#cc00ff"><h3>成员发布（群:386113172）</h3></font>
 
@@ -63,7 +63,7 @@
 							</script></font></center>
 
 
-<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="100%" color=#99cc00 SIZE=2>
+------
 
 <center>版权归田兵个人所有 2021©</center>
 
