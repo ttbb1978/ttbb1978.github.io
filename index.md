@@ -70,5 +70,5 @@
 <center>网站地址：四川省 德阳市 旌阳区</center>
 
 <audio autoplay="autoplay">
-<source src="https://api.uomg.com/api/rand.music?sort=电音榜" type="audio/mpeg">
+<source src="https://api.uomg.com/api/rand.music?sort=热歌榜" type="audio/mpeg">
 </audio>
