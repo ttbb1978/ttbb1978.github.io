@@ -19,8 +19,8 @@
 
 <font size="" color="#cc00ff"><h3>每日阅读</h3></font>
 
-<script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
-<script>ishan()</script>
+<script type="text/javascript" src="https://api.vvhan.com/api/love?type=js">
+</script><script>ishan()</script>
 <br>
 <p><img src="https://api.vvhan.com/api/acgimg?type=" width="" height="" /></p>
 
