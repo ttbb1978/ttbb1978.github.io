@@ -18,7 +18,7 @@ Theme Styles
 
 body {
   color:#373737;
-  background: #212121;
+  background: #c0c0c0;/背景颜色
   font-size: 18px;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -105,7 +105,7 @@ strong {
 img {
   position: relative;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1180px;/图片宽度
   padding: 5px;
   margin: 10px 0 10px 0;
 
@@ -184,11 +184,11 @@ hr {
   height: 1px;
   margin-bottom: 5px;
   border: none;
-  background: url('../images/bg_hr.png') repeat-x center;
+  background: url('') repeat-x center;
 }
 
 table {
-  border: 1px solid #373737;
+  border: 1px solid #55ffff;
   margin-bottom: 20px;
   text-align: left;
  }
@@ -220,7 +220,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 1100px;
+  max-width: 1200px;/显示宽度
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -234,11 +234,11 @@ header {
 }
 
 #header_wrap {
-  background: #212121;
+  background: #c0c0c0;/主题颜色
 }
 
 #header_wrap .inner {
-  padding: 60px 10px 0px 0px;
+  padding: 10px 10px 0px 0px;
 }
 
 #project_title {
@@ -268,7 +268,7 @@ header {
 
 #main_content.inner {
   background-color: #fff;
-  padding: 70px 100px;
+  padding: 70px 10px;
   box-shadow: 0 0 5px #ebebeb;
   -webkit-box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
   -moz-box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
@@ -277,7 +277,7 @@ header {
 }
 
 #footer_wrap {
-  background: #212121;
+  background: #c0c0c0;/主题颜色
 }
 
 /*******************************************************************************
@@ -309,7 +309,7 @@ Small Device Styles
   }
 
   #header_wrap .inner {
-    padding: 60px 10px;
+    padding: 10px 10px;/手机高度
   }
 
   #main_content.inner {
