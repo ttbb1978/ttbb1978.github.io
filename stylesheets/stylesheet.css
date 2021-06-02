@@ -1,12 +1,4 @@
 /*******************************************************************************
-Slate Theme for GitHub Pages
-by Jason Costello, @jsncostello
-*******************************************************************************/
-
-@import url(normalize.css);
-@import url(pygment_trac.css);
-
-/*******************************************************************************
 Theme Styles
 *******************************************************************************/
 
@@ -267,13 +259,9 @@ header {
 }
 
 #main_content.inner {
-  background-color: #fff;
+  background-color: #efefef;
   padding: 70px 10px;
   box-shadow: 0 0 5px #ebebeb;
-  -webkit-box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
-  -moz-box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
-  -o-box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
-  -ms-box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
 }
 
 #footer_wrap {
