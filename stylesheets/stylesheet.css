@@ -9,8 +9,8 @@ Theme Styles
 }
 
 body {
-  color:#373737;
-  background: #c0c0c0;/背景颜色
+  color:#000000;/字体颜色
+  background: #ffffff;/背景颜色
   font-size: 18px;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
   margin: 10px 0;
   font-weight: 700;
-  color:#222222;
+  color:#808080;/标题颜色
 }
 
 h1 {
@@ -120,7 +120,7 @@ p img {
 pre, code {
   width: 100%;
   color: #fff;
-  background-color: #222;
+  background-color: #008080;
 
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 14px;
@@ -187,13 +187,13 @@ table {
 
 th {
   padding: 10px;
-  background: #222;
+  background: #008080;
   color: #fff;
  }
 
 td {
   padding: 10px;
-  border: 1px solid #222;
+  border: 1px solid #008080;
  }
 
 form {
@@ -226,7 +226,7 @@ header {
 }
 
 #header_wrap {
-  background: #c0c0c0;/主题颜色
+  background: #dddddd;/主题颜色
 }
 
 #header_wrap .inner {
@@ -259,13 +259,13 @@ header {
 }
 
 #main_content.inner {
-  background-color: #efefef;
-  padding: 10px 10px;/电脑浏览器高度
+  background-color: #ffffff;/中间颜色
+  padding: 0px 0px;/电脑浏览器高度
   box-shadow: 0 0 5px #ebebeb;
 }
 
 #footer_wrap {
-  background: #c0c0c0;/主题颜色
+  background: #dddddd;/主题颜色
 }
 
 /*******************************************************************************
@@ -280,7 +280,7 @@ Small Device Styles
 
 @media screen and (max-width: 480px) {
   body {
-    font-size: 13px;
+    font-size: 16px;/手机浏览器字体大小
   }
 
   .downloads {
@@ -297,7 +297,7 @@ Small Device Styles
   }
 
   #header_wrap .inner {
-    padding: 10px 10px;/手机浏览器高度
+    padding: 0px -10px;/手机浏览器高度
   }
 
   #main_content.inner {
