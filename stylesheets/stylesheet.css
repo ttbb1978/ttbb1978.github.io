@@ -20,7 +20,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
   margin: 10px 0;
-  font-weight: 700;
+  font-weight: 500;
   color:#00b000;/标题颜色
 }
 
@@ -28,7 +28,7 @@ h1 {
   margin-bottom: 20px;
   font-size: 36px;
   line-height: 1.1;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h1#project_title {
@@ -226,7 +226,7 @@ header {
 }
 
 #header_wrap {
-  background: #dddddd;/主题颜色
+  background: #8dd002;/主题颜色
 }
 
 #header_wrap .inner {
@@ -261,11 +261,11 @@ header {
 #main_content.inner {
   background-color: #ffffff;/中间颜色
   padding: 0px -10px;/电脑浏览器高度
-  box-shadow: 0 0 5px #ebebeb;
+  box-shadow: 005px #ebebeb;
 }
 
 #footer_wrap {
-  background: #dddddd;/主题颜色
+  background: #ffffff;/下主题颜色
 }
 
 /*******************************************************************************
