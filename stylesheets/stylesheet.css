@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
   margin: 10px 0;
   font-weight: 700;
-  color:#5aa22b;/ 标题颜色
+  color:#499300;/ 标题颜色
 }
 
 h1 {
@@ -226,7 +226,7 @@ header {
 }
 
 #header_wrap {
-  background: #5aa22b;/主题颜色
+  background: #005782;/主题颜色
 }
 
 #header_wrap .inner {
