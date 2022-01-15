@@ -9,8 +9,7 @@ Theme Styles
 }
 
 body {
-  color:#000000;/字体颜色
-  background: #415467;/背景颜色
+  
   font-size: 18px;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -259,7 +258,6 @@ header {
 }
 
 #main_content.inner {
-  background-color: ;/中间颜色
   padding: 0px -10px;/电脑浏览器高度
   box-shadow: 005px #ebebeb;
 }
