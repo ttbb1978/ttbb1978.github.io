@@ -10,7 +10,7 @@ Theme Styles
 
 body {
   color:#000000;/字体颜色
-  background: #ffffff;/背景颜色
+  background: #415467;/背景颜色
   font-size: 18px;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -100,12 +100,12 @@ img {
   max-width: 1000px;/图片宽度
   padding: 5px;
   margin: 10px 0 10px 0;
-
-  box-shadow: 0 0 5px #ebebeb;
-  -webkit-box-shadow: 0 0 5px #ebebeb;
-  -moz-box-shadow: 0 0 5px #ebebeb;
-  -o-box-shadow: 0 0 5px #ebebeb;
-  -ms-box-shadow: 0 0 5px #ebebeb;
+/图片宽度
+  box-shadow: 0 0 5px #ffffff;
+  -webkit-box-shadow: 0 0 5px #c0c0c0;/图片柔光颜色
+  -moz-box-shadow: 0 0 5px #ffffff;
+  -o-box-shadow: 0 0 5px #ffffff;
+  -ms-box-shadow: 0 0 5px #ffffff;
 }
 
 p img {
@@ -119,7 +119,7 @@ p img {
 
 pre, code {
   width: 100%;
-  color: #fff;
+  color: #415467;
   background-color: #008080;
 
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
@@ -226,7 +226,7 @@ header {
 }
 
 #header_wrap {
-  background: #c40000;/主题颜色
+  background: #0b955e;/上主题颜色
 }
 
 #header_wrap .inner {
@@ -251,7 +251,7 @@ header {
   margin-right: 20px;
 }
 .downloads a:hover {
-  text-decoration: underline solid #fff;
+  text-decoration: underline solid #ff0000;
 }
 
 #main_content {
@@ -259,13 +259,13 @@ header {
 }
 
 #main_content.inner {
-  background-color: #ffffff;/中间颜色
+  background-color: ;/中间颜色
   padding: 0px -10px;/电脑浏览器高度
   box-shadow: 005px #ebebeb;
 }
 
 #footer_wrap {
-  background: #ffffff;/下主题颜色
+  background: #0b955e;/下主题颜色
 }
 
 /*******************************************************************************
