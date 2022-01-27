@@ -7,18 +7,9 @@
 }
 
 body {
-  font-size: 40px;
+  font-size: 38px;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-
-em {
-  font-style: italic;
-}
-
-strong {
-  font-weight: bold;
+  line-height: 1.9;
 }
 
 img {
@@ -30,9 +21,6 @@ img {
 /图片宽度
   box-shadow: 0 0 5px #ffffff;
   -webkit-box-shadow: 0 0 5px #ffffff;/图片柔光颜色
-}
-
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 
 /*****************/
@@ -50,22 +38,11 @@ img {
 }
 
 #header_wrap {
-  background: #5a432e;/上主题颜色
-}
-
-#header_wrap .inner {
-  padding: 10px 10px 0px 0px;
-}
-
-#project_title {
-  margin: 0;
-  color: #fff;
-  font-size: 54px;
-  font-weight: 800;
+  background: #000000;/上主题颜色
 }
 
 #footer_wrap {
-  background: #5a432e;/下主题颜色
+  background: #000000;/下主题颜色
 }
 
 /***************/
