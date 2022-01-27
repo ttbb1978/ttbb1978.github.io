@@ -7,7 +7,7 @@
 }
 
 body {
-  font-size: 20px;
+  font-size: 40px;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -24,8 +24,8 @@ strong {
 img {
   position: relative;
   margin: 0 auto;
-  max-width: 1100px;/图片宽度
-  padding: 5px;
+  max-width: 1000px;/图片宽度
+  padding: 10px;
   margin: 10px 0 10px 0;
 /图片宽度
   box-shadow: 0 0 5px #ffffff;
@@ -44,7 +44,7 @@ img {
 
 .inner {
   position: relative;
-  max-width: 1100px;/显示宽度
+  max-width: 1000px;/显示宽度
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -64,11 +64,6 @@ img {
   font-weight: 800;
 }
 
-#main_content.inner {
-  padding: 0px -10px;/电脑浏览器高度
-  box-shadow: 005px #ebebeb;
-}
-
 #footer_wrap {
   background: #5a432e;/下主题颜色
 }
@@ -82,5 +77,5 @@ img {
 
 @media screen and (max-width: 480px) {
   body {
-    font-size: 16px;/手机浏览器字体大小
+    font-size: 16px;/手机浏览器内容高度
 }
