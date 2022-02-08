@@ -7,7 +7,7 @@
 }
 
 body {
-  font-size: 38px;
+  font-size: 30px;/浏览器高度
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   line-height: 1.9;
 }
@@ -38,11 +38,11 @@ img {
 }
 
 #header_wrap {
-  background: #408080;/上主题颜色
+  background: #42a676;/上主题颜色
 }
 
 #footer_wrap {
-  background: #ffffff;/下主题颜色
+  background:;/下主题颜色
 }
 
 /***************/
