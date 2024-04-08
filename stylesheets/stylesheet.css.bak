@@ -1,0 +1,58 @@
+/*****************/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 30px;/浏览器高度
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  line-height: 1.9;
+}
+
+img {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1000px;/图片宽度
+  padding: 10px;
+  margin: 10px 0 10px 0;
+/图片宽度
+  box-shadow: 0 0 5px #ffffff;
+  -webkit-box-shadow: 0 0 5px #ffffff;/图片柔光颜色
+}
+
+/*****************/
+
+.outer {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.inner {
+  position: relative;
+  max-width: 1000px;/显示宽度
+  padding: 20px 10px;
+  margin: 0 auto;
+}
+
+#header_wrap {
+  background: #42a676;/上主题颜色
+}
+
+#footer_wrap {
+  background:;/下主题颜色
+}
+
+/***************/
+
+@media screen and (max-width: 992px) {
+  img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 16px;/手机浏览器内容高度
+}
