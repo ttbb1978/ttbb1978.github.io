@@ -12,7 +12,7 @@
 
 	<style>
 	body {
-	  font-family: Arial， sans-serif;
+	  font-family: Arial, sans-serif;
 	  background-color: #f0f0f0;
 	  color: #333;
 	  padding: 10px;
@@ -59,7 +59,7 @@
   
   <body>
   <pre style='background-color: transparent; border: none;'>
-<b style='font-size: 25px;'><center>田兵个人网站</center></b>
+<b style='font-size: 25px;'><center>田 兵 个 人 网 站</center></b>
 <b style='font-size: 15px;'><center><font size="" color="#ff6600">E-mail：tianbingyx@163.com</font></center></b>
 
 <hr>
@@ -78,19 +78,19 @@
 							<script language=javascript>
 								//document.write(""); 
 								function show_date_time() {
-									window。setTimeout("show_date_time()"， 1000);
-									timeold = ((new Date())。getTime() - (new Date("04/24/2021 00:00:00"))。getTime());
+									window.setTimeout("show_date_time()", 1000);
+									timeold = ((new Date()).getTime() - (new Date("04/24/2021 00:00:00")).getTime());
 									sectimeold = timeold / 1000
-									secondsold = Math。floor(sectimeold);
+									secondsold = Math.floor(sectimeold);
 									msPerDay = 24 * 60 * 60 * 1000
 									e_daysold = timeold / msPerDay
-									daysold = Math。floor(e_daysold);
+									daysold = Math.floor(e_daysold);
 									e_hrsold = (e_daysold - daysold) * 24;
-									hrsold = Math。floor(e_hrsold);
+									hrsold = Math.floor(e_hrsold);
 									e_minsold = (e_hrsold - hrsold) * 60;
-									minsold = Math。floor((e_hrsold - hrsold) * 60);
-									seconds = Math。floor((e_minsold - minsold) * 60);
-									aa。innerHTML = "" + daysold + "天 " + hrsold + "小时 " + minsold + "分 " + seconds +
+									minsold = Math.floor((e_hrsold - hrsold) * 60);
+									seconds = Math.floor((e_minsold - minsold) * 60);
+									aa.innerHTML = "" + daysold + "天 " + hrsold + "小时 " + minsold + "分 " + seconds +
 										"秒 ";
 								}
 								show_date_time();</script></font></center></section></div>
@@ -99,12 +99,12 @@
  </body>
  <script>
 	function copyToClipboard(text) {
-	  navigator。clipboard。writeText(text)
-		。then(() => {
+	  navigator.clipboard.writeText(text)
+		.then(() => {
 		  alert("Copied to clipboard");
 		})
-		。catch((err) => {
-		  console。error("Failed to copy to clipboard:"， err);
+		.catch((err) => {
+		  console.error("Failed to copy to clipboard:", err);
 		});
 	}
 </script>
