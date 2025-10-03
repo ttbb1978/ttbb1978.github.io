@@ -68,7 +68,18 @@
 联系：QQ:765931440  QQ群:386113172
 </pre>
 <iframe src="https://ip.skk.moe/simple" style="width: 100%; border: 0"></iframe>
-	
+<script>
+  var xhr = new XMLHttpRequest();
+  xhr.open('get', 'https://www.7ed.net/soup/api');
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      var data = JSON.parse(xhr.responseText);
+      var badsoup = document.getElementById('badsoup');
+      badsoup.innerText = data.badsoup;
+    }
+  }
+  xhr.send();
+</script>	
 <center><font color="##ff0000"><span><i class="fa fa-cog fa-spin"></i></span> 已运行 <span id="aa"></span>
 							<script language=javascript>
 								//document.write(""); 
@@ -104,3 +115,4 @@
 	}
 </script>
 </html>
+
