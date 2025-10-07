@@ -479,7 +479,7 @@
         // 页面加载完成后检测一次，并每30秒更新
         window.addEventListener('load', () => {
             checkNetworkStatus();
-            setInterval(checkNetworkStatus, 30000);
+            setInterval(checkNetworkStatus, 5000);
         });
 
         // 主题切换
