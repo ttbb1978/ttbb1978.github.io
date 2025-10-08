@@ -20,8 +20,8 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Roboto', 'Noto Sans SC', sans-serif;
-            background: #f5f7fa;
-            color: #333;
+            background: #000; /* 默认暗黑背景 */
+            color: #fffffd; /* 默认文本颜色 */
             line-height: 1.6;
             padding: 20px;
             transition: .3s;
@@ -30,15 +30,15 @@
         
         /* 卡片样式 */
         .card {
-            background: #fff;
+            background: #282838; /* 暗黑模式卡片背景 */
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* 暗黑模式阴影 */
             padding: 24px;
             margin-bottom: 24px;
             transition: .3s;
         }
         .card:hover {
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* 暗黑模式悬停阴影 */
             transform: translateY(-2px);
         }
         
@@ -46,7 +46,7 @@
         .title {
             font-size: 18px;
             font-weight: 700;
-            color: #008080;
+            color: #008080; /* 暗黑模式标题颜色 */
             margin-bottom: 8px;
             display: flex;
             align-items: center;
@@ -54,7 +54,7 @@
         }
         .subtitle {
             font-size: 16px;
-            color: #666;
+            color: #bbb; /* 暗黑模式副标题颜色 */
             margin-bottom: 16px;
         }
         .text-center { text-align: center; }
@@ -62,11 +62,11 @@
         
         /* 链接与按钮 */
         a {
-            color: #3366ff;
+            color: #6699ff; /* 暗黑模式链接颜色 */
             text-decoration: none;
             transition: .3s;
         }
-        a:hover { color: #2255ee; text-decoration: underline; }
+        a:hover { color: #88b0ff; text-decoration: underline; }
         .btn {
             display: inline-flex;
             align-items: center;
@@ -82,7 +82,7 @@
             transition: .3s;
         }
         .btn:hover {
-            background: #2255ee;
+            background: #4477ff;
             transform: translateY(-1px);
         }
         
@@ -112,7 +112,7 @@
             gap: 12px;
             font-size: 24px;
             font-weight: 700;
-            color: #3366ff;
+            color: #4477ff; /* 暗黑模式logo颜色 */
         }
         .nav {
             display: flex;
@@ -136,11 +136,11 @@
             flex: 1;
             min-width: 250px;
             padding: 16px;
-            border: 1px solid #f0f0f0;
+            border: 1px solid #383848; /* 暗黑模式边框 */
             border-radius: 8px;
             transition: .3s;
         }
-        .download-card:hover { border-color: #4242ff; }
+        .download-card:hover { border-color: #4477ff; }
         .download-title {
             font-weight: 500;
             margin-bottom: 8px;
@@ -165,42 +165,49 @@
         }
         .contact-icon {
             font-size: 18px;
-            color: #3366ff;
+            color: #4477ff; /* 暗黑模式图标颜色 */
         }
         .footer {
             text-align: center;
             padding: 20px 0;
-            color: #666;
+            color: #bbb; /* 暗黑模式底部文本 */
             font-size: 14px;
-            border-top: 1px solid #eee;
+            border-top: 1px solid #333; /* 暗黑模式分割线 */
             margin-top: 32px;
         }
         
-        /* 暗模式 */
-        body.dark-mode {
-            background: #000;
-            color: #fffffd;
+        /* 明模式（原暗黑模式的反模式） */
+        body.light-mode {
+            background: #f5f7fa;
+            color: #333;
         }
-        body.dark-mode .card {
-            background: #282838;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        body.light-mode .card {
+            background: #fff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
-        body.dark-mode .card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
-        body.dark-mode .subtitle,
-        body.dark-mode .footer { color: #bbb; }
-        body.dark-mode .download-card { border-color: #383848; }
-        body.dark-mode .download-card:hover { border-color: #4477ff; }
+        body.light-mode .card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
+        body.light-mode .subtitle,
+        body.light-mode .footer { color: #666; }
+        body.light-mode .download-card { border-color: #f0f0f0; }
+        body.light-mode .download-card:hover { border-color: #4242ff; }
+        body.light-mode .title { color: #008080; }
+        body.light-mode .logo { color: #3366ff; }
+        body.light-mode a { color: #3366ff; }
+        body.light-mode a:hover { color: #2255ee; }
+        body.light-mode .contact-icon { color: #3366ff; }
+        body.light-mode .footer { border-top: 1px solid #eee; }
+        body.light-mode .btn:hover { background: #2255ee; }
         
         /* 主题切换按钮 */
         .theme-toggle {
             background: none;
             border: none;
-            color: #3366ff;
+            color: #4477ff; /* 暗黑模式按钮颜色 */
             font-size: 20px;
             cursor: pointer;
             transition: .3s;
         }
-        body.dark-mode .theme-toggle { color: #4477ff; }
+        body.light-mode .theme-toggle { color: #3366ff; }
         
         /* 响应式 */
         @media (max-width: 768px) {
@@ -216,7 +223,7 @@
         <header class="header">
             <div class="logo">🍄田兵个人网站</div>            
             <button class="theme-toggle" onclick="toggleTheme()">
-                <i class="fa-solid fa-moon"></i>
+                <i class="fa-solid fa-sun"></i> <!-- 默认显示太阳图标 -->
             </button>
         </header>
         <hr><br>
@@ -229,7 +236,7 @@
             <div class="stat-bar">
                 <div class="visit-count">
                     <i class="fa-solid fa-eye"></i>
-                    <span>GitHub访问量：<img src="https://komarev.com/ghpvc/?username=ttbb1978&color=3366ff&style=flat" alt="访问统计"></span>
+                    <span>GitHub访问量：<img src="https://komarev.com/ghpvc/?username=ttbb1978&color=4477ff&style=flat" alt="访问统计"></span>
                 </div>
             </div>
             <div class="text-center" style="margin: 16px 0;">
@@ -340,7 +347,7 @@
         
         <hr><br>
         <div class="text-center">
-            <i class="fa fa-cog fa-spin"></i> 运行 <span id="aa"></span>
+            <i class="fa-hourglass-half fa-spin"></i> 运行 <span id="aa"></span>
             <p style="font-size: 15px;">网站：四川省 德阳市 旌阳区（天元街道）</p>
             <p style="font-size: 15px;">© 2021 版权归田兵所有 🍀TB🌸ハンサム</p>
         </div>
@@ -359,14 +366,18 @@
         }
         showDateTime();
         
-        // 主题切换
+        // 脉冲效果的时钟：fa-clock-o fa-pulse
+        // 旋转的小时钟：fa-hourglass-half fa-spin
+        // 跳动的计时器：fa-stopwatch fa-beat
+
+        // 主题切换 - 现在是从暗黑切换到明亮
         function toggleTheme() {
             const body = document.body;
-            body.classList.toggle('dark-mode');
+            body.classList.toggle('light-mode');
             const icon = document.querySelector('.theme-toggle i');
-            icon.className = body.classList.contains('dark-mode') 
-                ? 'fa-solid fa-sun' 
-                : 'fa-solid fa-moon';
+            icon.className = body.classList.contains('light-mode') 
+                ? 'fa-solid fa-moon' 
+                : 'fa-solid fa-sun';
         }
     </script>
 </body>
