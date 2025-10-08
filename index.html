@@ -1,58 +1,48 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🍀TB🌸ハンサム 网站</title>
-    <!-- 社交分享元数据补全 -->
+    <!-- 社交分享元数据 -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="田兵个人网站" />
-    <meta property="og:description" content="分享GitHub加速、Base64工具等实用资源，专注高效工具汇总" />
+    <meta property="og:description" content="分享GitHub加速、Base64工具等实用资源" />
     <meta property="og:image" content="https://picsum.photos/800/400?tech=tool" />
-    <meta property="og:image:width" content="800" />
-    <meta property="og:image:height" content="400" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="" />
-    <!-- 引入字体与图标 -->
+    <!-- 引入资源 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* 全局样式重置与基础配置 */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        /* 基础样式 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Roboto', 'Noto Sans SC', sans-serif;
-            background-color: #f5f7fa;
+            background: #f5f7fa;
             color: #333;
             line-height: 1.6;
             padding: 20px;
-            transition: background-color 0.3s, color 0.3s;
+            transition: .3s;
         }
-        /* 容器：控制页面宽度，居中显示 */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        /* 卡片样式：统一视觉容器 */
+        .container { max-width: 1200px; margin: 0 auto; }
+        
+        /* 卡片样式 */
         .card {
-            background-color: #fff;
+            background: #fff;
             border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             padding: 24px;
             margin-bottom: 24px;
-            transition: box-shadow 0.3s, transform 0.3s;
+            transition: .3s;
         }
         .card:hover {
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
             transform: translateY(-2px);
         }
-        /* 标题样式 */
+        
+        /* 标题与文本 */
         .title {
             font-size: 18px;
             font-weight: 700;
@@ -67,71 +57,54 @@
             color: #666;
             margin-bottom: 16px;
         }
-        /* 链接与按钮样式 */
+        .text-center { text-align: center; }
+        .margin-b-8 { margin-bottom: 8px; }
+        
+        /* 链接与按钮 */
         a {
             color: #3366ff;
             text-decoration: none;
-            transition: color 0.3s;
+            transition: .3s;
         }
-        a:hover {
-            color: #2255ee;
-            text-decoration: underline;
-        }
+        a:hover { color: #2255ee; text-decoration: underline; }
         .btn {
             display: inline-flex;
             align-items: center;
             gap: 6px;
             padding: 8px 16px;
-            background-color: #3366ff;
+            background: #3366ff;
             color: #fff !important;
             border-radius: 6px;
             font-weight: 500;
             text-decoration: none !important;
             border: none;
             cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
+            transition: .3s;
         }
         .btn:hover {
-            background-color: #2255ee;
+            background: #2255ee;
             transform: translateY(-1px);
         }
-        .btn-secondary {
-            background-color: #f0f5ff;
-            color: #3366ff !important;
-        }
-        .btn-secondary:hover {
-            background-color: #e6edff;
-        }
-        /* 布局工具：弹性盒 */
+        
+        /* 布局工具 */
         .flex {
             display: flex;
             gap: 16px;
-        }
-        .flex-wrap {
             flex-wrap: wrap;
         }
         .flex-item {
             flex: 1;
             min-width: 280px;
         }
-        .text-center {
-            text-align: center;
-        }
-        .gap-16 {
-            gap: 16px;
-        }
-        .margin-b-8 {
-            margin-bottom: 8px;
-        }
-        .margin-b-16 {
-            margin-bottom: 16px;
-        }
-        /* 头部样式 */
+        
+        /* 头部与导航 */
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 24px;
+            flex-wrap: wrap;
+            gap: 16px;
         }
         .logo {
             display: flex;
@@ -141,11 +114,6 @@
             font-weight: 700;
             color: #3366ff;
         }
-        .logo-icon {
-            font-size: 28px;
-            color: #3366ff;
-        }
-        /* 导航样式 */
         .nav {
             display: flex;
             gap: 20px;
@@ -157,7 +125,8 @@
             gap: 6px;
             font-weight: 500;
         }
-        /* 下载模块样式 */
+        
+        /* 下载区 */
         .download-list {
             display: flex;
             flex-wrap: wrap;
@@ -169,11 +138,9 @@
             padding: 16px;
             border: 1px solid #f0f0f0;
             border-radius: 8px;
-            transition: border-color 0.3s;
+            transition: .3s;
         }
-        .download-card:hover {
-            border-color: #4242ff;
-        }
+        .download-card:hover { border-color: #4242ff; }
         .download-title {
             font-weight: 500;
             margin-bottom: 8px;
@@ -181,13 +148,14 @@
             align-items: center;
             gap: 6px;
         }
-        /* 联系方式样式 */
+        
+        /* 联系与底部 */
         .contact-list {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
             justify-content: center;
-            margin-top: 16px;
+            margin: 16px 0;
         }
         .contact-item {
             display: flex;
@@ -199,7 +167,6 @@
             font-size: 18px;
             color: #3366ff;
         }
-        /* 底部样式 */
         .footer {
             text-align: center;
             padding: 20px 0;
@@ -208,113 +175,73 @@
             border-top: 1px solid #eee;
             margin-top: 32px;
         }
-        /* iframe 加载样式 */
-        .iframe-container {
-            position: relative;
-            width: 100%;
-            height: 120px;
-            margin-top: 16px;
-        }
-        .iframe-container iframe {
-            width: 100%;
-            height: 100%;
-            border: 0;
-            border-radius: 8px;
-        }
-        /* 暗模式样式 */
+        
+        /* 暗模式 */
         body.dark-mode {
-            background-color: #000000;
+            background: #000;
             color: #fffffd;
         }
         body.dark-mode .card {
-            background-color: #282838;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            background: #282838;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
         }
-        body.dark-mode .card:hover {
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        }
+        body.dark-mode .card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
         body.dark-mode .subtitle,
-        body.dark-mode .footer {
-            color: #bbb;
-        }
-        body.dark-mode .stat-bar {
-            border-bottom-color: #383848;
-        }
-        body.dark-mode .download-card {
-            border-color: #383848;
-        }
-        body.dark-mode .download-card:hover {
-            border-color: #4477ff;
-        }
-        /* 切换按钮样式 */
+        body.dark-mode .footer { color: #bbb; }
+        body.dark-mode .download-card { border-color: #383848; }
+        body.dark-mode .download-card:hover { border-color: #4477ff; }
+        
+        /* 主题切换按钮 */
         .theme-toggle {
             background: none;
             border: none;
             color: #3366ff;
             font-size: 20px;
             cursor: pointer;
-            transition: color 0.3s;
+            transition: .3s;
         }
-        body.dark-mode .theme-toggle {
-            color: #4477ff;
-        }
-        /* 响应式：小屏幕适配 */
+        body.dark-mode .theme-toggle { color: #4477ff; }
+        
+        /* 响应式 */
         @media (max-width: 768px) {
-            .header {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 16px;
-            }
-            .nav {
-                gap: 12px;
-            }
-            .stat-bar {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .flex {
-                flex-direction: column;
-            }
+            .header { align-items: flex-start; }
+            .nav { gap: 12px; }
+            .flex { flex-direction: column; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- 头部：Logo + 主题切换 -->
+        <!-- 头部 -->
         <header class="header">
-            <div class="logo">
-                <span>🍄田兵个人网站</span>
-            </div>            
-			<button class="theme-toggle" onclick="toggleTheme()">
+            <div class="logo">🍄田兵个人网站</div>            
+            <button class="theme-toggle" onclick="toggleTheme()">
                 <i class="fa-solid fa-moon"></i>
             </button>
         </header>
-<hr><br>
-        <!-- 个人信息卡片 -->
+        <hr><br>
+        
+        <!-- 个人信息 -->
         <section class="card">
             <h1 class="title">
                 <i class="fa-solid fa-user"></i> 🍀TB🌸ハンサム
             </h1>
-            <p class="subtitle"></p>
-            
-            <!-- 统计与运行时间 -->
             <div class="stat-bar">
                 <div class="visit-count">
                     <i class="fa-solid fa-eye"></i>
                     <span>GitHub访问量：<img src="https://komarev.com/ghpvc/?username=ttbb1978&color=3366ff&style=flat" alt="访问统计"></span>
                 </div>
             </div>
-
-            <!-- 联系方式 -->
-            <div>
-                <div style="text-align: center; margin: 16px 0;">
-                    <center><img src="http://q1.qlogo.cn/g?b=qq&nk=765931440&s=640" width="75" height="" border="1"/> <img src="http://q1.qlogo.cn/g?b=qq&nk=1040458166&s=640" width="75" height="" border="1"/> <img src="http://q1.qlogo.cn/g?b=qq&nk=2409495157&s=640" width="75" height="" border="1"/> <img src="http://q1.qlogo.cn/g?b=qq&nk=2358429597&s=640" width="75" height="" border="1"/></center>
-                </div>
-                </section>
-
-        <!-- 导航与Banner卡片 -->
-        <section class="flex gap-16">
-            <!-- 导航卡片 -->
+            <div class="text-center" style="margin: 16px 0;">
+                <img src="http://q1.qlogo.cn/g?b=qq&nk=765931440&s=640" width="75" border="1"/>
+                <img src="http://q1.qlogo.cn/g?b=qq&nk=1040458166&s=640" width="75" border="1"/>
+                <img src="http://q1.qlogo.cn/g?b=qq&nk=2409495157&s=640" width="75" border="1"/>
+                <img src="http://q1.qlogo.cn/g?b=qq&nk=2358429597&s=640" width="75" border="1"/>
+            </div>
+        </section>
+        
+        <!-- 导航与Banner -->
+        <section class="flex">
             <div class="card flex-item">
                 <h2 class="title">
                     <i class="fa-solid fa-compass"></i> 快速导航
@@ -324,7 +251,7 @@
                         <i class="fa-brands fa-github"></i> GitHub加速
                     </a>
                     <a href="https://github.com/ttbb1978" class="nav-link">
-                        <i class="fa-brands fa-github"></i> GitHub仓库
+                        <i class="fa-brands fa-github"></i> 仓库
                     </a>
                     <a href="https://blog.cmliussss.com/p/CloudFlare%E4%BC%98%E9%80%89" class="nav-link">
                         <i class="fa-solid fa-star"></i> CloudFlare优选
@@ -341,19 +268,18 @@
                 </div>
             </div>
 
-            <!-- Banner卡片 -->
             <div class="card flex-item">
                 <h2 class="title">
                     <i class="fa-solid fa-image"></i> 美丽等待
                 </h2>
                 <p class="subtitle">思念是一种美，我在这里等你 ...</p>
                 <div style="border-radius: 8px; overflow: hidden;">
-                    <img src="https://t.alcy.cc/ycy" alt="工具推荐Banner" style="width: 100%; height: auto; display: block;">
+                    <img src="https://t.alcy.cc/ycy" alt="Banner" style="width: 100%; height: auto;">
                 </div>
             </div>
         </section>
-
-        <!-- 下载资源卡片 -->
+        
+        <!-- 下载资源 -->
         <section class="card">
             <h2 class="title">
                 <i class="fa-solid fa-download"></i> 工具下载
@@ -361,84 +287,84 @@
             <p class="subtitle">本地工具，无需联网即可使用</p>
             
             <div class="download-list">
-                <!-- Base64安卓 -->
                 <div class="download-card">
                     <div class="download-title">
                         <i class="fa-brands fa-android" style="color: #3ddc84;"></i> Base64编码工具（安卓）
                     </div>
                     <p class="margin-b-8">支持Base64文本编码/解码，轻量无广告</p>
                     <a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/BASE64%E7%BC%96%E7%A0%81.apk" class="btn">
-                        <i class="fa-solid fa-download"></i> 立即下载
+                        <i class="fa-solid fa-download"></i> 下载
                     </a>
                 </div>
 
-                <!-- Base64 PC -->
                 <div class="download-card">
                     <div class="download-title">
                         <i class="fa-brands fa-windows" style="color: #00a4ef;"></i> Base64编码工具（PC）
                     </div>
                     <p class="margin-b-8">Windows端桌面工具，支持批量处理</p>
                     <a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/Base64%E7%BC%96%E7%A0%81.rar" class="btn">
-                        <i class="fa-solid fa-download"></i> 立即下载
+                        <i class="fa-solid fa-download"></i> 下载
                     </a>
                 </div>
 
-                <!-- TB记事本 -->
                 <div class="download-card">
                     <div class="download-title">
                         <i class="fa-solid fa-file-lines" style="color: #ff7d40;"></i> TB记事本
                     </div>
-                    <p class="margin-b-8">Windows端桌面工具，Base64编码工具</p>
+                    <p class="margin-b-8">Windows端桌面工具，Base64编码功能</p>
                     <a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/TB%E8%AE%B0%E4%BA%8B%E6%9C%AC.rar" class="btn">
-                        <i class="fa-solid fa-download"></i> 立即下载
+                        <i class="fa-solid fa-download"></i> 下载
                     </a>
                 </div>
-               </section>
+            </div>
+        </section>
+        
+        <!-- 联系信息与页脚 -->
+        <div class="contact-list">
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope contact-icon"></i>
+                <span>邮箱：<a href="mailto:tianbingyx@163.com">tianbingyx@163.com</a></span>
+            </div>
+            <div class="contact-item">
+                <i class="fa-brands fa-qq contact-icon"></i>
+                <span>QQ：<a href="tencent://message/?uin=765931440">765931440</a></span>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-users contact-icon"></i>
+                <span>QQ群：<a href="https://jq.qq.com/?_wv=1027&k=xxxxxx">386113172</a></span>
+            </div>
+        </div>
+        
+        <hr><br>
+        <div class="text-center">
+            <i class="fa fa-cog fa-spin"></i> 运行 <span id="aa"></span>
+            <p style="font-size: 15px;">网站：四川省 德阳市 旌阳区（天元街道）</p>
+            <p style="font-size: 15px;">© 2021 版权归田兵所有 🍀TB🌸ハンサム</p>
+        </div>
+    </div>
 
-      <script>
+    <script>
         // 运行时间计算
-        function show_date_time() {
-            window.setTimeout("show_date_time()", 1000);
-            timeold = ((new Date()).getTime() - (new Date("04/24/2021 00:00:00")).getTime());
-            sectimeold = timeold / 1000
-            secondsold = Math.floor(sectimeold);
-            msPerDay = 24 * 60 * 60 * 1000
-            e_daysold = timeold / msPerDay
-            daysold = Math.floor(e_daysold);
-            e_hrsold = (e_daysold - daysold) * 24;
-            hrsold = Math.floor(e_hrsold);
-            e_minsold = (e_hrsold - hrsold) * 60;
-            minsold = Math.floor((e_hrsold - hrsold) * 60);
-            seconds = Math.floor((e_minsold - minsold) * 60);
-            document.getElementById('aa').innerHTML = "" + daysold + "天 " + hrsold + "小时 " + minsold + "分 " + seconds + "秒 ";
+        function showDateTime() {
+            setTimeout(showDateTime, 1000);
+            const timeOld = Date.now() - new Date("2021/04/24 00:00:00").getTime();
+            const days = Math.floor(timeOld / (24 * 60 * 60 * 1000));
+            const hours = Math.floor((timeOld % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+            const mins = Math.floor((timeOld % (60 * 60 * 1000)) / (60 * 1000));
+            const secs = Math.floor((timeOld % (60 * 1000)) / 1000);
+            document.getElementById('aa').textContent = `${days}天 ${hours}小时 ${mins}分 ${secs}秒`;
         }
-        show_date_time();        
+        showDateTime();
+        
         // 主题切换
         function toggleTheme() {
-            document.body.classList.toggle('dark-mode');
+            const body = document.body;
+            body.classList.toggle('dark-mode');
             const icon = document.querySelector('.theme-toggle i');
-            if (document.body.classList.contains('dark-mode')) {
-                icon.className = 'fa-solid fa-sun';
-            } else {
-                icon.className = 'fa-solid fa-moon';
-            }
+            icon.className = body.classList.contains('dark-mode') 
+                ? 'fa-solid fa-sun' 
+                : 'fa-solid fa-moon';
         }
     </script>
-                    <div class="contact-item">
-                        <i class="fa-solid fa-envelope contact-icon"></i>
-                        <span>邮箱：<a href="mailto:tianbingyx@163.com">tianbingyx@163.com</a></span>
-                    </div>
-					<div class="contact-item">
-                        <i class="fa-brands fa-qq contact-icon"></i>
-                        <span>QQ：<a href="tencent://message/?uin=765931440">765931440</a></span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fa-solid fa-users contact-icon"></i>
-                        <span>QQ群：<a href="https://jq.qq.com/?_wv=1027&k=xxxxxx">386113172</a></span>
-                    </div>
-                    <br><hr><br>
-    <center><i class="fa fa-cog fa-spin"></i> 运行 <span id="aa"></span></center>
-    <p style="font-size: 15px; text-align: center;">网站：四川省 德阳市 旌阳区（天元街道）</p>
-    <p style="font-size: 15px; text-align: center;">© 2021 版权归田兵所有 🍀TB🌸ハンサム</p>
 </body>
 </html>
