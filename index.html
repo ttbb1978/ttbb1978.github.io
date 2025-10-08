@@ -7,7 +7,7 @@
     <title>🍀TB🌸ハンサム 网站</title>
     <!-- 社交分享元数据补全 -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="TB工具箱 | 田兵个人网站" />
+    <meta property="og:title" content="田兵个人网站" />
     <meta property="og:description" content="分享GitHub加速、Base64工具等实用资源，专注高效工具汇总" />
     <meta property="og:image" content="https://picsum.photos/800/400?tech=tool" />
     <meta property="og:image:width" content="800" />
@@ -54,7 +54,7 @@
         }
         /* 标题样式 */
         .title {
-            font-size: 24px;
+            font-size: 18px;
             font-weight: 700;
             color: #008080;
             margin-bottom: 8px;
@@ -156,31 +156,6 @@
             align-items: center;
             gap: 6px;
             font-weight: 500;
-        }
-        /* 统计与计时样式 */
-        .stat-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 16px;
-            margin-bottom: 16px;
-            padding-bottom: 16px;
-            border-bottom: 1px solid #eee;
-        }
-        .timer,
-        .network-status {
-            color: #808000;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .network-online {
-            color: #28a745;
-        }
-        .network-offline {
-            color: #dc3545;
         }
         /* 下载模块样式 */
         .download-list {
@@ -328,13 +303,6 @@
                     <i class="fa-solid fa-eye"></i>
                     <span>GitHub 访问量：<img src="https://komarev.com/ghpvc/?username=ttbb1978&color=3366ff&style=flat" alt="访问统计"></span>
                 </div>
-                <div class="timer">
-                    <i class="fa fa-cog fa-spin"></i> 已运行 <span id="aa"></span>
-                </div>
-                <div class="network-status">
-                    <i class="fa-solid fa-wifi"></i>
-                    <span id="networkStatus">检测中...</span>
-                </div>
             </div>
 
             <!-- 联系方式 -->
@@ -372,11 +340,20 @@
                     <a href="https://tbcel.pages.dev" class="nav-link">
                         <i class="fa-brands fa-github"></i> GitHub加速
                     </a>
+                    <a href="https://github.com" class="nav-link">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
                     <a href="https://blog.cmliussss.com/p/CloudFlare%E4%BC%98%E9%80%89" class="nav-link">
                         <i class="fa-solid fa-star"></i> CloudFlare优选
                     </a>
                     <a href="https://api.kuleu.com/api/MP4_xiaojiejie" class="nav-link">
                         <i class="fa-solid fa-video"></i> 随机视频
+                    </a>
+                    <a href="https://www.youtube.com" class="nav-link">
+                        <i class="fa-solid fa-star"></i> Youtube
+                    </a>
+                    <a href="https://www.google.com" class="nav-link">
+                        <i class="fa-solid fa-star"></i> Google
                     </a>
                 </div>
             </div>
@@ -396,7 +373,7 @@
         <!-- 下载资源卡片 -->
         <section class="card">
             <h2 class="title">
-                <i class="fa-solid fa-download"></i> 实用工具下载
+                <i class="fa-solid fa-download"></i> 工具下载
             </h2>
             <p class="subtitle">本地工具，无需联网即可使用</p>
             
@@ -454,34 +431,7 @@
             seconds = Math.floor((e_minsold - minsold) * 60);
             document.getElementById('aa').innerHTML = "" + daysold + "天 " + hrsold + "小时 " + minsold + "分 " + seconds + "秒 ";
         }
-        show_date_time();
-
-        // 网络状态检测
-        function checkNetworkStatus() {
-            const statusEl = document.getElementById('networkStatus');
-            const icon = statusEl.previousElementSibling;
-
-            // 尝试加载一个轻量资源判断网络
-            const testImage = new Image();
-            testImage.onload = () => {
-                statusEl.textContent = '正常访问外网';
-                statusEl.className = 'network-online';
-                icon.className = 'fa-solid fa-wifi';
-            };
-            testImage.onerror = () => {
-                statusEl.textContent = '无法访问外网';
-                statusEl.className = 'network-offline';
-                icon.className = 'fa-solid fa-wifi-slash';
-            };
-            testImage.src = `https://www.google.com/images/phd/px.gif?${Date.now()}`;
-        }
-
-        // 页面加载完成后检测一次，并每30秒更新
-        window.addEventListener('load', () => {
-            checkNetworkStatus();
-            setInterval(checkNetworkStatus, 5000);
-        });
-
+        show_date_time();        
         // 主题切换
         function toggleTheme() {
             document.body.classList.toggle('dark-mode');
@@ -493,7 +443,8 @@
             }
         }
     </script>
+    <center><i class="fa fa-cog fa-spin"></i> 运行 <span id="aa"></span></center>
     <p style="font-size: 15px; text-align: center;">网站：四川省 德阳市 旌阳区（天元街道）</p>
-    <p style="font-size: 15px; text-align: center;">© 2021–2025 版权归田兵个人所有</p>
+    <p style="font-size: 15px; text-align: center;">© 2021–2025 版权归田兵个人所有 🍀TB🌸ハンサム</p>
 </body>
 </html>
