@@ -28,6 +28,17 @@
         }
         .container { max-width: 1200px; margin: 0 auto; }
         
+        /* 图片圆角化 - 新增样式 */
+        img {
+            border-radius: 12px; /* 圆角半径 */
+            transition: all 0.3s ease; /* 平滑过渡效果 */
+        }
+        
+        /* 头像特殊处理 - 圆形效果 */
+        .text-center img {
+            border-radius: 15%; /* 圆形 */
+        }
+        
         /* 卡片样式 */
         .card {
             background: #282838; /* 暗黑模式卡片背景 */
@@ -367,11 +378,7 @@
         }
         showDateTime();
         
-        // 脉冲效果的时钟：fa-clock-o fa-pulse
-        // 旋转的小时钟：fa-hourglass-half fa-spin
-        // 跳动的计时器：fa-stopwatch fa-beat
-
-        // 主题切换 - 现在是从暗黑切换到明亮
+        // 主题切换
         function toggleTheme() {
             const body = document.body;
             body.classList.toggle('light-mode');
@@ -384,8 +391,3 @@
 </body>
 
 </html>
-
-
-
-
-
