@@ -226,6 +226,37 @@
             .nav { gap: 12px; }
             .flex { flex-direction: column; }
         }
+
+        /* Card header for aligning title and visit counter */
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        /* Webpage visit counter */
+        .visit-counter {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: #bbb; /* Match subtitle color for consistency */
+        }
+
+        .visit-counter img {
+            vertical-align: middle;
+            height: 20px; /* Adjust size to match GitHub counter */
+        }
+
+        /* Ensure responsiveness */
+        @media (max-width: 768px) {
+            .card-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -241,13 +272,13 @@
         
         <!-- 个人信息 -->
         <section class="card">
-            <h1 class="title">
-                <i class="fa-solid fa-user"></i> 🍀TB🌸ハンサム
-            </h1>
-            <div class="stat-bar">
-                <div class="visit-count">
-                    <i class="fa-solid fa-eye"></i>
-                    <span>GitHub访问量：<img src="https://komarev.com/ghpvc/?username=ttbb1978&color=4477ff&style=flat" alt="访问统计"></span>
+            <div class="card-header">
+                <h1 class="title">
+                    <i class="fa-solid fa-user"></i> 🍀TB🌸ハンサム
+                </h1>
+                <div class="visit-counter">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>访问量：<img src="https://hits.sh/tbcel.pages.dev/hits.svg" alt="网页访问统计"></span>
                 </div>
             </div>
             <div class="text-center" style="margin: 16px 0;">
@@ -381,4 +412,3 @@
 
 
 </html>
-
