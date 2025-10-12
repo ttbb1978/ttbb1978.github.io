@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
         /* 基础样式 */
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -116,6 +116,11 @@
             align-items: center;
             gap: 6px;
         }
+        .download-icon {
+            font-size: 18px;
+            width: 24px;
+            text-align: center;
+        }
         
         /* 联系与底部 */
         .contact-list {
@@ -210,7 +215,7 @@
     <div class="container">
         <!-- 头部 -->
         <header class="header">
-            <div class="logo">🍄 田兵个人网站</div>            
+            <div class="logo"> 🍄 田兵个人网站</div>            
             <button class="theme-toggle" onclick="toggleTheme()">
                 <i class="fa-solid fa-moon"></i>
             </button>
@@ -251,9 +256,9 @@
                 <!-- 随机文本栏 -->
                 <div class="random-text-box">
                     <div class="random-text-header">
-                        <h2 class="title"style="font-size: 18px;"><i class="fa-solid fa-quote-left"></i>每日一言</h2>
+                        <h2 class="title" style="font-size: 18px;"><i class="fa-solid fa-quote-left"></i> 每日一言</h2>
                         <button class="btn" style="padding: 4px 10px; font-size: 14px;" onclick="showRandomText()">
-                            <i class="fa-solid fa-refresh"></i> 换一条
+                            <i class="fa-solid fa-rotate"></i> 换一条
                         </button>
                     </div>
                     <div class="random-text-content" id="randomText">
@@ -278,22 +283,34 @@
             
             <div class="download-list">
                 <div class="download-card">
-                    <div class="download-title"><i class="fa-brands fa-android" style="color: #3ddc84;"></i> Base64编码工具（安卓）</div>
+                    <div class="download-title">
+                        <i class="fa-brands fa-android download-icon" style="color: #3ddc84;"></i>
+                        Base64编码工具（安卓）
+                    </div>
                     <p class="margin-b-8">支持Base64文本编码/解码，轻量无广告</p>
                     <a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/BASE64%E7%BC%96%E7%A0%81.apk" class="btn"><i class="fa-solid fa-download"></i> 下载</a>
                 </div>
-                    <div class="download-card">
-                    <div class="download-title"><i class="fa-solid fa-windows" style="color: #ff7d40;"></i> 右键管理</div>
+                <div class="download-card">
+                    <div class="download-title">
+                        <i class="fa-solid fa-desktop download-icon" style="color: #3ddc84;"></i>
+                        右键管理
+                    </div>
                     <p class="margin-b-8">Windows端桌面工具，右键管理功能</p>
                     <a href="https://hub.gitmirror.com/https://github.com/ttbb1978/ttbb1978.github.io/blob/1434d355b6c30683d1d1a808018605937301b355/img/%E5%8F%B3%E9%94%AE%E7%AE%A1%E7%90%86.zip" class="btn"><i class="fa-solid fa-download"></i> 下载</a>
                 </div>
-                    <div class="download-card">
-                    <div class="download-title"><i class="fa-solid fa-windows" style="color: #ff7d40;"></i> 图片编码</div>
+                <div class="download-card">
+                    <div class="download-title">
+                        <i class="fa-solid fa-desktop download-icon" style="color: #3ddc84;"></i>
+                        图片编码
+                    </div>
                     <p class="margin-b-8">Windows端桌面工具，Base64图片编码功能</p>
                     <a href="https://hub.gitmirror.com/https://github.com/ttbb1978/ttbb1978.github.io/blob/1434d355b6c30683d1d1a808018605937301b355/img/Base64%E5%9B%BE%E7%89%87.zip" class="btn"><i class="fa-solid fa-download"></i> 下载</a>
                 </div>
                 <div class="download-card">
-                    <div class="download-title"><i class="fa-solid fa-file-lines" style="color: #ff7d40;"></i> TB记事本</div>
+                    <div class="download-title">
+                        <i class="fa-solid fa-desktop download-icon" style="color: #3ddc84;"></i>
+                        TB记事本
+                    </div>
                     <p class="margin-b-8">Windows端桌面工具，Base64编码功能</p>
                     <a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/TB%E8%AE%B0%E4%BA%8B%E6%9C%AC.rar" class="btn"><i class="fa-solid fa-download"></i> 下载</a>
                 </div>
@@ -318,7 +335,7 @@
         
         <hr><br>
         <div class="text-center">
-            <i class="fa fa-cog fa-spin"></i> 运行 <span id="aa"></span>
+            <i class="fa-solid fa-cog fa-spin"></i> 运行 <span id="aa"></span>
             <p style="font-size: 15px;">四川省 德阳市 旌阳区（天元街道）</p>
             <p style="font-size: 15px;">© 2021-2025 版权归田兵所有 🍀TB🌸ハンサム</p>
         </div>
