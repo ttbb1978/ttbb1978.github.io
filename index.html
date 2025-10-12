@@ -16,30 +16,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* 基础样式 - 默认浅色主题 */
+        /* 基础样式 */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Roboto', 'Noto Sans SC', sans-serif;
-            background: #e1e7f0; /* 默认浅色背景 */
-            color: #333; /* 默认文本颜色 */
+            background: #e1e7f0;
+            color: #333;
             line-height: 1.6;
             padding: 20px;
             transition: .3s;
         }
         .container { max-width: 1200px; margin: 0 auto; }
+        img { border-radius: 12px; transition: all 0.3s ease; }
+        .text-center img { border-radius: 10%; }
         
-        /* 图片圆角化 */
-        img {
-            border-radius: 12px; /* 圆角半径 */
-            transition: all 0.3s ease; /* 平滑过渡效果 */
-        }
-        
-        /* 头像特殊处理 - 圆形效果 */
-        .text-center img {
-            border-radius: 10%; /* 圆形 */
-        }
-        
-        /* 卡片样式 - 默认浅色 */
+        /* 卡片样式 */
         .card {
             background: #fff;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
@@ -48,12 +39,9 @@
             margin-bottom: 24px;
             transition: .3s;
         }
-        .card:hover {
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-            transform: translateY(-2px);
-        }
+        .card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.08); transform: translateY(-2px); }
         
-        /* 标题与文本 - 默认浅色 */
+        /* 文本样式 */
         .title {
             font-size: 18px;
             font-weight: 700;
@@ -63,20 +51,12 @@
             align-items: center;
             gap: 8px;
         }
-        .subtitle {
-            font-size: 16px;
-            color: #666;
-            margin-bottom: 16px;
-        }
+        .subtitle { font-size: 16px; color: #666; margin-bottom: 16px; }
         .text-center { text-align: center; }
         .margin-b-8 { margin-bottom: 8px; }
         
-        /* 链接与按钮 - 默认浅色 */
-        a {
-            color: #3366ff;
-            text-decoration: none;
-            transition: .3s;
-        }
+        /* 链接与按钮 */
+        a { color: #3366ff; text-decoration: none; transition: .3s; }
         a:hover { color: #2255ee; text-decoration: underline; }
         .btn {
             display: inline-flex;
@@ -92,23 +72,13 @@
             cursor: pointer;
             transition: .3s;
         }
-        .btn:hover {
-            background: #2255ee;
-            transform: translateY(-1px);
-        }
+        .btn:hover { background: #2255ee; transform: translateY(-1px); }
         
         /* 布局工具 */
-        .flex {
-            display: flex;
-            gap: 16px;
-            flex-wrap: wrap;
-        }
-        .flex-item {
-            flex: 1;
-            min-width: 280px;
-        }
+        .flex { display: flex; gap: 16px; flex-wrap: wrap; }
+        .flex-item { flex: 1; min-width: 280px; }
         
-        /* 头部与导航 - 默认浅色 */
+        /* 头部与导航 */
         .header {
             display: flex;
             justify-content: space-between;
@@ -125,24 +95,11 @@
             font-weight: 700;
             color: #3366ff;
         }
-        .nav {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .nav-link {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            font-weight: 500;
-        }
+        .nav { display: flex; gap: 20px; flex-wrap: wrap; }
+        .nav-link { display: flex; align-items: center; gap: 6px; font-weight: 500; }
         
-        /* 下载区 - 默认浅色 */
-        .download-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 16px;
-        }
+        /* 下载区 */
+        .download-list { display: flex; flex-wrap: wrap; gap: 16px; }
         .download-card {
             flex: 1;
             min-width: 250px;
@@ -160,7 +117,7 @@
             gap: 6px;
         }
         
-        /* 联系与底部 - 默认浅色 */
+        /* 联系与底部 */
         .contact-list {
             display: flex;
             flex-wrap: wrap;
@@ -168,16 +125,8 @@
             justify-content: center;
             margin: 16px 0;
         }
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 15px;
-        }
-        .contact-icon {
-            font-size: 18px;
-            color: #3366ff;
-        }
+        .contact-item { display: flex; align-items: center; gap: 8px; font-size: 15px; }
+        .contact-icon { font-size: 18px; color: #3366ff; }
         .footer {
             text-align: center;
             padding: 20px 0;
@@ -187,21 +136,13 @@
             margin-top: 32px;
         }
         
-        /* 暗黑模式（与默认浅色相反） */
-        body.dark-mode {
-            background: #000;
-            color: #fffffd;
-        }
-        body.dark-mode .card {
-            background: #282838;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        }
+        /* 暗黑模式 */
+        body.dark-mode { background: #000; color: #fffffd; }
+        body.dark-mode .card { background: #282838; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
         body.dark-mode .card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
-        body.dark-mode .subtitle,
-        body.dark-mode .footer { color: #bbb; }
+        body.dark-mode .subtitle, body.dark-mode .footer { color: #bbb; }
         body.dark-mode .download-card { border-color: #383848; }
         body.dark-mode .download-card:hover { border-color: #4477ff; }
-        body.dark-mode .title { color: #008080; }
         body.dark-mode .logo { color: #4477ff; }
         body.dark-mode a { color: #6699ff; }
         body.dark-mode a:hover { color: #88b0ff; }
@@ -213,29 +154,26 @@
         .theme-toggle {
             background: none;
             border: none;
-            color: #808080; /* 浅色模式按钮颜色 */
+            color: #808080;
             font-size: 20px;
             cursor: pointer;
             transition: .3s;
         }
         body.dark-mode .theme-toggle { color: #c0c0c0; }
         
-        /* 响应式 */
+        /* 响应式与计数器 */
         @media (max-width: 768px) {
             .header { align-items: flex-start; }
             .nav { gap: 12px; }
             .flex { flex-direction: column; }
+            .card-header { flex-direction: column; align-items: flex-start; gap: 12px; }
         }
-
-        /* 用于对齐标题和访问计数器的卡片标题 */
         .card-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 16px;
         }
-
-        /* 网页访问计数器 */
         .visit-counter {
             display: flex;
             align-items: center;
@@ -243,20 +181,7 @@
             font-size: 14px;
             color: #808080;
         }
-
-        .visit-counter img {
-            vertical-align: middle;
-            height: 20px;
-        }
-
-        /* 确保响应能力 */
-        @media (max-width: 768px) {
-            .card-header {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 12px;
-            }
-        }
+        .visit-counter img { vertical-align: middle; height: 20px; }
     </style>
 </head>
 <body>
@@ -265,7 +190,7 @@
         <header class="header">
             <div class="logo">🍄 田兵个人网站</div>            
             <button class="theme-toggle" onclick="toggleTheme()">
-                <i class="fa-solid fa-moon"></i> <!-- 默认显示月亮图标（浅色模式下切换到暗黑） -->
+                <i class="fa-solid fa-moon"></i>
             </button>
         </header>
         <hr><br>
@@ -273,9 +198,7 @@
         <!-- 个人信息 -->
         <section class="card">
             <div class="card-header">
-                <h1 class="title">
-                    <i class="fa-solid fa-user"></i> 🍀TB🌸ハンサム
-                </h1>
+                <h1 class="title"><i class="fa-solid fa-user"></i> 🍀TB🌸ハンサム</h1>
                 <div class="visit-counter">                   
                     <a href="https://hits.sh/tb.xyz1978.cloudns.ch/"><img alt="点击数" src="https://hits.sh/tb.xyz1978.cloudns.ch.svg?style=flat-square&label=%E8%AE%BF%E9%97%AE%E9%87%8F&extraCount=4896&color=007ec6"/></a>
                 </div>
@@ -291,39 +214,21 @@
         <!-- 导航与Banner -->
         <section class="flex">
             <div class="card flex-item">
-                <h2 class="title">
-                    <i class="fa-solid fa-compass"></i> 快速导航
-                </h2>
-                 <p class="subtitle">带你快速了解这个世界...</p>
+                <h2 class="title"><i class="fa-solid fa-compass"></i> 快速导航</h2>
+                <p class="subtitle">带你快速了解这个世界...</p>
                 <div class="nav">
-                    <a href="https://tbcel.pages.dev" class="nav-link">
-                        <i class="fa-brands fa-github"></i> GitHub加速
-                    </a>
-                    <a href="https://github.com/ttbb1978" class="nav-link">
-                        <i class="fa-brands fa-github"></i> GitHub仓库
-                    </a>                   
-                    <a href="https://tbai.bing1978.workers.dev" class="nav-link">
-                        <i class="fa-solid fa-star"></i> TB AI（密码:admin123）
-                    </a>
-                    <a href="https://blog.cmliussss.com/p/CloudFlare%E4%BC%98%E9%80%89" class="nav-link">
-                        <i class="fa-solid fa-cloud"></i> CloudFlare优选
-                    </a>
-                    <a href="https://api.kuleu.com/api/MP4_xiaojiejie" class="nav-link">
-                        <i class="fa-solid fa-video"></i> 随机视频
-                    </a>
-                    <a href="https://www.youtube.com" class="nav-link">
-                        <i class="fa-brands fa-youtube"></i> Youtube
-                    </a>
-                    <a href="https://www.google.com" class="nav-link">
-                        <i class="fa-brands fa-google"></i> Google
-                    </a>
+                    <a href="https://tbcel.pages.dev" class="nav-link"><i class="fa-brands fa-github"></i> GitHub加速</a>
+                    <a href="https://github.com/ttbb1978" class="nav-link"><i class="fa-brands fa-github"></i> GitHub仓库</a>                   
+                    <a href="https://tbai.bing1978.workers.dev" class="nav-link"><i class="fa-solid fa-star"></i> TB AI（密码:admin123）</a>
+                    <a href="https://blog.cmliussss.com/p/CloudFlare%E4%BC%98%E9%80%89" class="nav-link"><i class="fa-solid fa-cloud"></i> CloudFlare优选</a>
+                    <a href="https://api.kuleu.com/api/MP4_xiaojiejie" class="nav-link"><i class="fa-solid fa-video"></i> 随机视频</a>
+                    <a href="https://www.youtube.com" class="nav-link"><i class="fa-brands fa-youtube"></i> Youtube</a>
+                    <a href="https://www.google.com" class="nav-link"><i class="fa-brands fa-google"></i> Google</a>
                 </div>
             </div>
 
             <div class="card flex-item">
-                <h2 class="title">
-                    <i class="fa-solid fa-image"></i> 图片欣赏
-                </h2>
+                <h2 class="title"><i class="fa-solid fa-image"></i> 图片欣赏</h2>
                 <p class="subtitle">思念是一种美，我在这里等你...</p>
                 <div style="border-radius: 8px; overflow: hidden;">
                     <img src="https://t.alcy.cc/ycy" alt="Banner" style="width: 100%; height: auto;">
@@ -331,31 +236,21 @@
             </div>
         </section>
         
-		<!-- 下载资源 -->
+        <!-- 下载资源 -->
         <section class="card">
-            <h2 class="title">
-                <i class="fa-solid fa-download"></i> 工具下载
-            </h2>
+            <h2 class="title"><i class="fa-solid fa-download"></i> 工具下载</h2>
             <p class="subtitle">本地工具，无需联网即可使用</p>
             
             <div class="download-list">
                 <div class="download-card">
-                    <div class="download-title">
-                        <i class="fa-brands fa-android" style="color: #3ddc84;"></i> Base64编码工具（安卓）
-                    </div>
+                    <div class="download-title"><i class="fa-brands fa-android" style="color: #3ddc84;"></i> Base64编码工具（安卓）</div>
                     <p class="margin-b-8">支持Base64文本编码/解码，轻量无广告</p>
-                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/BASE64%E7%BC%96%E7%A0%81.apk" class="btn">
-                        <i class="fa-solid fa-download"></i> 下载
-                    </a>
+                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/BASE64%E7%BC%96%E7%A0%81.apk" class="btn"><i class="fa-solid fa-download"></i> 下载</a>
                 </div>
                 <div class="download-card">
-                    <div class="download-title">
-                        <i class="fa-solid fa-file-lines" style="color: #ff7d40;"></i> TB记事本
-                    </div>
+                    <div class="download-title"><i class="fa-solid fa-file-lines" style="color: #ff7d40;"></i> TB记事本</div>
                     <p class="margin-b-8">Windows端桌面工具，Base64编码功能</p>
-                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/TB%E8%AE%B0%E4%BA%8B%E6%9C%AC.rar" class="btn">
-                        <i class="fa-solid fa-download"></i> 下载
-                    </a>
+                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/TB%E8%AE%B0%E4%BA%8B%E6%9C%AC.rar" class="btn"><i class="fa-solid fa-download"></i> 下载</a>
                 </div>
             </div>
         </section>
@@ -397,39 +292,24 @@
         }
         showDateTime();
         
-        // 主题切换 - 支持记住用户选择
+        // 主题切换
         function toggleTheme() {
             const body = document.body;
             body.classList.toggle('dark-mode');
             const icon = document.querySelector('.theme-toggle i');
-            
-            // 更新图标
-            icon.className = body.classList.contains('dark-mode') 
-                ? 'fa-solid fa-sun'  // 暗黑模式显示太阳图标
-                : 'fa-solid fa-moon'; // 浅色模式显示月亮图标
-                
-            // 保存主题偏好到localStorage
+            icon.className = body.classList.contains('dark-mode') ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
             localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
         }
         
-        // 页面加载时恢复用户上次选择的主题
-        function loadSavedTheme() {
+        // 加载保存的主题
+        window.addEventListener('DOMContentLoaded', () => {
             const savedTheme = localStorage.getItem('theme');
             const icon = document.querySelector('.theme-toggle i');
-            
-            // 如果有保存的主题设置，应用它
             if (savedTheme === 'dark') {
                 document.body.classList.add('dark-mode');
                 icon.className = 'fa-solid fa-sun';
-            } else {
-                // 默认使用浅色模式
-                document.body.classList.remove('dark-mode');
-                icon.className = 'fa-solid fa-moon';
             }
-        }
-        
-        // 页面加载完成后恢复主题设置
-        window.addEventListener('DOMContentLoaded', loadSavedTheme);
+        });
     </script>
 </body>
 </html>
