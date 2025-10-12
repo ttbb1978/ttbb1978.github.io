@@ -277,7 +277,7 @@
                     <i class="fa-solid fa-user"></i> 🍀TB🌸ハンサム
                 </h1>
                 <div class="visit-counter">                   
-                    <a href="https://hits.sh/tb.xyz1978.cloudns.ch/"><img alt="点击数" src="https://hits.sh/tb.xyz1978.cloudns.ch.svg?style=flat-square&label=%E8%AE%BF%E9%97%AE%E9%87%8F&extraCount=2000&color=007ec6"/></a>
+                    <a href="https://hits.sh/tb.xyz1978.cloudns.ch/"><img alt="点击数" src="https://hits.sh/tb.xyz1978.cloudns.ch.svg?style=flat-square&label=%E8%AE%BF%E9%97%AE%E9%87%8F&extraCount=4896&color=007ec6"/></a>
                 </div>
             </div>
             <div class="text-center" style="margin: 16px 0;">
@@ -397,15 +397,39 @@
         }
         showDateTime();
         
-        // 主题切换 - 改为切换暗黑模式
+        // 主题切换 - 支持记住用户选择
         function toggleTheme() {
             const body = document.body;
             body.classList.toggle('dark-mode');
             const icon = document.querySelector('.theme-toggle i');
+            
+            // 更新图标
             icon.className = body.classList.contains('dark-mode') 
                 ? 'fa-solid fa-sun'  // 暗黑模式显示太阳图标
                 : 'fa-solid fa-moon'; // 浅色模式显示月亮图标
+                
+            // 保存主题偏好到localStorage
+            localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
         }
+        
+        // 页面加载时恢复用户上次选择的主题
+        function loadSavedTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            const icon = document.querySelector('.theme-toggle i');
+            
+            // 如果有保存的主题设置，应用它
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-mode');
+                icon.className = 'fa-solid fa-sun';
+            } else {
+                // 默认使用浅色模式
+                document.body.classList.remove('dark-mode');
+                icon.className = 'fa-solid fa-moon';
+            }
+        }
+        
+        // 页面加载完成后恢复主题设置
+        window.addEventListener('DOMContentLoaded', loadSavedTheme);
     </script>
 </body>
 </html>
