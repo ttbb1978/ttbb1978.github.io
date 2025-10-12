@@ -149,6 +149,7 @@
         body.dark-mode .contact-icon { color: #4477ff; }
         body.dark-mode .footer { border-top: 1px solid #333; }
         body.dark-mode .btn:hover { background: #4477ff; }
+        body.dark-mode .random-text-box { border-color: #444; background-color: #333; }
         
         /* 主题切换按钮 */
         .theme-toggle {
@@ -160,6 +161,27 @@
             transition: .3s;
         }
         body.dark-mode .theme-toggle { color: #c0c0c0; }
+        
+        /* 随机文本区域样式 */
+        .random-text-box {
+            margin-top: 100px;
+            padding: 16px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            transition: .3s;
+        }
+        .random-text-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .random-text-content {
+            font-size: 16px;
+            line-height: 1.8;
+            min-height: 60px;
+        }
         
         /* 响应式与计数器 */
         @media (max-width: 768px) {
@@ -221,15 +243,28 @@
                     <a href="https://github.com/ttbb1978" class="nav-link"><i class="fa-brands fa-github"></i> GitHub仓库</a>                   
                     <a href="https://tbai.bing1978.workers.dev" class="nav-link"><i class="fa-solid fa-star"></i> TB AI（密码:admin123）</a>
                     <a href="https://blog.cmliussss.com/p/CloudFlare%E4%BC%98%E9%80%89" class="nav-link"><i class="fa-solid fa-cloud"></i> CloudFlare优选</a>
-                    <a href="https://api.kuleu.com/api/MP4_xiaojiejie" class="nav-link"><i class="fa-solid fa-video"></i> 随机视频</a>
+                    <a href="https://api.kuleu.com/api/MP4_xiaojiejie" class="nav-link"><i class="fa-solid fa-video"></i> 每日视频</a>
                     <a href="https://www.youtube.com" class="nav-link"><i class="fa-brands fa-youtube"></i> Youtube</a>
                     <a href="https://www.google.com" class="nav-link"><i class="fa-brands fa-google"></i> Google</a>
+                </div>
+
+                <!-- 随机文本栏 -->
+                <div class="random-text-box">
+                    <div class="random-text-header">
+                        <h2 class="title"style="font-size: 18px;"><i class="fa-solid fa-quote-left"></i>每日一言</h2>
+                        <button class="btn" style="padding: 4px 10px; font-size: 14px;" onclick="showRandomText()">
+                            <i class="fa-solid fa-refresh"></i> 换一条
+                        </button>
+                    </div>
+                    <div class="random-text-content" id="randomText">
+                        加载中...
+                    </div>
                 </div>
             </div>
 
             <div class="card flex-item">
                 <h2 class="title"><i class="fa-solid fa-image"></i> 图片欣赏</h2>
-                <p class="subtitle">思念是一种美，我在这里等你...</p>
+                <p class="subtitle">你的一次回眸，却触动了我的心弦...</p>
                 <div style="border-radius: 8px; overflow: hidden;">
                     <img src="https://t.alcy.cc/ycy" alt="Banner" style="width: 100%; height: auto;">
                 </div>
@@ -280,6 +315,46 @@
     </div>
 
     <script>
+        // 随机文本数据
+        const textList = [
+            "生活就像海洋，只有意志坚强的人才能到达彼岸。",
+            "成功不是将来才有的，而是从决定去做的那一刻起，持续累积而成。",
+            "人生重要的不是所站的位置，而是所朝的方向。",
+            "任何的限制，都是从自己的内心开始的。",
+            "含泪播种的人一定能含笑收获。",
+            "第一个青春是上帝给的；第二个的青春是靠自己努力的。",
+            "过去属于死神，未来属于你自己。",
+            "人的价值，在遭受诱惑的一瞬间被决定。",
+            "世上没有绝望的处境，只有对处境绝望的人。",
+            "天才是百分之一的灵感加上百分之九十九的汗水。",
+            "不要等待机会，而要创造机会。",
+            "一个人的态度，决定他的高度。",
+            "真正的强者，不是没有眼泪的人，而是含着眼泪奔跑的人。",
+            "你若盛开，蝴蝶自来；你若精彩，天自安排。",
+            "生活不是等待暴风雨过去，而是学会在雨中跳舞。",
+            "看到女人掉眼泪还无动于衷的话，就太不男人了。",
+            "我是个比较成熟的人，像赌气不吃东西这种事，都是吃饱后才做的。",
+            "即使从梦中醒来，还会有回忆留下。",
+            "古有一人得道鸡犬升天，今有一人得病全家成仙。",
+            "活着就是为了改变世界。",
+            "人生只有一次，所以按照自己的意愿，努力活下去！",
+            "爱情可以来迟，但外卖不行，毕竟我还在长身体。",
+            "但愿再次遇见你能够心如止水，不再如刀割。",
+            "我是喜欢盖着被子睡觉的人，热了就把被子踢掉，冷了又把被子裹上，其实潜意识里一直都在照顾自己。",
+            "人类总是给自己那么多束缚，连自己至亲都不能相容，反而为妖族所悦纳，也真是奇特啊。",
+            "谁是谁生命中的过客，谁是谁生命的转轮，前世的尘，今世的风，无穷无尽的哀伤的精魂。",
+            "想干成点事就记住两句话，别把别人不当人了，别把自己太当人了。",
+            "所有人都抵不过时间，就像你偶然想起我，问我有没有钱。",
+            "说好我们一起到白头，你却偷偷焗了油。",
+            "回望当初，那时我一定也一直在训练自己迈步，如果有一天，能够走得更稳更远了，就去见她吧。",
+        ];
+
+        // 显示随机文本
+        function showRandomText() {
+            const randomIndex = Math.floor(Math.random() * textList.length);
+            document.getElementById('randomText').textContent = textList[randomIndex];
+        }
+        
         // 运行时间计算
         function showDateTime() {
             setTimeout(showDateTime, 1000);
@@ -290,7 +365,6 @@
             const secs = Math.floor((timeOld % (60 * 1000)) / 1000);
             document.getElementById('aa').textContent = `${days}天 ${hours}小时 ${mins}分 ${secs}秒`;
         }
-        showDateTime();
         
         // 主题切换
         function toggleTheme() {
@@ -301,14 +375,21 @@
             localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
         }
         
-        // 加载保存的主题
+        // 页面加载完成后初始化
         window.addEventListener('DOMContentLoaded', () => {
+            // 加载保存的主题
             const savedTheme = localStorage.getItem('theme');
             const icon = document.querySelector('.theme-toggle i');
             if (savedTheme === 'dark') {
                 document.body.classList.add('dark-mode');
                 icon.className = 'fa-solid fa-sun';
             }
+            
+            // 显示初始随机文本
+            showRandomText();
+            
+            // 启动运行时间计数器
+            showDateTime();
         });
     </script>
 </body>
