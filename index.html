@@ -28,9 +28,11 @@
         }
         .container { max-width: 1200px; margin: 0 auto; }
         img { border-radius: 12px; transition: all 0.3s ease; }
+        .text-center { text-align: center; }
         .text-center img { border-radius: 10%; }
+        .margin-b-8 { margin-bottom: 8px; }
         
-        /* 卡片样式 */
+        /* 卡片与布局 */
         .card {
             background: #fff;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
@@ -40,6 +42,16 @@
             transition: .3s;
         }
         .card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.08); transform: translateY(-2px); }
+        .flex { display: flex; gap: 16px; flex-wrap: wrap; }
+        .flex-item { flex: 1; min-width: 280px; }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
         
         /* 文本样式 */
         .title {
@@ -52,8 +64,6 @@
             gap: 8px;
         }
         .subtitle { font-size: 16px; color: #666; margin-bottom: 16px; }
-        .text-center { text-align: center; }
-        .margin-b-8 { margin-bottom: 8px; }
         
         /* 链接与按钮 */
         a { color: #3366ff; text-decoration: none; transition: .3s; }
@@ -74,10 +84,6 @@
         }
         .btn:hover { background: #2255ee; transform: translateY(-1px); }
         
-        /* 布局工具 */
-        .flex { display: flex; gap: 16px; flex-wrap: wrap; }
-        .flex-item { flex: 1; min-width: 280px; }
-        
         /* 头部与导航 */
         .header {
             display: flex;
@@ -93,7 +99,7 @@
             gap: 12px;
             font-size: 24px;
             font-weight: 700;
-            color: #000; /* 头部文字改为黑色 */
+            color: #000;
         }
         .nav { display: flex; gap: 20px; flex-wrap: wrap; }
         .nav-link { display: flex; align-items: center; gap: 6px; font-weight: 500; }
@@ -116,11 +122,7 @@
             align-items: center;
             gap: 6px;
         }
-        .download-icon {
-            font-size: 18px;
-            width: 24px;
-            text-align: center;
-        }
+        .download-icon { font-size: 18px; width: 24px; text-align: center; }
         
         /* 联系与底部 */
         .contact-list {
@@ -141,33 +143,7 @@
             margin-top: 32px;
         }
         
-        /* 暗黑模式 */
-        body.dark-mode { background: #000; color: #fffffd; }
-        body.dark-mode .card { background: #282838; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
-        body.dark-mode .card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
-        body.dark-mode .subtitle, body.dark-mode .footer { color: #bbb; }
-        body.dark-mode .download-card { border-color: #383848; }
-        body.dark-mode .download-card:hover { border-color: #4477ff; }
-        body.dark-mode .logo { color: #fff; /* 暗黑模式下头部文字改为白色 */ }
-        body.dark-mode a { color: #6699ff; }
-        body.dark-mode a:hover { color: #88b0ff; }
-        body.dark-mode .contact-icon { color: #4477ff; }
-        body.dark-mode .footer { border-top: 1px solid #333; }
-        body.dark-mode .btn:hover { background: #4477ff; }
-        body.dark-mode .random-text-box { border-color: #444; background-color: #333; }
-        
-        /* 主题切换按钮 */
-        .theme-toggle {
-            background: none;
-            border: none;
-            color: #808080;
-            font-size: 20px;
-            cursor: pointer;
-            transition: .3s;
-        }
-        body.dark-mode .theme-toggle { color: #c0c0c0; }
-        
-        /* 随机文本区域样式 */
+        /* 随机文本区域 */
         .random-text-box {
             margin-top: 20px;
             padding: 16px;
@@ -188,19 +164,7 @@
             min-height: 60px;
         }
         
-        /* 响应式与计数器 */
-        @media (max-width: 768px) {
-            .header { align-items: flex-start; }
-            .nav { gap: 12px; }
-            .flex { flex-direction: column; }
-            .card-header { flex-direction: column; align-items: flex-start; gap: 12px; }
-        }
-        .card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 16px;
-        }
+        /* 访问计数器 */
         .visit-counter {
             display: flex;
             align-items: center;
@@ -209,6 +173,39 @@
             color: #808080;
         }
         .visit-counter img { vertical-align: middle; height: 20px; }
+        
+        /* 主题切换按钮 */
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: #808080;
+            font-size: 20px;
+            cursor: pointer;
+            transition: .3s;
+        }
+        
+        /* 暗黑模式 */
+        body.dark-mode { background: #000; color: #fffffd; }
+        body.dark-mode .card { background: #282838; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+        body.dark-mode .card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
+        body.dark-mode .subtitle, body.dark-mode .footer { color: #bbb; }
+        body.dark-mode .download-card { border-color: #383848; }
+        body.dark-mode .download-card:hover { border-color: #4477ff; }
+        body.dark-mode .logo { color: #fff; }
+        body.dark-mode a { color: #6699ff; }
+        body.dark-mode a:hover { color: #88b0ff; }
+        body.dark-mode .contact-icon { color: #4477ff; }
+        body.dark-mode .footer { border-top: 1px solid #333; }
+        body.dark-mode .btn:hover { background: #4477ff; }
+        body.dark-mode .random-text-box { border-color: #444; background-color: #333; }
+        body.dark-mode .theme-toggle { color: #c0c0c0; }
+        
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .header { align-items: flex-start; }
+            .nav { gap: 12px; }
+            .flex { flex-direction: column; }
+        }
     </style>
 </head>
 <body>
@@ -262,9 +259,7 @@
                             <i class="fa-solid fa-rotate"></i> 换一条
                         </button>
                     </div>
-                    <div class="random-text-content" id="randomText">
-                        加载中...
-                    </div>
+                    <div class="random-text-content" id="randomText">加载中...</div>
                 </div>
             </div>
 
@@ -339,7 +334,7 @@
     </div>
 
     <script>
-        // 随机文本数据（新增50条，总计80条）
+        // 随机文本数据
         const textList = [
             "生活就像海洋，只有意志坚强的人才能到达彼岸。",
             "成功不是将来才有的，而是从决定去做的那一刻起，持续累积而成。",
@@ -425,13 +420,13 @@
         ];
 
         // 显示随机文本
-        function showRandomText() {
+        const showRandomText = () => {
             const randomIndex = Math.floor(Math.random() * textList.length);
             document.getElementById('randomText').textContent = textList[randomIndex];
-        }
+        };
         
         // 运行时间计算
-        function showDateTime() {
+        const showDateTime = () => {
             setTimeout(showDateTime, 1000);
             const timeOld = Date.now() - new Date("2021/04/24 00:00:00").getTime();
             const days = Math.floor(timeOld / (24 * 60 * 60 * 1000));
@@ -439,31 +434,26 @@
             const mins = Math.floor((timeOld % (60 * 60 * 1000)) / (60 * 1000));
             const secs = Math.floor((timeOld % (60 * 1000)) / 1000);
             document.getElementById('aa').textContent = `${days}天 ${hours}小时 ${mins}分 ${secs}秒`;
-        }
+        };
         
         // 主题切换
-        function toggleTheme() {
+        const toggleTheme = () => {
             const body = document.body;
             body.classList.toggle('dark-mode');
             const icon = document.querySelector('.theme-toggle i');
             icon.className = body.classList.contains('dark-mode') ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
             localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
-        }
+        };
         
-        // 页面加载完成后初始化
+        // 页面加载初始化
         window.addEventListener('DOMContentLoaded', () => {
             // 加载保存的主题
-            const savedTheme = localStorage.getItem('theme');
-            const icon = document.querySelector('.theme-toggle i');
-            if (savedTheme === 'dark') {
+            if (localStorage.getItem('theme') === 'dark') {
                 document.body.classList.add('dark-mode');
-                icon.className = 'fa-solid fa-sun';
+                document.querySelector('.theme-toggle i').className = 'fa-solid fa-sun';
             }
-            
-            // 显示初始随机文本
+            // 初始化内容
             showRandomText();
-            
-            // 启动运行时间计数器
             showDateTime();
         });
     </script>
