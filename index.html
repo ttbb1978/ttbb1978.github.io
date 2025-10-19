@@ -25,16 +25,78 @@
             line-height: 1.6;
             padding: 20px;
             transition: .3s;
+            position: relative;
+            min-height: 100vh;
+            overflow-x: hidden;
         }
-        .container { max-width: 1200px; margin: 0 auto; }
-        img { border-radius: 12px; transition: all 0.3s ease; }
-        .text-center { text-align: center; }
-        .text-center img { border-radius: 10%; }
-        .margin-b-8 { margin-bottom: 8px; }
         
-        /* 卡片与布局 */
+        /* 背景动画容器 */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        /* 粒子效果 */
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.3;
+            pointer-events: none;
+            animation: float 15s infinite ease-in-out;
+        }
+        
+        /* 渐变背景 */
+        .gradient-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background: linear-gradient(135deg, #e1e7f0 0%, #c9d6ff 50%, #e2e2e2 100%);
+            transition: background 1.5s ease;
+        }
+        
+        body.dark-mode .gradient-bg {
+            background: linear-gradient(135deg, #000 0%, #1a1a2e 50%, #16213e 100%);
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0) translateX(0) rotate(0deg);
+            }
+            25% {
+                transform: translateY(-20px) translateX(10px) rotate(5deg);
+            }
+            50% {
+                transform: translateY(-40px) translateX(0) rotate(0deg);
+            }
+            75% {
+                transform: translateY(-20px) translateX(-10px) rotate(-5deg);
+            }
+            100% {
+                transform: translateY(0) translateX(0) rotate(0deg);
+            }
+        }
+        
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            position: relative;
+            z-index: 1;
+        }
+        img { border-radius: 12px; transition: all 0.3s ease; }
+        .text-center img { border-radius: 10%; }
+        
+        /* 卡片样式 */
         .card {
-            background: #fff;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             border-radius: 12px;
             padding: 24px;
@@ -42,16 +104,6 @@
             transition: .3s;
         }
         .card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.08); transform: translateY(-2px); }
-        .flex { display: flex; gap: 16px; flex-wrap: wrap; }
-        .flex-item { flex: 1; min-width: 280px; }
-        .card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 16px;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
         
         /* 文本样式 */
         .title {
@@ -64,6 +116,8 @@
             gap: 8px;
         }
         .subtitle { font-size: 16px; color: #666; margin-bottom: 16px; }
+        .text-center { text-align: center; }
+        .margin-b-8 { margin-bottom: 8px; }
         
         /* 链接与按钮 */
         a { color: #3366ff; text-decoration: none; transition: .3s; }
@@ -84,6 +138,10 @@
         }
         .btn:hover { background: #2255ee; transform: translateY(-1px); }
         
+        /* 布局工具 */
+        .flex { display: flex; gap: 16px; flex-wrap: wrap; }
+        .flex-item { flex: 1; min-width: 280px; }
+        
         /* 头部与导航 */
         .header {
             display: flex;
@@ -99,7 +157,7 @@
             gap: 12px;
             font-size: 24px;
             font-weight: 700;
-            color: #000;
+            color: #000; /* 头部文字改为黑色 */
         }
         .nav { display: flex; gap: 20px; flex-wrap: wrap; }
         .nav-link { display: flex; align-items: center; gap: 6px; font-weight: 500; }
@@ -122,7 +180,11 @@
             align-items: center;
             gap: 6px;
         }
-        .download-icon { font-size: 18px; width: 24px; text-align: center; }
+        .download-icon {
+            font-size: 18px;
+            width: 24px;
+            text-align: center;
+        }
         
         /* 联系与底部 */
         .contact-list {
@@ -143,13 +205,43 @@
             margin-top: 32px;
         }
         
-        /* 随机文本区域 */
+        /* 暗黑模式 */
+        body.dark-mode { background: #000; color: #fffffd; }
+        body.dark-mode .card { 
+            background: rgba(40, 40, 56, 0.85); 
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
+        }
+        body.dark-mode .card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
+        body.dark-mode .subtitle, body.dark-mode .footer { color: #bbb; }
+        body.dark-mode .download-card { border-color: #383848; }
+        body.dark-mode .download-card:hover { border-color: #4477ff; }
+        body.dark-mode .logo { color: #fff; /* 暗黑模式下头部文字改为白色 */ }
+        body.dark-mode a { color: #6699ff; }
+        body.dark-mode a:hover { color: #88b0ff; }
+        body.dark-mode .contact-icon { color: #4477ff; }
+        body.dark-mode .footer { border-top: 1px solid #333; }
+        body.dark-mode .btn:hover { background: #4477ff; }
+        body.dark-mode .random-text-box { border-color: #444; background-color: rgba(51, 51, 51, 0.8); }
+        
+        /* 主题切换按钮 */
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: #808080;
+            font-size: 20px;
+            cursor: pointer;
+            transition: .3s;
+        }
+        body.dark-mode .theme-toggle { color: #c0c0c0; }
+        
+        /* 随机文本区域样式 */
         .random-text-box {
             margin-top: 20px;
             padding: 16px;
             border: 1px solid #eee;
             border-radius: 8px;
-            background-color: #f9f9f9;
+            background-color: rgba(249, 249, 249, 0.8);
             transition: .3s;
         }
         .random-text-header {
@@ -164,7 +256,19 @@
             min-height: 60px;
         }
         
-        /* 访问计数器 */
+        /* 响应式与计数器 */
+        @media (max-width: 768px) {
+            .header { align-items: flex-start; }
+            .nav { gap: 12px; }
+            .flex { flex-direction: column; }
+            .card-header { flex-direction: column; align-items: flex-start; gap: 12px; }
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
         .visit-counter {
             display: flex;
             align-items: center;
@@ -173,42 +277,13 @@
             color: #808080;
         }
         .visit-counter img { vertical-align: middle; height: 20px; }
-        
-        /* 主题切换按钮 */
-        .theme-toggle {
-            background: none;
-            border: none;
-            color: #808080;
-            font-size: 20px;
-            cursor: pointer;
-            transition: .3s;
-        }
-        
-        /* 暗黑模式 */
-        body.dark-mode { background: #000; color: #fffffd; }
-        body.dark-mode .card { background: #282838; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
-        body.dark-mode .card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
-        body.dark-mode .subtitle, body.dark-mode .footer { color: #bbb; }
-        body.dark-mode .download-card { border-color: #383848; }
-        body.dark-mode .download-card:hover { border-color: #4477ff; }
-        body.dark-mode .logo { color: #fff; }
-        body.dark-mode a { color: #6699ff; }
-        body.dark-mode a:hover { color: #88b0ff; }
-        body.dark-mode .contact-icon { color: #4477ff; }
-        body.dark-mode .footer { border-top: 1px solid #333; }
-        body.dark-mode .btn:hover { background: #4477ff; }
-        body.dark-mode .random-text-box { border-color: #444; background-color: #333; }
-        body.dark-mode .theme-toggle { color: #c0c0c0; }
-        
-        /* 响应式 */
-        @media (max-width: 768px) {
-            .header { align-items: flex-start; }
-            .nav { gap: 12px; }
-            .flex { flex-direction: column; }
-        }
     </style>
 </head>
 <body>
+    <!-- 背景动画元素 -->
+    <div class="gradient-bg"></div>
+    <div class="bg-animation" id="bgAnimation"></div>
+    
     <div class="container">
         <!-- 头部 -->
         <header class="header">
@@ -241,7 +316,7 @@
                 <h2 class="title"><i class="fa-solid fa-compass"></i> 快速导航</h2>
                 <p class="subtitle">带你快速了解这个世界...</p>
                 <div class="nav">
-                    <a href="https://www.7ed.net/gitmirror/hub.html" class="nav-link"><i class="fa-brands fa-github"></i> GitHub加速</a>
+                    <a href="https://tbcel.pages.dev" class="nav-link"><i class="fa-brands fa-github"></i> GitHub加速</a>
                     <a href="https://tbai.bing1978.workers.dev" class="nav-link"><i class="fa-solid fa-star"></i> TB AI（密码:admin123）</a>
                     <a href="https://blog.cmliussss.com/p/CloudFlare%E4%BC%98%E9%80%89" class="nav-link"><i class="fa-solid fa-cloud"></i> CFYX</a>
                     <a href="https://api.kuleu.com/api/MP4_xiaojiejie" class="nav-link"><i class="fa-solid fa-video"></i> 每日视频</a>
@@ -259,7 +334,9 @@
                             <i class="fa-solid fa-rotate"></i> 换一条
                         </button>
                     </div>
-                    <div class="random-text-content" id="randomText">加载中...</div>
+                    <div class="random-text-content" id="randomText">
+                        加载中...
+                    </div>
                 </div>
             </div>
 
@@ -334,6 +411,50 @@
     </div>
 
     <script>
+        // 创建背景粒子动画
+        function createParticles() {
+            const container = document.getElementById('bgAnimation');
+            const particleCount = 20; // 粒子数量
+            
+            // 清除现有粒子
+            container.innerHTML = '';
+            
+            // 创建新粒子
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // 随机大小
+                const size = Math.random() * 50 + 10;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                
+                // 随机动画延迟和持续时间
+                const delay = Math.random() * 10;
+                const duration = Math.random() * 20 + 10;
+                particle.style.animationDelay = `${delay}s`;
+                particle.style.animationDuration = `${duration}s`;
+                
+                // 随机位置
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                
+                // 根据主题设置颜色
+                const isDark = document.body.classList.contains('dark-mode');
+                if (isDark) {
+                    // 暗黑模式粒子颜色
+                    const colors = ['#4477ff', '#6699ff', '#88b0ff', '#aaccff'];
+                    particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                } else {
+                    // 明亮模式粒子颜色
+                    const colors = ['#3366ff', '#008080', '#666', '#999'];
+                    particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                }
+                
+                container.appendChild(particle);
+            }
+        }
+        
         // 随机文本数据
         const textList = [
             "生活就像海洋，只有意志坚强的人才能到达彼岸。",
@@ -420,13 +541,13 @@
         ];
 
         // 显示随机文本
-        const showRandomText = () => {
+        function showRandomText() {
             const randomIndex = Math.floor(Math.random() * textList.length);
             document.getElementById('randomText').textContent = textList[randomIndex];
-        };
+        }
         
         // 运行时间计算
-        const showDateTime = () => {
+        function showDateTime() {
             setTimeout(showDateTime, 1000);
             const timeOld = Date.now() - new Date("2021/04/24 00:00:00").getTime();
             const days = Math.floor(timeOld / (24 * 60 * 60 * 1000));
@@ -434,27 +555,41 @@
             const mins = Math.floor((timeOld % (60 * 60 * 1000)) / (60 * 1000));
             const secs = Math.floor((timeOld % (60 * 1000)) / 1000);
             document.getElementById('aa').textContent = `${days}天 ${hours}小时 ${mins}分 ${secs}秒`;
-        };
+        }
         
         // 主题切换
-        const toggleTheme = () => {
+        function toggleTheme() {
             const body = document.body;
             body.classList.toggle('dark-mode');
             const icon = document.querySelector('.theme-toggle i');
             icon.className = body.classList.contains('dark-mode') ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
             localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
-        };
+            
+            // 重新创建粒子以适应主题变化
+            createParticles();
+        }
         
-        // 页面加载初始化
+        // 页面加载完成后初始化
         window.addEventListener('DOMContentLoaded', () => {
             // 加载保存的主题
-            if (localStorage.getItem('theme') === 'dark') {
+            const savedTheme = localStorage.getItem('theme');
+            const icon = document.querySelector('.theme-toggle i');
+            if (savedTheme === 'dark') {
                 document.body.classList.add('dark-mode');
-                document.querySelector('.theme-toggle i').className = 'fa-solid fa-sun';
+                icon.className = 'fa-solid fa-sun';
             }
-            // 初始化内容
+            
+            // 创建背景粒子
+            createParticles();
+            
+            // 显示初始随机文本
             showRandomText();
+            
+            // 启动运行时间计数器
             showDateTime();
+            
+            // 窗口大小改变时重新创建粒子
+            window.addEventListener('resize', createParticles);
         });
     </script>
 </body>
