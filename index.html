@@ -20,7 +20,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Roboto', 'Noto Sans SC', sans-serif;
-            background: #dfdfee;
+            background: #e1f1ff;
             color: #000;
             line-height: 1.6;
             padding: 20px;
@@ -117,8 +117,31 @@
             border: 1px solid #f0f0f0;
             border-radius: 8px;
             transition: .3s;
+            position: relative;
+            padding-left: 24px; /* 为左侧边框留出空间 */
         }
-        .download-card:hover { border-color: #4242ff; }
+        /* 为每个下载卡片添加不同的左侧边框和背景色 */
+        .download-card:nth-child(1) {
+            border-left: 4px solid #3ddc84; /* 绿色 */
+            background-color: rgba(61, 220, 132, 0.05);
+        }
+        .download-card:nth-child(2) {
+            border-left: 4px solid #2196f3; /* 蓝色 */
+            background-color: rgba(33, 150, 243, 0.05);
+        }
+        .download-card:nth-child(3) {
+            border-left: 4px solid #ff9800; /* 橙色 */
+            background-color: rgba(255, 152, 0, 0.05);
+        }
+        .download-card:nth-child(4) {
+            border-left: 4px solid #e91e63; /* 粉红色 */
+            background-color: rgba(233, 30, 99, 0.05);
+        }
+        
+        .download-card:hover { 
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
         .download-title {
             font-weight: 500;
             margin-bottom: 8px;
@@ -160,7 +183,23 @@
         }
         body.dark-mode .card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
         body.dark-mode .subtitle, body.dark-mode .footer { color: #bbb; }
-        body.dark-mode .download-card { border-color: #383848; }
+        body.dark-mode .download-card { 
+            border-color: #383848; 
+        }
+        /* 暗黑模式下的下载卡片样式调整 */
+        body.dark-mode .download-card:nth-child(1) {
+            background-color: rgba(61, 220, 132, 0.08);
+        }
+        body.dark-mode .download-card:nth-child(2) {
+            background-color: rgba(33, 150, 243, 0.08);
+        }
+        body.dark-mode .download-card:nth-child(3) {
+            background-color: rgba(255, 152, 0, 0.08);
+        }
+        body.dark-mode .download-card:nth-child(4) {
+            background-color: rgba(233, 30, 99, 0.08);
+        }
+        
         body.dark-mode .download-card:hover { border-color: #4477ff; }
         body.dark-mode .logo { color: #fff; /* 暗黑模式下头部文字改为白色 */ }
         body.dark-mode a { color: #4477ff; }
@@ -234,8 +273,7 @@
                 <i class="fa-solid fa-moon"></i>
             </button>
         </header>
-        <hr><br>
-        
+
         <!-- 个人信息 -->
         <section class="card">
             <div class="card-header">
@@ -250,6 +288,18 @@
                 <img src="http://q1.qlogo.cn/g?b=qq&nk=2409495157&s=640" width="75" border="1"/>
                 <img src="http://q1.qlogo.cn/g?b=qq&nk=2358429597&s=640" width="75" border="1"/>
 			</div>
+
+ <div class="contact-list">
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope contact-icon"></i>
+                <span><a href="mailto:tianbingyx@163.com">tianbingyx@163.com</a></span>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-users contact-icon"></i>
+                <span><a href="https://jq.qq.com/?_wv=1027&k=386113172">386113172</a></span>
+            </div>
+        </div>
+
         </section>
         
         <!-- 导航与Banner -->
@@ -310,7 +360,7 @@
                 </div>
                 <div class="download-card">
                     <div class="download-title">
-                        <i class="fa-solid fa-desktop download-icon" style="color: #3ddc84;"></i>
+                        <i class="fa-solid fa-desktop download-icon" style="color: #2196f3;"></i>
                         右键管理
                     </div>
                     <p class="margin-b-8">Windows端桌面工具，右键管理功能</p>
@@ -318,7 +368,7 @@
                 </div>
                 <div class="download-card">
                     <div class="download-title">
-                        <i class="fa-solid fa-desktop download-icon" style="color: #3ddc84;"></i>
+                        <i class="fa-solid fa-desktop download-icon" style="color: #ff9800;"></i>
                         图片编码
                     </div>
                     <p class="margin-b-8">Windows端桌面工具，Base64图片编码功能</p>
@@ -326,7 +376,7 @@
                 </div>
                 <div class="download-card">
                     <div class="download-title">
-                        <i class="fa-solid fa-desktop download-icon" style="color: #3ddc84;"></i>
+                        <i class="fa-solid fa-desktop download-icon" style="color: #e91e63;"></i>
                         TB记事本
                     </div>
                     <p class="margin-b-8">Windows端桌面工具，Base64编码功能</p>
@@ -335,23 +385,11 @@
             </div>
         </section>
         
-        <!-- 联系信息与页脚 -->
-        <div class="contact-list">
-            <div class="contact-item">
-                <i class="fa-solid fa-envelope contact-icon"></i>
-                <span><a href="mailto:tianbingyx@163.com">tianbingyx@163.com</a></span>
-            </div>
-            <div class="contact-item">
-                <i class="fa-solid fa-users contact-icon"></i>
-                <span><a href="https://jq.qq.com/?_wv=1027&k=386113172">386113172</a></span>
-            </div>
-        </div>
-        
-        <hr><br>
-        <div class="text-center">
-            <i class="fa fa-cog fa-spin"></i> 运行 <span id="aa"></span>
-            <p style="font-size: 15px;">四川省 德阳市 旌阳区（天元街道）</p>
-            <p style="font-size: 15px;">© 2021-2025 版权归田兵所有 🍀TB🌸ハンサム</p>
+        <!-- 联系信息与页脚 -->                      
+        <div class="text-center">        
+            <p style="font-size: 16px;">提供维护: 🍀TB🌸ハンサム</p>
+			<p style="font-size: 16px;">四川省 德阳市 旌阳区（天元街道）</p>
+            <p style="font-size: 16px;">萌ICP备-19780101号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&copy;2021-2025</p>
         </div>
     </div>
 
@@ -466,18 +504,7 @@
             const randomIndex = Math.floor(Math.random() * textList.length);
             document.getElementById('randomText').textContent = textList[randomIndex];
         }
-        
-        // 运行时间计算
-        function showDateTime() {
-            setTimeout(showDateTime, 1000);
-            const timeOld = Date.now() - new Date("2021/04/24 00:00:00").getTime();
-            const days = Math.floor(timeOld / (24 * 60 * 60 * 1000));
-            const hours = Math.floor((timeOld % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
-            const mins = Math.floor((timeOld % (60 * 60 * 1000)) / (60 * 1000));
-            const secs = Math.floor((timeOld % (60 * 1000)) / 1000);
-            document.getElementById('aa').textContent = `${days}天 ${hours}小时 ${mins}分 ${secs}秒`;
-        }
-        
+                
         // 主题切换
         function toggleTheme() {
             const body = document.body;
@@ -498,10 +525,7 @@
             }
             
             // 显示初始随机文本
-            showRandomText();
-            
-            // 启动运行时间计数器
-            showDateTime();
+            showRandomText();                        
         });
     </script>
 </body>
