@@ -20,68 +20,14 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Roboto', 'Noto Sans SC', sans-serif;
-            background: #e1e7f0;
-            color: #333;
+            background: #dfdfee;
+            color: #000;
             line-height: 1.6;
             padding: 20px;
             transition: .3s;
             position: relative;
             min-height: 100vh;
             overflow-x: hidden;
-        }
-        
-        /* 背景动画容器 */
-        .bg-animation {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            overflow: hidden;
-        }
-        
-        /* 粒子效果 */
-        .particle {
-            position: absolute;
-            border-radius: 50%;
-            opacity: 0.3;
-            pointer-events: none;
-            animation: float 15s infinite ease-in-out;
-        }
-        
-        /* 渐变背景 */
-        .gradient-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -2;
-            background: linear-gradient(135deg, #e1e7f0 0%, #c9d6ff 50%, #e2e2e2 100%);
-            transition: background 1.5s ease;
-        }
-        
-        body.dark-mode .gradient-bg {
-            background: linear-gradient(135deg, #000 0%, #1a1a2e 50%, #16213e 100%);
-        }
-        
-        @keyframes float {
-            0% {
-                transform: translateY(0) translateX(0) rotate(0deg);
-            }
-            25% {
-                transform: translateY(-20px) translateX(10px) rotate(5deg);
-            }
-            50% {
-                transform: translateY(-40px) translateX(0) rotate(0deg);
-            }
-            75% {
-                transform: translateY(-20px) translateX(-10px) rotate(-5deg);
-            }
-            100% {
-                transform: translateY(0) translateX(0) rotate(0deg);
-            }
         }
         
         .container { 
@@ -109,7 +55,7 @@
         .title {
             font-size: 18px;
             font-weight: 700;
-            color: #008080;
+            color: #3ddc84;
             margin-bottom: 8px;
             display: flex;
             align-items: center;
@@ -121,7 +67,7 @@
         
         /* 链接与按钮 */
         a { color: #3366ff; text-decoration: none; transition: .3s; }
-        a:hover { color: #2255ee; text-decoration: underline; }
+        a:hover { color: #3366ff; text-decoration: underline; }
         .btn {
             display: inline-flex;
             align-items: center;
@@ -136,7 +82,7 @@
             cursor: pointer;
             transition: .3s;
         }
-        .btn:hover { background: #2255ee; transform: translateY(-1px); }
+        .btn:hover { background: #3366ff; transform: translateY(-1px); }
         
         /* 布局工具 */
         .flex { display: flex; gap: 16px; flex-wrap: wrap; }
@@ -217,8 +163,8 @@
         body.dark-mode .download-card { border-color: #383848; }
         body.dark-mode .download-card:hover { border-color: #4477ff; }
         body.dark-mode .logo { color: #fff; /* 暗黑模式下头部文字改为白色 */ }
-        body.dark-mode a { color: #6699ff; }
-        body.dark-mode a:hover { color: #88b0ff; }
+        body.dark-mode a { color: #4477ff; }
+        body.dark-mode a:hover { color: #4477ff; }
         body.dark-mode .contact-icon { color: #4477ff; }
         body.dark-mode .footer { border-top: 1px solid #333; }
         body.dark-mode .btn:hover { background: #4477ff; }
@@ -280,10 +226,6 @@
     </style>
 </head>
 <body>
-    <!-- 背景动画元素 -->
-    <div class="gradient-bg"></div>
-    <div class="bg-animation" id="bgAnimation"></div>
-    
     <div class="container">
         <!-- 头部 -->
         <header class="header">
@@ -332,7 +274,7 @@
                 <!-- 随机文本栏 -->
                 <div class="random-text-box">
                     <div class="random-text-header">
-                        <h2 class="title" style="font-size: 18px;"><i class="fa-solid fa-quote-left"></i> 每日一言</h2>
+                        <h2 class="title" style="font-size: 18px;"> 每日一言</h2>
                         <button class="btn" style="padding: 4px 10px; font-size: 14px;" onclick="showRandomText()">
                             <i class="fa-solid fa-rotate"></i> 换一条
                         </button>
@@ -414,51 +356,7 @@
     </div>
 
     <script>
-        // 创建背景粒子动画
-        function createParticles() {
-            const container = document.getElementById('bgAnimation');
-            const particleCount = 20; // 粒子数量
-            
-            // 清除现有粒子
-            container.innerHTML = '';
-            
-            // 创建新粒子
-            for (let i = 0; i < particleCount; i++) {
-                const particle = document.createElement('div');
-                particle.classList.add('particle');
-                
-                // 随机大小
-                const size = Math.random() * 50 + 10;
-                particle.style.width = `${size}px`;
-                particle.style.height = `${size}px`;
-                
-                // 随机动画延迟和持续时间
-                const delay = Math.random() * 10;
-                const duration = Math.random() * 20 + 10;
-                particle.style.animationDelay = `${delay}s`;
-                particle.style.animationDuration = `${duration}s`;
-                
-                // 随机位置
-                particle.style.left = `${Math.random() * 100}%`;
-                particle.style.top = `${Math.random() * 100}%`;
-                
-                // 根据主题设置颜色
-                const isDark = document.body.classList.contains('dark-mode');
-                if (isDark) {
-                    // 暗黑模式粒子颜色
-                    const colors = ['#4477ff', '#6699ff', '#88b0ff', '#aaccff'];
-                    particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                } else {
-                    // 明亮模式粒子颜色
-                    const colors = ['#3366ff', '#008080', '#666', '#999'];
-                    particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                }
-                
-                container.appendChild(particle);
-            }
-        }
-        
-        // 随机文本数据
+        // 随机文本数据（100条）
         const textList = [
             "生活就像海洋，只有意志坚强的人才能到达彼岸。",
             "成功不是将来才有的，而是从决定去做的那一刻起，持续累积而成。",
@@ -540,7 +438,27 @@
             "不是因为看到希望才坚持，而是坚持了才会看到希望。",
             "你是谁并不重要，重要的是你和谁在一起。",
             "人生伟业的建立，不在能知，乃在能行。",
-            "一个人的快乐，不是因为他拥有的多，而是因为他计较的少。"
+            "一个人的快乐，不是因为他拥有的多，而是因为他计较的少。",
+            "生命太短，没时间留给遗憾。若不是终点，请微笑一直向前。",
+            "你现在的付出，都会是一种沉淀，它们会默默铺路，只为让你成为更好的人。",
+            "不要害怕改变，尽管你可能会因此失去一些好的东西，但你也可能会得到一些更好的东西。",
+            "幸福不是得到你想要的一切，而是享受你所拥有的一切。",
+            "人生就像一杯白开水，你每天都喝，不要羡慕别人喝的饮料有各种颜色，其实未必有你的白开水解渴。",
+            "有时候，我们需要的不是一碗鸡汤，而是一个巴掌。有些人出现在你的生命里，就是为了告诉你：你真好骗。",
+            "努力和效果之间，永远有这样一段距离。成功和失败的唯一区别是，你能不能坚持挺过这段无法估计的距离。",
+            "与其用泪水悔恨今天，不如用汗水拼搏今天。",
+            "生活中其实没有绝境，绝境在于你自己的心没有打开。",
+            "世界会向那些有目标和远见的人让路。",
+            "环境不会改变，解决之道在于改变自己。",
+            "人的潜能是一座无法估量的丰富的矿藏，只等着我们去挖掘。",
+            "人生的路，靠的是自己一步步去走，真正能保护你的，是你自己的选择。",
+            "不要轻易用过去来衡量生活的幸与不幸，每个人的生命都是可以绽放美丽的，只要你珍惜。",
+            "你必须跌到你从未经历过的谷底，才能站上你从未到达过的高峰。",
+            "生活不是用来妥协的，你退缩得越多，能让你喘息的空间就越有限。",
+            "自己打败自己是最可悲的失败，自己战胜自己是最可贵的胜利。",
+            "这个世界上没有不带伤的人，真正能治愈自己的，只有自己。",
+            "如果你的面前有阴影，那是因为你的背后有阳光。",
+            "没有什么过不去，只是再也回不去。"
         ];
 
         // 显示随机文本
@@ -567,9 +485,6 @@
             const icon = document.querySelector('.theme-toggle i');
             icon.className = body.classList.contains('dark-mode') ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
             localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
-            
-            // 重新创建粒子以适应主题变化
-            createParticles();
         }
         
         // 页面加载完成后初始化
@@ -582,17 +497,11 @@
                 icon.className = 'fa-solid fa-sun';
             }
             
-            // 创建背景粒子
-            createParticles();
-            
             // 显示初始随机文本
             showRandomText();
             
             // 启动运行时间计数器
             showDateTime();
-            
-            // 窗口大小改变时重新创建粒子
-            window.addEventListener('resize', createParticles);
         });
     </script>
 </body>
