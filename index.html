@@ -20,11 +20,7 @@
     
     <style>
         /* 基础样式重置与设置 */
-        * { 
-            margin: 0; 
-            padding: 0; 
-            box-sizing: border-box; 
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
             font-family: 'Roboto', 'Noto Sans SC', sans-serif;
@@ -33,26 +29,13 @@
             line-height: 1.6;
             padding: 20px;
             transition: .3s;
-            position: relative;
             min-height: 100vh;
             overflow-x: hidden;
         }
         
-        .container { 
-            max-width: 1200px; 
-            margin: 0 auto; 
-            position: relative;
-            z-index: 1;
-        }
-        
-        img { 
-            border-radius: 12px; 
-            transition: all 0.3s ease; 
-        }
-        
-        .text-center img { 
-            border-radius: 10%; 
-        }
+        .container { max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
+        img { border-radius: 12px; transition: all 0.3s ease; }
+        .text-center img { border-radius: 10%; }
         
         /* 卡片样式 */
         .card {
@@ -65,10 +48,7 @@
             transition: .3s;
         }
         
-        .card:hover { 
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08); 
-            transform: translateY(-2px); 
-        }
+        .card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.08); transform: translateY(-2px); }
         
         /* 文本样式 */
         .title {
@@ -81,31 +61,13 @@
             gap: 8px;
         }
         
-        .subtitle { 
-            font-size: 16px; 
-            color: #666; 
-            margin-bottom: 16px; 
-        }
-        
-        .text-center { 
-            text-align: center; 
-        }
-        
-        .margin-b-8 { 
-            margin-bottom: 8px; 
-        }
+        .subtitle { font-size: 16px; color: #666; margin-bottom: 16px; }
+        .text-center { text-align: center; }
+        .margin-b-8 { margin-bottom: 8px; }
         
         /* 链接与按钮样式 */
-        a { 
-            color: #3366ff; 
-            text-decoration: none; 
-            transition: .3s; 
-        }
-        
-        a:hover { 
-            color: #3366ff; 
-            text-decoration: underline; 
-        }
+        a { color: #3366ff; text-decoration: none; transition: .3s; }
+        a:hover { color: #3366ff; text-decoration: underline; }
         
         .btn {
             display: inline-flex;
@@ -122,22 +84,11 @@
             transition: .3s;
         }
         
-        .btn:hover { 
-            background: #3366ff; 
-            transform: translateY(-1px); 
-        }
+        .btn:hover { background: #3366ff; transform: translateY(-1px); }
         
         /* 布局工具类 */
-        .flex { 
-            display: flex; 
-            gap: 16px; 
-            flex-wrap: wrap; 
-        }
-        
-        .flex-item { 
-            flex: 1; 
-            min-width: 280px; 
-        }
+        .flex { display: flex; gap: 16px; flex-wrap: wrap; }
+        .flex-item { flex: 1; min-width: 280px; }
         
         /* 头部与导航样式 */
         .header {
@@ -155,28 +106,14 @@
             gap: 12px;
             font-size: 24px;
             font-weight: 700;
-            color: #000; /* 头部文字颜色 */
+            color: #000;
         }
         
-        .nav { 
-            display: flex; 
-            gap: 20px; 
-            flex-wrap: wrap; 
-        }
-        
-        .nav-link { 
-            display: flex; 
-            align-items: center; 
-            gap: 6px; 
-            font-weight: 500; 
-        }
+        .nav { display: flex; gap: 20px; flex-wrap: wrap; }
+        .nav-link { display: flex; align-items: center; gap: 6px; font-weight: 500; }
         
         /* 下载区样式 */
-        .download-list { 
-            display: flex; 
-            flex-wrap: wrap; 
-            gap: 16px; 
-        }
+        .download-list { display: flex; flex-wrap: wrap; gap: 16px; }
         
         .download-card {
             flex: 1;
@@ -185,35 +122,15 @@
             border: 1px solid #f0f0f0;
             border-radius: 8px;
             transition: .3s;
-            position: relative;
-            padding-left: 24px; /* 为左侧边框留出空间 */
+            padding-left: 24px;
         }
         
-        /* 下载卡片左侧边框和背景色 */
-        .download-card:nth-child(1) {
-            border-left: 4px solid #3ddc84; /* 绿色 */
-            background-color: rgba(61, 220, 132, 0.05);
-        }
+        .download-card:nth-child(1) { border-left: 4px solid #3ddc84; background-color: rgba(61, 220, 132, 0.05); }
+        .download-card:nth-child(2) { border-left: 4px solid #2196f3; background-color: rgba(33, 150, 243, 0.05); }
+        .download-card:nth-child(3) { border-left: 4px solid #ff9800; background-color: rgba(255, 152, 0, 0.05); }
+        .download-card:nth-child(4) { border-left: 4px solid #e91e63; background-color: rgba(233, 30, 99, 0.05); }
         
-        .download-card:nth-child(2) {
-            border-left: 4px solid #2196f3; /* 蓝色 */
-            background-color: rgba(33, 150, 243, 0.05);
-        }
-        
-        .download-card:nth-child(3) {
-            border-left: 4px solid #ff9800; /* 橙色 */
-            background-color: rgba(255, 152, 0, 0.05);
-        }
-        
-        .download-card:nth-child(4) {
-            border-left: 4px solid #e91e63; /* 粉红色 */
-            background-color: rgba(233, 30, 99, 0.05);
-        }
-        
-        .download-card:hover { 
-            transform: translateY(-3px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
+        .download-card:hover { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
         
         .download-title {
             font-weight: 500;
@@ -223,11 +140,7 @@
             gap: 6px;
         }
         
-        .download-icon {
-            font-size: 18px;
-            width: 24px;
-            text-align: center;
-        }
+        .download-icon { font-size: 18px; width: 24px; text-align: center; }
         
         /* 联系与底部样式 */
         .contact-list {
@@ -238,17 +151,8 @@
             margin: 16px 0;
         }
         
-        .contact-item { 
-            display: flex; 
-            align-items: center; 
-            gap: 8px; 
-            font-size: 15px; 
-        }
-        
-        .contact-icon { 
-            font-size: 18px; 
-            color: #3366ff; 
-        }
+        .contact-item { display: flex; align-items: center; gap: 8px; font-size: 15px; }
+        .contact-icon { font-size: 18px; color: #3366ff; }
         
         .footer {
             text-align: center;
@@ -260,10 +164,7 @@
         }
         
         /* 暗黑模式样式 */
-        body.dark-mode { 
-            background: #000; 
-            color: #fffffd; 
-        }
+        body.dark-mode { background: #000; color: #fffffd; }
         
         body.dark-mode .card { 
             background: rgba(40, 40, 56, 0.85); 
@@ -271,68 +172,23 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
         }
         
-        body.dark-mode .card:hover { 
-            box-shadow: 0 8px 20px rgba(0,0,0,0.3); 
-        }
+        body.dark-mode .card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
+        body.dark-mode .subtitle, body.dark-mode .footer { color: #bbb; }
+        body.dark-mode .download-card { border-color: #383848; }
         
-        body.dark-mode .subtitle, 
-        body.dark-mode .footer { 
-            color: #bbb; 
-        }
+        body.dark-mode .download-card:nth-child(1) { background-color: rgba(61, 220, 132, 0.08); }
+        body.dark-mode .download-card:nth-child(2) { background-color: rgba(33, 150, 243, 0.08); }
+        body.dark-mode .download-card:nth-child(3) { background-color: rgba(255, 152, 0, 0.08); }
+        body.dark-mode .download-card:nth-child(4) { background-color: rgba(233, 30, 99, 0.08); }
         
-        body.dark-mode .download-card { 
-            border-color: #383848; 
-        }
-        
-        /* 暗黑模式下载卡片背景色调整 */
-        body.dark-mode .download-card:nth-child(1) {
-            background-color: rgba(61, 220, 132, 0.08);
-        }
-        
-        body.dark-mode .download-card:nth-child(2) {
-            background-color: rgba(33, 150, 243, 0.08);
-        }
-        
-        body.dark-mode .download-card:nth-child(3) {
-            background-color: rgba(255, 152, 0, 0.08);
-        }
-        
-        body.dark-mode .download-card:nth-child(4) {
-            background-color: rgba(233, 30, 99, 0.08);
-        }
-        
-        body.dark-mode .download-card:hover { 
-            border-color: #4477ff; 
-        }
-        
-        body.dark-mode .logo { 
-            color: #fff; /* 暗黑模式头部文字颜色 */
-        }
-        
-        body.dark-mode a { 
-            color: #4477ff; 
-        }
-        
-        body.dark-mode a:hover { 
-            color: #4477ff; 
-        }
-        
-        body.dark-mode .contact-icon { 
-            color: #4477ff; 
-        }
-        
-        body.dark-mode .footer { 
-            border-top: 1px solid #333; 
-        }
-        
-        body.dark-mode .btn:hover { 
-            background: #4477ff; 
-        }
-        
-        body.dark-mode .random-text-box { 
-            border-color: #444; 
-            background-color: rgba(51, 51, 51, 0.8); 
-        }
+        body.dark-mode .download-card:hover { border-color: #4477ff; }
+        body.dark-mode .logo { color: #fff; }
+        body.dark-mode a { color: #4477ff; }
+        body.dark-mode a:hover { color: #4477ff; }
+        body.dark-mode .contact-icon { color: #4477ff; }
+        body.dark-mode .footer { border-top: 1px solid #333; }
+        body.dark-mode .btn:hover { background: #4477ff; }
+        body.dark-mode .random-text-box { border-color: #444; background-color: rgba(51, 51, 51, 0.8); }
         
         /* 主题切换按钮 */
         .theme-toggle {
@@ -344,9 +200,7 @@
             transition: .3s;
         }
         
-        body.dark-mode .theme-toggle { 
-            color: #c0c0c0; 
-        }
+        body.dark-mode .theme-toggle { color: #c0c0c0; }
         
         /* 随机文本区域样式 */
         .random-text-box {
@@ -371,25 +225,12 @@
             min-height: 60px;
         }
         
-        /* 响应式与计数器样式 */
+        /* 响应式样式 */
         @media (max-width: 768px) {
-            .header { 
-                align-items: flex-start; 
-            }
-            
-            .nav { 
-                gap: 12px; 
-            }
-            
-            .flex { 
-                flex-direction: column; 
-            }
-            
-            .card-header { 
-                flex-direction: column; 
-                align-items: flex-start; 
-                gap: 12px; 
-            }
+            .header { align-items: flex-start; }
+            .nav { gap: 12px; }
+            .flex { flex-direction: column; }
+            .card-header { flex-direction: column; align-items: flex-start; gap: 12px; }
         }
         
         .card-header {
@@ -407,10 +248,7 @@
             color: #808080;
         }
         
-        .visit-counter img { 
-            vertical-align: middle; 
-            height: 20px; 
-        }
+        .visit-counter img { vertical-align: middle; height: 20px; }
     </style>
 </head>
 <body>
@@ -428,33 +266,10 @@
             <div class="card-header">
                <h2 class="title"><i class="fa-solid fa-cloud"></i>🍀TB🌸ハンサム</h2>
                <div class="visit-counter">                                                                     
-
 					<font color="#ff9800">
                         <span><i class="fa fa-cog fa-spin"></i></span> 
                         已运行<span id="aa"></span>
                     </font>
-                    
-                    <script language="javascript">
-                        function show_date_time() {
-                            window.setTimeout("show_date_time()", 1000);
-                            // 计算从2021年4月24日00:00:00到现在的时间差
-                            timeold = ((new Date()).getTime() - (new Date("04/24/2021 00:00:00")).getTime());
-                            sectimeold = timeold / 1000;
-                            secondsold = Math.floor(sectimeold);
-                            msPerDay = 24 * 60 * 60 * 1000;
-                            e_daysold = timeold / msPerDay;
-                            daysold = Math.floor(e_daysold);
-                            e_hrsold = (e_daysold - daysold) * 24;
-                            hrsold = Math.floor(e_hrsold);
-                            e_minsold = (e_hrsold - hrsold) * 60;
-                            minsold = Math.floor((e_hrsold - hrsold) * 60);
-                            seconds = Math.floor((e_minsold - minsold) * 60);
-                            
-                            // 更新显示
-                            aa.innerHTML = "" + daysold + "天 " + hrsold + "小时 " + minsold + "分 " + seconds +"秒 ";
-                        }
-                        show_date_time();
-                    </script>
                </div>
             </div>
             
@@ -510,9 +325,7 @@
                             <i class="fa-solid fa-rotate"></i> 换一条
                         </button>
                     </div>
-                    <div class="random-text-content" id="randomText">
-                        加载中...
-                    </div>
+                    <div class="random-text-content" id="randomText">加载中...</div>
                 </div>
             </div>
 
@@ -586,7 +399,19 @@
     </div>
 
     <script>
-        // 随机文本数据（100条）
+        // 网站运行时间计算
+        function showDateTime() {
+            setInterval(() => {
+                const timeOld = new Date() - new Date("04/24/2021 00:00:00");
+                const days = Math.floor(timeOld / (24 * 60 * 60 * 1000));
+                const hours = Math.floor((timeOld % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+                const mins = Math.floor((timeOld % (60 * 60 * 1000)) / (60 * 1000));
+                const secs = Math.floor((timeOld % (60 * 1000)) / 1000);
+                document.getElementById('aa').textContent = `${days}天 ${hours}小时 ${mins}分 ${secs}秒`;
+            }, 1000);
+        }
+
+        // 随机文本数据
         const textList = [
             "生活就像海洋，只有意志坚强的人才能到达彼岸。",
             "成功不是将来才有的，而是从决定去做的那一刻起，持续累积而成。",
@@ -617,78 +442,7 @@
             "想干成点事就记住两句话，别把别人不当人了，别把自己太当人了。",
             "所有人都抵不过时间，就像你偶然想起我，问我有没有钱。",
             "说好我们一起到白头，你却偷偷焗了油。",
-            "回望当初，那时我一定也一直在训练自己迈步，如果有一天，能够走得更稳更远了，就去见她吧。",
-            "努力的意义，在于可以选择自己想要的生活，而不是被迫随波逐流。",
-            "时间会治愈一切，但首先你要给它机会。",
-            "生命中最美好的事情都是免费的，比如阳光、空气和爱。",
-            "与其抱怨黑暗，不如提灯前行。",
-            "幸福就像香水，洒给别人也一定会感染自己。",
-            "世界上没有绝对的公平，但努力可以无限接近公平。",
-            "每一个不曾起舞的日子，都是对生命的辜负。",
-            "不要让未来的你，讨厌现在不努力的自己。",
-            "生活总会给你答案，但不会马上把一切都告诉你。",
-            "成长就是把哭声调成静音的过程。",
-            "人最大的对手，往往不是别人，而是自己的懒惰。",
-            "你今天的选择，决定了你明天的样子。",
-            "命运如同手中的掌纹，无论多曲折，终掌握在自己手中。",
-            "别让你的梦想只停留在梦里。",
-            "当你觉得为时已晚的时候，恰恰是最早的时候。",
-            "把简单的事情做好就是不简单，把平凡的事情做好就是不平凡。",
-            "成功的路上没有捷径，只有脚踏实地。",
-            "生活不是一场赛跑，而是一场旅行，重要的不是目的地，而是沿途的风景以及看风景的心情。",
-            "你若有颗不屈的灵魂，脚下便有片坚实的土地。",
-            "所有的苦难都是暂时的，扛过去就是晴天。",
-            "人生没有白走的路，每一步都算数。",
-            "抱怨是最无用的情绪，与其抱怨，不如改变。",
-            "生活的智慧，在于滤除那些不重要的杂质，保留最重要的部分。",
-            "所谓的幸运，不过是机会遇到了准备好的人。",
-            "人的一切痛苦，本质上都是对自己无能的愤怒。",
-            "如果你不出去走走，你就会以为这就是全世界。",
-            "大多数人想改造这个世界，但却罕有人想改造自己。",
-            "有时候，你需要停下来，想一想自己究竟想要什么。",
-            "不要在该奋斗的年纪选择了安逸。",
-            "你必须非常努力，才能看起来毫不费力。",
-            "真正的平静，不是避开车马喧嚣，而是在心中修篱种菊。",
-            "人生就像一杯茶，不会苦一辈子，但总会苦一阵子。",
-            "世界上只有一种真正的英雄主义，那就是在认清生活的真相后依然热爱生活。",
-            "时间是最好的老师，但遗憾的是，它最后把所有的学生都弄死了。",
-            "有时候，失去比拥有更踏实。",
-            "成熟不是心变老，而是眼泪在眼里打转却还能保持微笑。",
-            "如果事与愿违，请相信一定另有安排。",
-            "不要因为结束而哭泣，要为曾经发生过而微笑。",
-            "你今天的日积月累，早晚会成为别人的望尘莫及。",
-            "生活不是缺少美，而是缺少发现美的眼睛。",
-            "当你手中抓住一件东西不放时，你只能拥有这件东西，如果你肯放手，你就有机会选择别的。",
-            "青春是打开了就合不上的书，人生是踏上了就回不了头的路。",
-            "我们总是对陌生人太客气，而对亲密的人太苛刻。",
-            "人生就像弈棋，一步失误，全盘皆输。",
-            "没有伞的孩子，必须努力奔跑。",
-            "不要拿过去的记忆，来折磨现在的自己。",
-            "人生的价值，并不是用时间，而是用深度去衡量的。",
-            "不是因为看到希望才坚持，而是坚持了才会看到希望。",
-            "你是谁并不重要，重要的是你和谁在一起。",
-            "人生伟业的建立，不在能知，乃在能行。",
-            "一个人的快乐，不是因为他拥有的多，而是因为他计较的少。",
-            "生命太短，没时间留给遗憾。若不是终点，请微笑一直向前。",
-            "你现在的付出，都会是一种沉淀，它们会默默铺路，只为让你成为更好的人。",
-            "不要害怕改变，尽管你可能会因此失去一些好的东西，但你也可能会得到一些更好的东西。",
-            "幸福不是得到你想要的一切，而是享受你所拥有的一切。",
-            "人生就像一杯白开水，你每天都喝，不要羡慕别人喝的饮料有各种颜色，其实未必有你的白开水解渴。",
-            "有时候，我们需要的不是一碗鸡汤，而是一个巴掌。有些人出现在你的生命里，就是为了告诉你：你真好骗。",
-            "努力和效果之间，永远有这样一段距离。成功和失败的唯一区别是，你能不能坚持挺过这段无法估计的距离。",
-            "与其用泪水悔恨今天，不如用汗水拼搏今天。",
-            "生活中其实没有绝境，绝境在于你自己的心没有打开。",
-            "世界会向那些有目标和远见的人让路。",
-            "环境不会改变，解决之道在于改变自己。",
-            "人的潜能是一座无法估量的丰富的矿藏，只等着我们去挖掘。",
-            "人生的路，靠的是自己一步步去走，真正能保护你的，是你自己的选择。",
-            "不要轻易用过去来衡量生活的幸与不幸，每个人的生命都是可以绽放美丽的，只要你珍惜。",
-            "你必须跌到你从未经历过的谷底，才能站上你从未到达过的高峰。",
-            "生活不是用来妥协的，你退缩得越多，能让你喘息的空间就越有限。",
-            "自己打败自己是最可悲的失败，自己战胜自己是最可贵的胜利。",
-            "这个世界上没有不带伤的人，真正能治愈自己的，只有自己。",
-            "如果你的面前有阴影，那是因为你的背后有阳光。",
-            "没有什么过不去，只是再也回不去。"
+            "回望当初，那时我一定也一直在训练自己迈步，如果有一天，能够走得更稳更远了，就去见她吧。"
         ];
 
         // 显示随机文本
@@ -716,7 +470,8 @@
                 icon.className = 'fa-solid fa-sun';
             }
             
-            // 显示初始随机文本
+            // 初始化功能
+            showDateTime();
             showRandomText();                        
         });
     </script>
