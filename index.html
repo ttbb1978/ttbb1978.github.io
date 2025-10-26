@@ -7,8 +7,8 @@
     
     <!-- 社交分享元数据 -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="田兵个人网站" />
-    <meta property="og:description" content="分享GitHub加速、Base64工具等实用资源" />
+    <meta property="og:title" content="tb" />
+    <meta property="og:description" content="tb" />
     <meta property="og:image" content="https://picsum.photos/800/400?tech=tool" />
     <meta name="twitter:card" content="summary_large_image" />
     
@@ -756,10 +756,6 @@
                     <i class="fa-solid fa-envelope contact-icon"></i>
                     <span><a href="mailto:tianbingyx@163.com">tianbingyx@163.com</a></span>
                 </div>
-                <div class="contact-item">
-                    <i class="fa-solid fa-users contact-icon"></i>
-                    <span><a href="https://jq.qq.com/?_wv=1027&k=386113172">386113172</a></span>
-                </div>
             </div>
         </section>
         
@@ -932,22 +928,6 @@
             }, 300);
         }
         
-        // 切换Banner图片
-        function changeBanner() {
-            const bannerImg = document.querySelector('.card .flex-item img');
-            // 添加过渡效果
-            bannerImg.style.opacity = "0";
-            bannerImg.style.transform = "scale(0.95)";
-            
-            setTimeout(() => {
-                const randomIndex = Math.floor(Math.random() * bannerImages.length);
-                bannerImg.src = bannerImages[randomIndex];
-                // 恢复显示
-                bannerImg.style.opacity = "1";
-                bannerImg.style.transform = "scale(1)";
-            }, 300);
-        }
-                
         // 主题切换功能
         function toggleTheme() {
             const body = document.body;
