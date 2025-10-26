@@ -202,7 +202,7 @@
         .flex { display: flex; gap: 24px; flex-wrap: wrap; }
         .flex-item { flex: 1; min-width: 280px; }
         
-        /* 头部与导航样式 */
+        /* 头部与导航样式 - 移除了边框和背景 */
         .header {
             display: flex;
             justify-content: space-between;
@@ -210,11 +210,7 @@
             margin-bottom: 32px;
             flex-wrap: wrap;
             gap: 16px;
-            padding: 16px;
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(10px);
-            border-radius: 16px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            padding: 16px 0; /* 只保留内边距，去除背景和边框 */
         }
         
         .logo {
@@ -223,19 +219,12 @@
             gap: 12px;
             font-size: 26px;
             font-weight: 700;
-            color: #000;
+            color: #000; /* 头部文字正常颜色 */
             transition: transform 0.3s ease;
         }
         
         .logo:hover {
             transform: scale(1.05);
-        }
-        
-        .logo span {
-            background: linear-gradient(90deg, #3ddc84, #3366ff);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
         }
         
         .nav { 
@@ -469,7 +458,7 @@
         }
         
         body.dark-mode .logo { 
-            color: #fff; 
+            color: #fff; /* 暗黑模式下头部文字颜色 */
         }
         
         body.dark-mode a { 
@@ -516,8 +505,7 @@
         }
         
         body.dark-mode .header {
-            background: rgba(40, 40, 56, 0.7);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            /* 移除暗黑模式下的头部背景和边框 */
         }
         
         body.dark-mode .nav-link:hover {
@@ -664,7 +652,7 @@
         @media (max-width: 768px) {
             .header { 
                 align-items: flex-start; 
-                padding: 12px;
+                padding: 12px 0; /* 移除左右内边距 */
             }
             
             .nav { 
@@ -718,20 +706,17 @@
     <div class="decor-element decor-2"></div>
     
     <div class="container">
-        <!-- 头部区域 -->
+        <!-- 头部区域 - 已去除边框和背景 -->
         <header class="header">
-            <div class="logo">
-                <span>🍁 田兵个人网站</span>
-            </div>            
+            <div class="logo">🍁 田兵个人网站</div>
             <button class="theme-toggle" onclick="toggleTheme()">
                 <i class="fa-solid fa-moon"></i>
             </button>
         </header>
-
         <!-- 个人信息区域 -->
         <section class="card">
             <div class="card-header">
-               <h2 class="title"></i>🍀TB🌸ハンサム</h2>
+               <h2 class="title">🍀TB🌸ハンサム</h2>
             <div class="visit-counter">                                                                     
 					<span><i class="fa fa-cog fa-spin"></i></span> 
                     在线<span id="aa"></span>
