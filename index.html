@@ -2,192 +2,116 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <!-- 视口设置，确保在移动设备上正确显示 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <!-- 引入Font Awesome图标库 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
-        /* 全局样式重置 */
-        * { 
-            margin: 0; 
-            padding: 0; 
-            box-sizing: border-box; /* 盒模型设置为border-box，便于布局计算 */
-        }
-        
-        /* 页面基础样式 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body { 
-            font-family: sans-serif; /* 使用无衬线字体提高可读性 */
-            line-height: 1.6; /* 设置行高，增强文本可读性 */
+            font-family: sans-serif; 
+            line-height: 1.6; 
             padding: 20px; 
-            max-width: 1200px; /* 限制最大宽度，在大屏幕上保持美观 */
-            margin: 0 auto; /* 居中显示 */
+            max-width: 1200px; 
+            margin: 0 auto; 
         }
-        
-        .container { 
-            margin: 0 auto; /* 容器居中 */
-        }
-        
-        /* 图片样式 */
-        img { 
-            border-radius: 8px; /* 图片圆角效果 */
-            max-width: 100%; /* 图片自适应容器宽度 */
-        }
-        
-        /* 头部样式 */
+        .container { margin: 0 auto; }
+        img { border-radius: 8px; max-width: 100%; }
         .header { 
-            display: flex; /* 使用flex布局 */
-            justify-content: space-between; /* 内容两端对齐 */
-            align-items: center; /* 垂直居中对齐 */
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
             margin-bottom: 0px; 
-            padding-bottom: 18px; /* 底部内边距 */
+			padding-bottom: 18px; 
         }
-        
-        .logo { 
-            font-size: 22px; /* 网站标题字体大小 */
-        }
-        
-        /* 卡片组件样式 */
+        .logo { font-size: 22px; }
         .card { 
-            border: 1px solid #c0c0c0; /* 卡片边框 */
-            border-radius: 8px; /* 卡片圆角 */
-            padding: 20px; /* 卡片内边距 */
-            margin-bottom: 20px; /* 卡片之间的间距 */
+            border: 1px solid #c0c0c0; 
+            border-radius: 8px; 
+            padding: 20px; 
+            margin-bottom: 20px; 
         }
-        
-        /* 标题样式 */
         .title { 
             font-size: 18px; 
             margin-bottom: 10px; 
-            color: #ff8000; /* 标题橙色 */
+            color: #ff8000; 
         }
-        
-        /* 副标题样式 */
         .subtitle { 
-            color: #666; /* 灰色 */
+            color: #666; 
             margin-bottom: 15px; 
             font-size: 14px; 
         }
-        
-        /* 弹性布局容器 */
         .flex { 
-            display: flex; /* 启用flex布局 */
-            gap: 20px; /* 子元素之间的间距 */
-            flex-wrap: wrap; /* 允许换行，适应小屏幕 */
+            display: flex; 
+            gap: 20px; 
+            flex-wrap: wrap; 
         }
-        
-        /* 弹性布局子项 */
-        .flex-item { 
-            flex: 1; /* 子项平均分配空间 */
-            min-width: 280px; /* 最小宽度，确保在小屏幕上不致过窄 */
-        }
-        
-        /* 导航链接样式 */
+        .flex-item { flex: 1; min-width: 280px; }
         .nav { 
             display: flex; 
-            flex-wrap: wrap; /* 允许换行 */
-            gap: 15px; /* 链接之间的间距 */
+            flex-wrap: wrap; 
+            gap: 15px; 
             margin-bottom: 20px; 
         }
-        
-        .nav a { 
-            color: #8080ff; /* 链接颜色 */
-            text-decoration: none; /* 去除下划线 */
-        }
-        
-        .nav a:hover { 
-            text-decoration: underline; /* 鼠标悬停时显示下划线 */
-        }
-        
-        /* 下载列表样式 */
+        .nav a { color: #8080ff; text-decoration: none; }
+        .nav a:hover { text-decoration: underline; }
         .download-list { 
             display: flex; 
-            flex-wrap: wrap; /* 允许换行 */
-            gap: 15px; /* 下载项之间的间距 */
+            flex-wrap: wrap; 
+            gap: 15px; 
         }
-        
-        /* 下载卡片样式 */
         .download-card { 
             flex: 1; 
-            min-width: 250px; /* 最小宽度 */
-            border: 1px solid #c0c0c0; /* 边框 */
-            padding: 15px; /* 内边距 */
-            border-radius: 8px; /* 圆角 */
+            min-width: 250px; 
+            border: 1px solid #c0c0c0;
+            padding: 15px; 
+            border-radius: 8px; 
         }
-        
-        /* 按钮样式 */
         .btn { 
-            display: inline-block; /* 行内块元素，便于设置宽高 */
-            padding: 6px 12px; /* 内边距 */
-            background: #3366ff; /* 蓝色背景 */
-            color: white; /* 白色文字 */
-            text-decoration: none; /* 去除下划线 */
-            border-radius: 4px; /* 圆角 */
+            display: inline-block; 
+            padding: 6px 12px; 
+            background: #3366ff; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 4px; 
             font-size: 14px; 
         }
-        
-        /* 联系列表样式 */
-        .contact-list { 
-            margin: 15px 0; /* 上下外边距 */
-        }
-        
-        .contact-item { 
-            margin-bottom: 8px; /* 项之间的间距 */
-        }
-        
-        .contact-item a { 
-            color: #408080; /* 联系链接颜色 */
-        }
-        
-        /* 随机文本框样式 */
+        .contact-list { margin: 15px 0; }
+        .contact-item { margin-bottom: 8px; }
+        .contact-item a { color: #408080; }
         .random-text-box { 
-            padding: 15px; /* 内边距 */
-            border: 1px solid #c0c0c0; /* 边框 */
-            border-radius: 8px; /* 圆角 */
-            margin-top: 15px; /* 上外边距 */
+            padding: 15px; 
+            border: 1px solid #c0c0c0; 
+            border-radius: 8px; 
+            margin-top: 15px; 
         }
-        
-        /* 页脚样式 */
-        .footer { 
-            text-align: center; /* 文本居中 */
+		.footer { 
+            text-align: center; 
             margin-top: 0px; 
             padding-top: 0px; 
-            color: #000; /* 黑色文字 */
+            color: #000; 
             font-size: 14px; 
         }
-        
-        /* 文本居中样式 */
-        .text-center { 
-            text-align: center; 
-            margin: 15px 0; /* 上下外边距 */
-        }
-        
-        /* 访问计数器样式 */
-        .visit-counter { 
-            font-size: 14px; 
-            color: #808080; /* 灰色 */
-        }
+		.text-center { text-align: center; margin: 15px 0; }
+        .visit-counter { font-size: 14px; color: #808080; }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- 头部区域：显示网站标题 -->
+        <!-- 头部区域 -->
         <header class="header">
             <div class="logo">🍁 田兵个人网站</div>
         </header>
         
-        <!-- 个人信息区域：展示个人基本信息和头像 -->
+        <!-- 个人信息区域 -->
         <section class="card">
             <h2 class="title">🍀TB🌸ハンサム</h2>
-            <!-- 在线时长统计区域 -->
-            <center>
-                <div class="visit-counter">
-                    <span><i class="fa fa-cog fa-spin"></i></span> 
-                    在线<span id="aa"></span>
-                </div>
-            </center>
+          <center>
+			<div class="visit-counter">
+            <span><i class="fa fa-cog fa-spin"></i></span> 
+                在线<span id="aa"></span>
+            </div>
+		  </center>
             
-            <!-- 头像展示区域 -->
             <div class="text-center">
                 <img src="http://q1.qlogo.cn/g?b=qq&nk=765931440&s=640" width="75" />
                 <img src="http://q1.qlogo.cn/g?b=qq&nk=1040458166&s=640" width="75" />
@@ -195,22 +119,22 @@
                 <img src="http://q1.qlogo.cn/g?b=qq&nk=2358429597&s=640" width="75" />
             </div>
 
-            <!-- 联系方式区域 -->
             <div class="contact-list">
                 <div class="contact-item">
-                    <center>
-                        <a href="mailto:tianbingyx@163.com">Email:tianbingyx@163.com</a>
-                    </center>
+                <center>
+					
+                    <a href="mailto:tianbingyx@163.com">Email:tianbingyx@163.com</a>
+				</center>
                 </div>
             </div>
         </section>
         
-        <!-- 导航与Banner区域：包含常用网站链接和图片展示 -->
+        <!-- 导航与Banner区域 -->
         <section class="flex">
             <div class="card flex-item">
                 <h2 class="title">常用网站</h2>
                 <div class="nav">
-                    <a href="https://github.com" class="nav-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                      <a href="https://github.com" class="nav-link"><i class="fa-brands fa-github"></i> GitHub</a>
                     <a href="https://www.7ed.net/gitmirror/hub.html" class="nav-link"><i class="fa-brands fa-github"></i> GitHub加速</a>
                     <a href="https://tbai.bing1978.workers.dev" class="nav-link"><i class="fa-solid fa-star"></i> AI（密码：admin123）</a>
                     <a href="https://cf.090227.xyz" class="nav-link"><i class="fa-solid fa-cloud"></i> CF优选</a>
@@ -223,7 +147,7 @@
                     <a href="https://ip.sb" class="nav-link"><i class="fa-solid fa-star"></i> IP SB</a>
                 </div>
 
-                <!-- 随机文本栏：显示每日一言 -->
+                <!-- 随机文本栏 -->
                 <div class="random-text-box">
                     <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
                         <span>每日一言</span>
@@ -233,21 +157,18 @@
                 </div>
             </div>
 
-            <!-- 图片展示区域 -->
             <div class="card flex-item">
                 <h2 class="title">美好瞬间</h2>
                 <img src="https://t.alcy.cc/ycy" alt="图片展示">
             </div>
         </section>
         
-        <!-- 下载资源区域：提供各类工具下载 -->
+        <!-- 下载资源区域 -->
         <section class="card">
             <h2 class="title">工具下载</h2>
             <p class="subtitle">本地工具，无需联网即可使用</p>
             
-            <!-- 下载列表 -->
             <div class="download-list">
-                <!-- 下载项1：安卓编码工具 -->
                 <div class="download-card">
                     <div style="margin-bottom: 10px;">
                         <i class="fa-brands fa-android"></i> 编码工具（安卓）
@@ -256,7 +177,6 @@
                     <a href="https://cdn.jsdelivr.net/gh/ttbb1978/tbsc@tb01/BASE64%E7%BC%96%E7%A0%81.apk" class="btn">下载</a>
                 </div>
                 
-                <!-- 下载项2：右键管理工具 -->
                 <div class="download-card">
                     <div style="margin-bottom: 10px;">
                         <i class="fa-solid fa-desktop"></i> 右键管理
@@ -265,7 +185,6 @@
                     <a href="https://hub.gitmirror.com/https://github.com/ttbb1978/ttbb1978.github.io/blob/1434d355b6c30683d1d1a808018605937301b355/img/%E5%8F%B3%E9%94%AE%E7%AE%A1%E7%90%86.zip" class="btn">下载</a>
                 </div>
                 
-                <!-- 下载项3：图片编码工具 -->
                 <div class="download-card">
                     <div style="margin-bottom: 10px;">
                         <i class="fa-solid fa-desktop"></i> 图片编码
@@ -274,7 +193,6 @@
                     <a href="https://hub.gitmirror.com/https://github.com/ttbb1978/ttbb1978.github.io/blob/1434d355b6c30683d1d1a808018605937301b355/img/Base64%E5%9B%BE%E7%89%87.zip" class="btn">下载</a>
                 </div>
                 
-                <!-- 下载项4：TB记事本 -->
                 <div class="download-card">
                     <div style="margin-bottom: 10px;">
                         <i class="fa-solid fa-desktop"></i> TB记事本
@@ -285,7 +203,7 @@
             </div>
         </section>
         
-        <!-- 页脚：显示版权和维护信息 -->
+        <!-- 页脚 -->                      
         <div class="footer">
             <p>提供维护：🍀TB🌸ハンサム</p>
             <p>四川省 德阳市 旌阳区（天元街道）</p>
@@ -294,23 +212,19 @@
     </div>
 
     <script>
-        // 网站运行时间计算函数
+        // 网站运行时间计算
         function showDateTime() {
-            // 使用setInterval实现每秒更新一次
             setInterval(() => {
-                // 计算从2021年4月24日0点到现在的毫秒数
                 const timeOld = new Date() - new Date("04/24/2021 00:00:00");
-                // 转换为天、时、分、秒
                 const days = Math.floor(timeOld / (24 * 60 * 60 * 1000));
                 const hours = Math.floor((timeOld % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
                 const mins = Math.floor((timeOld % (60 * 60 * 1000)) / (60 * 1000));
                 const secs = Math.floor((timeOld % (60 * 1000)) / 1000);
-                // 更新页面显示
                 document.getElementById('aa').textContent = `${days}天 ${hours}小时 ${mins}分 ${secs}秒`;
             }, 1000);
         }
 
-        // 随机文本数据：存储多条"每日一言"内容
+        // 随机文本数据
         const textList = [
             "生活就像海洋，只有意志坚强的人才能到达彼岸。",
             "成功不是将来才有的，而是从决定去做的那一刻起，持续累积而成。",
@@ -331,22 +245,80 @@
             "我是个比较成熟的人，像赌气不吃东西这种事，都是吃饱后才做的。",
             "即使从梦中醒来，还会有回忆留下。",
             "古有一人得道鸡犬升天，今有一人得病全家成仙。",
-            "活着就是为了改变世界。"
-            // 更多文本省略...
+            "活着就是为了改变世界。",
+            "人生只有一次，所以按照自己的意愿，努力活下去！",
+            "爱情可以来迟，但外卖不行，毕竟我还在长身体。",
+            "但愿再次遇见你能够心如止水，不再如刀割。",
+            "我是喜欢盖着被子睡觉的人，热了就把被子踢掉，冷了又把被子裹上，其实潜意识里一直都在照顾自己。",
+            "人类总是给自己那么多束缚，连自己至亲都不能相容，反而为妖族所悦纳，也真是奇特啊。",
+            "谁是谁生命中的过客，谁是谁生命的转轮，前世的尘，今世的风，无穷无尽的哀伤的精魂。",
+            "想干成点事就记住两句话，别把别人不当人了，别把自己太当人了。",
+            "所有人都抵不过时间，就像你偶然想起我，问我有没有钱。",
+            "说好我们一起到白头，你却偷偷焗了油。",
+            "回望当初，那时我一定也一直在训练自己迈步，如果有一天，能够走得更稳更远了，就去见她吧。",
+            "努力的意义，在于可以选择自己想要的生活，而不是被迫随波逐流。",
+            "时间会治愈一切，但首先你要给它机会。",
+            "生命中最美好的事情都是免费的，比如阳光、空气和爱。",
+            "与其抱怨黑暗，不如提灯前行。",
+            "幸福就像香水，洒给别人也一定会感染自己。",
+            "世界上没有绝对的公平，但努力可以无限接近公平。",
+            "每一个不曾起舞的日子，都是对生命的辜负。",
+            "不要让未来的你，讨厌现在不努力的自己。",
+            "生活总会给你答案，但不会马上把一切都告诉你。",
+            "成长就是把哭声调成静音的过程。",
+            "人最大的对手，往往不是别人，而是自己的懒惰。",
+            "你今天的选择，决定了你明天的样子。",
+            "命运如同手中的掌纹，无论多曲折，终掌握在自己手中。",
+            "别让你的梦想只停留在梦里。",
+            "当你觉得为时已晚的时候，恰恰是最早的时候。",
+            "把简单的事情做好就是不简单，把平凡的事情做好就是不平凡。",
+            "成功的路上没有捷径，只有脚踏实地。",
+            "生活不是一场赛跑，而是一场旅行，重要的不是目的地，而是沿途的风景以及看风景的心情。",
+            "你若有颗不屈的灵魂，脚下便有片坚实的土地。",
+            "所有的苦难都是暂时的，扛过去就是晴天。",
+            "人生没有白走的路，每一步都算数。",
+            "抱怨是最无用的情绪，与其抱怨，不如改变。",
+            "生活的智慧，在于滤除那些不重要的杂质，保留最重要的部分。",
+            "所谓的幸运，不过是机会遇到了准备好的人。",
+            "人的一切痛苦，本质上都是对自己无能的愤怒。",
+            "如果你不出去走走，你就会以为这就是全世界。",
+            "大多数人想改造这个世界，但却罕有人想改造自己。",
+            "有时候，你需要停下来，想一想自己究竟想要什么。",
+            "不要在该奋斗的年纪选择了安逸。",
+            "你必须非常努力，才能看起来毫不费力。",
+            "真正的平静，不是避开车马喧嚣，而是在心中修篱种菊。",
+            "人生就像一杯茶，不会苦一辈子，但总会苦一阵子。",
+            "世界上只有一种真正的英雄主义，那就是在认清生活的真相后依然热爱生活。",
+            "时间是最好的老师，但遗憾的是，它最后把所有的学生都弄死了。",
+            "有时候，失去比拥有更踏实。",
+            "成熟不是心变老，而是眼泪在眼里打转却还能保持微笑。",
+            "如果事与愿违，请相信一定另有安排。",
+            "不要因为结束而哭泣，要为曾经发生过而微笑。",
+            "你今天的日积月累，早晚会成为别人的望尘莫及。",
+            "生活不是缺少美，而是缺少发现美的眼睛。",
+            "当你手中抓住一件东西不放时，你只能拥有这件东西，如果你肯放手，你就有机会选择别的。",
+            "青春是打开了就合不上的书，人生是踏上了就回不了头的路。",
+            "我们总是对陌生人太客气，而对亲密的人太苛刻。",
+            "人生就像弈棋，一步失误，全盘皆输。",
+            "没有伞的孩子，必须努力奔跑。",
+            "不要拿过去的记忆，来折磨现在的自己。",
+            "人生的价值，并不是用时间，而是用深度去衡量的。",
+            "不是因为看到希望才坚持，而是坚持了才会看到希望。",
+            "你是谁并不重要，重要的是你和谁在一起。",
+            "人生伟业的建立，不在能知，乃在能行。",
+            "一个人的快乐，不是因为他拥有的多，而是因为他计较的少。"
         ];
 
-        // 显示随机文本函数
+        // 显示随机文本
         function showRandomText() {
-            // 生成随机索引
             const randomIndex = Math.floor(Math.random() * textList.length);
-            // 显示随机文本
             document.getElementById('randomText').textContent = textList[randomIndex];
         }
         
         // 页面加载完成后初始化
         window.addEventListener('DOMContentLoaded', () => {
-            showDateTime(); // 启动在线时长统计
-            showRandomText(); // 显示第一条随机文本
+            showDateTime();
+            showRandomText();
         });
     </script>
 </body>
