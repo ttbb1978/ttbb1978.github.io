@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>田兵个人网站</title>
     
     <!-- 引入外部资源 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -185,27 +185,76 @@
         
         .logo:hover { transform: scale(1.05); }
         
-        .nav { 
-            display: flex; 
-            gap: 20px; 
-            flex-wrap: wrap; 
-            padding: 8px 0;
+        /* 【优化】重构快速导航样式 - 卡片式网格布局 */
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 16px;
+            margin-top: 8px;
         }
         
-        .nav-link { 
-            display: flex; 
-            align-items: center; 
-            gap: 6px; 
-            font-weight: 500;
-            padding: 4px 8px;
-            border-radius: 4px;
+        .nav-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 8px;
+            background: rgba(249, 250, 251, 0.9);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+            min-height: 90px;
+        }
+        
+        .dark-mode .nav-card {
+            background: rgba(50, 50, 70, 0.9);
+        }
+        
+        .nav-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 12px rgba(51, 102, 255, 0.1);
+            border-color: rgba(51, 102, 255, 0.2);
+        }
+        
+        .dark-mode .nav-card:hover {
+            box-shadow: 0 6px 12px rgba(68, 119, 255, 0.2);
+            border-color: rgba(68, 119, 255, 0.3);
+        }
+        
+        .nav-card-icon {
+            font-size: 24px;
+            margin-bottom: 8px;
+            color: #3366ff;
             transition: all 0.3s ease;
         }
         
-        .nav-link:hover {
-            background-color: rgba(51, 102, 255, 0.1);
-            transform: translateY(-2px);
+        .nav-card:nth-child(odd) .nav-card-icon { color: #3ddc84; }
+        .nav-card:nth-child(3n) .nav-card-icon { color: #ff9800; }
+        .nav-card:nth-child(4n) .nav-card-icon { color: #e91e63; }
+        
+        .dark-mode .nav-card-icon { color: #4477ff; }
+        .dark-mode .nav-card:nth-child(odd) .nav-card-icon { color: #42e595; }
+        .dark-mode .nav-card:nth-child(3n) .nav-card-icon { color: #ffb74d; }
+        .dark-mode .nav-card:nth-child(4n) .nav-card-icon { color: #f06292; }
+        
+        .nav-card:hover .nav-card-icon {
+            transform: scale(1.2) rotate(5deg);
         }
+        
+        .nav-card-text {
+            font-size: 14px;
+            font-weight: 500;
+            color: #333;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .dark-mode .nav-card-text { color: #ddd; }
+        .nav-card:hover .nav-card-text { color: #3366ff; }
+        .dark-mode .nav-card:hover .nav-card-text { color: #4477ff; }
+        
+        /* 移除原有的.nav和.nav-link样式，替换为上述网格布局 */
+        .nav, .nav-link { display: none; }
         
         /* 下载区样式 */
         .download-list { 
@@ -332,8 +381,6 @@
             box-shadow: 0 4px 10px rgba(68, 119, 255, 0.4);
         }
         
-        body.dark-mode .nav-link:hover { background-color: rgba(68, 119, 255, 0.1); }
-        
         /* 主题切换按钮 */
         .theme-toggle {
             background: none;
@@ -423,12 +470,15 @@
         /* 响应式样式 */
         @media (max-width: 768px) {
             .header { align-items: flex-start; padding: 12px 0; }
-            .nav { gap: 12px; margin-top: 10px; }
             .flex { flex-direction: column; gap: 16px; }
             .card-header { flex-direction: column; align-items: flex-start; gap: 12px; }
             .contact-list { gap: 16px; }
             .download-list { gap: 16px; }
             .title { font-size: 18px; }
+            .nav-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
+            .nav-card { min-height: 80px; padding: 12px 4px; }
+            .nav-card-icon { font-size: 20px; }
+            .nav-card-text { font-size: 13px; }
         }
     </style>
 </head>
@@ -454,17 +504,16 @@
             </div>
             
             <div class="text-center" style="margin: 24px 0;">
-                <img src="http://q1.qlogo.cn/g?b=qq&nk=765931440&s=640"/>
-                <img src="http://q1.qlogo.cn/g?b=qq&nk=1040458166&s=640"/>
-                <img src="http://q1.qlogo.cn/g?b=qq&nk=2409495157&s=640"/>
-                <img src="http://q1.qlogo.cn/g?b=qq&nk=2358429597&s=640"/>
+                <img src="http://q1.qlogo.cn/g?b=qq&nk=765931440&s=640" loading="lazy"/>
+                <img src="http://q1.qlogo.cn/g?b=qq&nk=1040458166&s=640" loading="lazy"/>
+                <img src="http://q1.qlogo.cn/g?b=qq&nk=2409495157&s=640" loading="lazy"/>
+                <img src="http://q1.qlogo.cn/g?b=qq&nk=2358429597&s=640" loading="lazy"/>
             </div> 
 
             <center>		
                 <a href="https://hits.sh/ttbb1978.github.io">
                     <img alt="点击数" src="https://hits.sh/ttbb1978.github.io.svg?style=flat-square&label=%E8%AE%BF%E9%97%AE%E9%87%8F&extraCount=4896&color=007ec6"/>
                 </a>
-
             </center>
         <div class="contact-list">
                 <div class="contact-item">
@@ -479,22 +528,52 @@
             <div class="card flex-item">
                 <h2 class="title"><i class="fa-solid fa-compass"></i> 快速导航</h2>
                 <p class="subtitle">带你快速了解这个世界 ...</p>
-                <div class="nav">                    
-                    <a href="https://tb90.de5.net" class="nav-link"><i class="fa-solid fa-cloud"></i> 缩短网址</a>
-                    <a href="https://ai.tb80.de5.net" class="nav-link"><i class="fa-solid fa-cloud"></i> TBAI</a>
-                    <a href="https://cf.090227.xyz" class="nav-link"><i class="fa-solid fa-cloud"></i> CM优选</a>
-                    <a href="https://vps789.com/cfip/?remarks=domain" class="nav-link"><i class="fa-solid fa-cloud"></i> VPS789</a>
-                    <a href="https://check-proxyip.ssss.nyc.mn" class="nav-link"><i class="fa-solid fa-star"></i>Proxyip 检测</a>
-                    <a href="https://api.kuleu.com/api/MP4_xiaojiejie" class="nav-link"><i class="fa-solid fa-video"></i> 每日视频</a>
-                    <a href="https://www.zzzzz688.com" class="nav-link"><i class="fa-solid fa-star"></i> PC游戏</a>                    
-                    <a href="https://kcnawatch.org/korea-central-tv-livestream" class="nav-link"><i class="fa-solid fa-star"></i> 朝鲜TV</a>
+                
+                <!-- 【优化】重构后的快速导航 - 卡片式网格布局 -->
+                <div class="nav-grid">
+                    <a href="https://tb90.de5.net" class="nav-card" target="_blank">
+                        <i class="fa-solid fa-cloud nav-card-icon"></i>
+                        <span class="nav-card-text">缩短网址</span>
+                    </a>
+                    <a href="https://ai.tb80.de5.net" class="nav-card" target="_blank">
+                        <i class="fa-solid fa-cloud nav-card-icon"></i>
+                        <span class="nav-card-text">TBAI</span>
+                    </a>
+                    <a href="https://cf.090227.xyz" class="nav-card" target="_blank">
+                        <i class="fa-solid fa-cloud nav-card-icon"></i>
+                        <span class="nav-card-text">CM优选</span>
+                    </a>
+                    <a href="https://vps789.com/cfip/?remarks=domain" class="nav-card" target="_blank">
+                        <i class="fa-solid fa-cloud nav-card-icon"></i>
+                        <span class="nav-card-text">VPS789</span>
+                    </a>
+                    <a href="https://check-proxyip.ssss.nyc.mn" class="nav-card" target="_blank">
+                        <i class="fa-solid fa-star nav-card-icon"></i>
+                        <span class="nav-card-text">Proxyip 检测</span>
+                    </a>
+                    <a href="https://www.fofoyy.com/dianying" class="nav-card" target="_blank">
+                        <i class="fa-solid fa-video nav-card-icon"></i>
+                        <span class="nav-card-text">FoFo影院</span>
+                    </a>
+                    <a href="https://api.kuleu.com/api/MP4_xiaojiejie" class="nav-card" target="_blank">
+                        <i class="fa-solid fa-video nav-card-icon"></i>
+                        <span class="nav-card-text">每日视频</span>
+                    </a>
+                    <a href="https://www.zzzzz688.com" class="nav-card" target="_blank">
+                        <i class="fa-solid fa-star nav-card-icon"></i>
+                        <span class="nav-card-text">PC游戏</span>
+                    </a>
+                    <a href="https://kcnawatch.org/korea-central-tv-livestream" class="nav-card" target="_blank">
+                        <i class="fa-solid fa-star nav-card-icon"></i>
+                        <span class="nav-card-text">朝鲜TV</span>
+                    </a>
                 </div>
 
                 <!-- 随机文本栏 -->
                 <div class="random-text-box">
                     <div class="random-text-header">
                         <h2 class="title" style="font-size: 18px;"> 每日一言</h2>
-                        <button class="btn" style="padding: 4px 10px; font-size: 14px;" onclick="showRandomText()">
+                        <button class="btn" style="padding: 4px 10px; font-size: 14px;" onclick="getHitokoto()">
                             <i class="fa-solid fa-rotate"></i> 换一条
                         </button>
                     </div>
@@ -506,7 +585,7 @@
                 <h2 class="title"><i class="fa-solid fa-image"></i> 在线美图</h2>
                 <p class="subtitle">一处美景，邂逅一次，便会万劫不复地爱上 ...</p>
                 <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                    <img src="https://cdn.seovx.com/?mom=302" alt="Banner" style="width: 100%; height: auto;">
+                    <img src="https://cdn.seovx.com/?mom=302" alt="Banner" style="width: 100%; height: auto;" loading="lazy">
                 </div>
             </div>
         </section>
@@ -523,7 +602,7 @@
                         编码工具（安卓）
                     </div>
                     <p class="margin-b-8">支持Base64文本编码/解码，轻量无广告</p>
-                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/BASE64%E7%BC%96%E7%A0%81.apk" class="btn">
+                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/BASE64%E7%BC%96%E7%A0%81.apk" class="btn" download="BASE64编码工具.apk">
                         <i class="fa-solid fa-download"></i> 下载
                     </a>
                 </div>
@@ -534,7 +613,7 @@
                         右键管理
                     </div>
                     <p class="margin-b-8">Windows端桌面工具，右键管理功能</p>
-                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/%E5%8F%B3%E9%94%AE%E7%AE%A1%E7%90%86.zip" class="btn">
+                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/%E5%8F%B3%E9%94%AE%E7%AE%A1%E7%90%86.zip" class="btn" download="右键管理工具.zip">
                         <i class="fa-solid fa-download"></i> 下载
                     </a>
                 </div>
@@ -545,7 +624,7 @@
                         图片编码
                     </div>
                     <p class="margin-b-8">Windows端桌面工具，Base64图片编码功能</p>
-                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/Base64%E5%9B%BE%E7%89%87.zip" class="btn">
+                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/Base64%E5%9B%BE%E7%89%87.zip" class="btn" download="Base64图片编码工具.zip">
                         <i class="fa-solid fa-download"></i> 下载
                     </a>
                 </div>
@@ -556,7 +635,7 @@
                         TB记事本
                     </div>
                     <p class="margin-b-8">Windows端桌面工具，Base64编码功能</p>
-                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/TB%E8%AE%B0%E4%BA%8B%E6%9C%AC.zip" class="btn">
+                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/TB%E8%AE%B0%E4%BA%8B%E6%9C%AC.zip" class="btn" download="TB记事本.zip">
                         <i class="fa-solid fa-download"></i> 下载
                     </a>
                 </div>
@@ -575,7 +654,7 @@
         // 网站运行时间计算
         function showDateTime() {
             setInterval(() => {
-                const timeOld = new Date() - new Date("04/24/2021 00:00:00");
+                const timeOld = new Date() - new Date("2021-04-24T00:00:00"); // 优化：ISO标准日期格式，提升兼容性
                 const days = Math.floor(timeOld / (24 * 60 * 60 * 1000));
                 const hours = Math.floor((timeOld % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
                 const mins = Math.floor((timeOld % (60 * 60 * 1000)) / (60 * 1000));
@@ -584,8 +663,8 @@
             }, 1000);
         }
 
-        // 随机文本数据
-        const textList = [
+        // 【优化】本地备用文本（API请求失败时降级使用）
+        const backupTextList = [
             "风儿你可别笑我，你又怎知我难过。",
             "在我的心里 住着一个过客，万般想念我却不能说。",
             "你转身走的利落，我却空守着寂寞。",
@@ -603,18 +682,35 @@
             "如果云知道,想你的夜慢慢熬。"
         ];
 
-        // 显示随机文本
-        function showRandomText() {
+        // 【优化】从一言API获取动态文本（带过渡动画+降级处理）
+        async function getHitokoto() {
             const randomTextElement = document.getElementById('randomText');
+            // 先添加淡出+下移动画
             randomTextElement.style.opacity = "0";
             randomTextElement.style.transform = "translateY(10px)";
-            
-            setTimeout(() => {
-                const randomIndex = Math.floor(Math.random() * textList.length);
-                randomTextElement.textContent = textList[randomIndex];
-                randomTextElement.style.opacity = "1";
-                randomTextElement.style.transform = "translateY(0)";
-            }, 300);
+
+            try {
+                // 调用一言API
+                const response = await fetch('https://v1.hitokoto.cn/');
+                if (!response.ok) throw new Error("API请求失败");
+                const data = await response.json();
+                
+                // 延迟300ms（匹配动画时长），更新API返回的文本
+                setTimeout(() => {
+                    randomTextElement.textContent = data.hitokoto;
+                    randomTextElement.style.opacity = "1";
+                    randomTextElement.style.transform = "translateY(0)";
+                }, 300);
+            } catch (error) {
+                // API失败时，使用本地备用文本随机切换
+                setTimeout(() => {
+                    const randomIndex = Math.floor(Math.random() * backupTextList.length);
+                    randomTextElement.textContent = backupTextList[randomIndex];
+                    randomTextElement.style.opacity = "1";
+                    randomTextElement.style.transform = "translateY(0)";
+                }, 300);
+                console.log("一言API请求失败，使用本地备用文本：", error);
+            }
         }
         
         // 主题切换功能
@@ -644,7 +740,7 @@
             
             // 初始化功能
             showDateTime();
-            showRandomText();
+            getHitokoto(); // 初始化每日一言
         });
     </script>
 </body>
