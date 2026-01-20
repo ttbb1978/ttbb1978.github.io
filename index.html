@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>田兵个人网站</title>
+    <title></title>
     
     <!-- 引入外部资源 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
     
     <style>
         /* 基础样式重置 */
@@ -51,6 +51,7 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             width: 75px;
             border: 1px solid #eee;
+            margin: 0 8px;
         }
         
         .text-center img:hover {
@@ -185,7 +186,7 @@
         
         .logo:hover { transform: scale(1.05); }
         
-        /* 【优化】重构快速导航样式 - 卡片式网格布局 */
+        /* 快速导航样式 - 卡片式网格布局 */
         .nav-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
@@ -206,55 +207,220 @@
             min-height: 90px;
         }
         
-        .dark-mode .nav-card {
-            background: rgba(50, 50, 70, 0.9);
+        /* 暗黑模式样式 - 调整后的色调 */
+        body.dark-mode { 
+            background: #121212; 
+            color: #e0e0e0; 
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(61, 220, 132, 0.02) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(51, 102, 255, 0.02) 0%, transparent 20%);
         }
         
-        .nav-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 6px 12px rgba(51, 102, 255, 0.1);
-            border-color: rgba(51, 102, 255, 0.2);
+        body.dark-mode .card { 
+            background: rgba(28, 28, 30, 0.9); 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3); 
         }
         
-        .dark-mode .nav-card:hover {
-            box-shadow: 0 6px 12px rgba(68, 119, 255, 0.2);
-            border-color: rgba(68, 119, 255, 0.3);
+        body.dark-mode .card:hover { 
+            box-shadow: 0 12px 24px rgba(0,0,0,0.4); 
         }
         
-        .nav-card-icon {
-            font-size: 24px;
-            margin-bottom: 8px;
-            color: #3366ff;
+        body.dark-mode .card::before { 
+            background: linear-gradient(90deg, #4ade80, #60a5fa); 
+        }
+        
+        body.dark-mode .subtitle, 
+        body.dark-mode .footer-text { 
+            color: #a0a0a0; 
+        }
+        
+        body.dark-mode .card:hover .subtitle { 
+            color: #c0c0c0; 
+        }
+        
+        body.dark-mode .nav-card {
+            background: rgba(42, 42, 46, 0.9);
+        }
+        
+        body.dark-mode .nav-card:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            border-color: rgba(96, 165, 250, 0.3);
+        }
+        
+        body.dark-mode .nav-card-icon { 
+            color: #60a5fa; 
+        }
+        
+        body.dark-mode .nav-card:nth-child(odd) .nav-card-icon { 
+            color: #4ade80; 
+        }
+        
+        body.dark-mode .nav-card:nth-child(3n) .nav-card-icon { 
+            color: #f59e0b; 
+        }
+        
+        body.dark-mode .nav-card:nth-child(4n) .nav-card-icon { 
+            color: #ec4899; 
+        }
+        
+        body.dark-mode .nav-card-text { 
+            color: #d0d0d0; 
+        }
+        
+        body.dark-mode .nav-card:hover .nav-card-text { 
+            color: #60a5fa; 
+        }
+        
+        body.dark-mode .download-card:nth-child(1) { 
+            background-color: rgba(74, 222, 128, 0.08); 
+        }
+        
+        body.dark-mode .download-card:nth-child(2) { 
+            background-color: rgba(96, 165, 250, 0.08); 
+        }
+        
+        body.dark-mode .download-card:nth-child(3) { 
+            background-color: rgba(245, 158, 11, 0.08); 
+        }
+        
+        body.dark-mode .download-card:nth-child(4) { 
+            background-color: rgba(236, 72, 153, 0.08); 
+        }
+        
+        body.dark-mode .logo { 
+            color: #e0e0e0; 
+        }
+        
+        body.dark-mode a { 
+            color: #60a5fa; 
+        }
+        
+        body.dark-mode a::after { 
+            background-color: #60a5fa; 
+        }
+        
+        body.dark-mode .contact-icon { 
+            color: #60a5fa; 
+        }
+        
+        body.dark-mode .contact-item { 
+            background-color: rgba(42, 42, 46, 0.6); 
+        }
+        
+        body.dark-mode .contact-item:hover { 
+            background-color: rgba(96, 165, 250, 0.1); 
+        }
+        
+        body.dark-mode .footer-text { 
+            border-top: 1px solid #333; 
+        }
+        
+        body.dark-mode .btn {
+            background: #60a5fa;
+            box-shadow: 0 2px 5px rgba(96, 165, 250, 0.3);
+        }
+        
+        body.dark-mode .btn:hover { 
+            background: #3b82f6; 
+            box-shadow: 0 4px 10px rgba(96, 165, 250, 0.4);
+        }
+        
+        body.dark-mode .theme-toggle { 
+            color: #a0a0a0; 
+        }
+        
+        body.dark-mode .theme-toggle:hover { 
+            background-color: rgba(255,255,255,0.05); 
+        }
+        
+        body.dark-mode .random-text-box { 
+            border-color: #333; 
+            background-color: rgba(42, 42, 46, 0.8); 
+        }
+        
+        body.dark-mode .visit-counter {
+            color: #a0a0a0;
+            background-color: rgba(255,255,255,0.03);
+        }
+        
+        body.dark-mode .visit-counter:hover { 
+            background-color: rgba(255,255,255,0.05); 
+        }
+        
+        /* 主题切换按钮 */
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: #808080;
+            font-size: 22px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .theme-toggle:hover {
+            background-color: rgba(0,0,0,0.05);
+            transform: rotate(30deg);
+        }
+        
+        /* 随机文本区域样式 */
+        .random-text-box {
+            margin-top: 24px;
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            background-color: rgba(249, 249, 249, 0.8);
             transition: all 0.3s ease;
         }
         
-        .nav-card:nth-child(odd) .nav-card-icon { color: #3ddc84; }
-        .nav-card:nth-child(3n) .nav-card-icon { color: #ff9800; }
-        .nav-card:nth-child(4n) .nav-card-icon { color: #e91e63; }
-        
-        .dark-mode .nav-card-icon { color: #4477ff; }
-        .dark-mode .nav-card:nth-child(odd) .nav-card-icon { color: #42e595; }
-        .dark-mode .nav-card:nth-child(3n) .nav-card-icon { color: #ffb74d; }
-        .dark-mode .nav-card:nth-child(4n) .nav-card-icon { color: #f06292; }
-        
-        .nav-card:hover .nav-card-icon {
-            transform: scale(1.2) rotate(5deg);
+        .random-text-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
         }
         
-        .nav-card-text {
+        .random-text-content {
+            font-size: 16px;
+            line-height: 1.8;
+            min-height: 60px;
+            padding-right: 20px;
+            transition: all 0.3s ease;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* 访问统计样式 */
+        .visit-counter {
+            display: flex;
+            align-items: center;
+            gap: 8px;
             font-size: 14px;
-            font-weight: 500;
-            color: #333;
-            text-align: center;
+            color: #808080;
+            padding: 4px 10px;
+            border-radius: 15px;
+            background-color: rgba(0,0,0,0.03);
             transition: all 0.3s ease;
         }
         
-        .dark-mode .nav-card-text { color: #ddd; }
-        .nav-card:hover .nav-card-text { color: #3366ff; }
-        .dark-mode .nav-card:hover .nav-card-text { color: #4477ff; }
+        .visit-counter:hover { 
+            background-color: rgba(0,0,0,0.05); 
+        }
         
-        /* 移除原有的.nav和.nav-link样式，替换为上述网格布局 */
-        .nav, .nav-link { display: none; }
+        /* 卡片头部样式 */
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
         
         /* 下载区样式 */
         .download-list { 
@@ -273,10 +439,25 @@
             overflow: hidden;
         }
         
-        .download-card:nth-child(1) { border-left: 4px solid #3ddc84; background-color: rgba(61, 220, 132, 0.05); }
-        .download-card:nth-child(2) { border-left: 4px solid #2196f3; background-color: rgba(33, 150, 243, 0.05); }
-        .download-card:nth-child(3) { border-left: 4px solid #ff9800; background-color: rgba(255, 152, 0, 0.05); }
-        .download-card:nth-child(4) { border-left: 4px solid #e91e63; background-color: rgba(233, 30, 99, 0.05); }
+        .download-card:nth-child(1) { 
+            border-left: 4px solid #3ddc84; 
+            background-color: rgba(61, 220, 132, 0.05); 
+        }
+        
+        .download-card:nth-child(2) { 
+            border-left: 4px solid #2196f3; 
+            background-color: rgba(33, 150, 243, 0.05); 
+        }
+        
+        .download-card:nth-child(3) { 
+            border-left: 4px solid #ff9800; 
+            background-color: rgba(255, 152, 0, 0.05); 
+        }
+        
+        .download-card:nth-child(4) { 
+            border-left: 4px solid #e91e63; 
+            background-color: rgba(233, 30, 99, 0.05); 
+        }
         
         .download-card:hover { 
             transform: translateY(-5px); 
@@ -299,7 +480,9 @@
             transition: transform 0.3s ease;
         }
         
-        .download-card:hover .download-icon { transform: scale(1.2) rotate(10deg); }
+        .download-card:hover .download-icon { 
+            transform: scale(1.2) rotate(10deg); 
+        }
         
         /* 联系与底部样式 */
         .contact-list {
@@ -332,7 +515,9 @@
             transition: transform 0.3s ease;
         }
         
-        .contact-item:hover .contact-icon { transform: rotate(15deg); }
+        .contact-item:hover .contact-icon { 
+            transform: rotate(15deg); 
+        }
         
         .footer-text {
             text-align: center;
@@ -343,135 +528,11 @@
             margin-top: 40px;
         }
         
-        /* 暗黑模式样式 */
-        body.dark-mode { 
-            background: #141414; 
-            color: #fffffd; 
-            background-image: 
-                radial-gradient(circle at 10% 20%, rgba(61, 220, 132, 0.03) 0%, transparent 20%),
-                radial-gradient(circle at 90% 80%, rgba(51, 102, 255, 0.03) 0%, transparent 20%);
-        }
-        
-        body.dark-mode .card { background: rgba(40, 40, 56, 0.85); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
-        body.dark-mode .card:hover { box-shadow: 0 12px 24px rgba(0,0,0,0.3); }
-        body.dark-mode .card::before { background: linear-gradient(90deg, #3ddc84, #4477ff); }
-        body.dark-mode .subtitle, body.dark-mode .footer-text { color: #bbb; }
-        body.dark-mode .card:hover .subtitle { color: #ccc; }
-        
-        body.dark-mode .download-card:nth-child(1) { background-color: rgba(61, 220, 132, 0.08); }
-        body.dark-mode .download-card:nth-child(2) { background-color: rgba(33, 150, 243, 0.08); }
-        body.dark-mode .download-card:nth-child(3) { background-color: rgba(255, 152, 0, 0.08); }
-        body.dark-mode .download-card:nth-child(4) { background-color: rgba(233, 30, 99, 0.08); }
-        
-        body.dark-mode .logo { color: #fff; }
-        body.dark-mode a { color: #4477ff; }
-        body.dark-mode a::after { background-color: #4477ff; }
-        body.dark-mode .contact-icon { color: #4477ff; }
-        body.dark-mode .contact-item { background-color: rgba(50, 50, 70, 0.6); }
-        body.dark-mode .contact-item:hover { background-color: rgba(68, 119, 255, 0.1); }
-        body.dark-mode .footer-text { border-top: 1px solid #333; }
-        
-        body.dark-mode .btn {
-            background: #4477ff;
-            box-shadow: 0 2px 5px rgba(68, 119, 255, 0.3);
-        }
-        
-        body.dark-mode .btn:hover { 
-            background: #5a88ff; 
-            box-shadow: 0 4px 10px rgba(68, 119, 255, 0.4);
-        }
-        
-        /* 主题切换按钮 */
-        .theme-toggle {
-            background: none;
-            border: none;
-            color: #808080;
-            font-size: 22px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .theme-toggle:hover {
-            background-color: rgba(0,0,0,0.05);
-            transform: rotate(30deg);
-        }
-        
-        body.dark-mode .theme-toggle { color: #c0c0c0; }
-        body.dark-mode .theme-toggle:hover { background-color: rgba(255,255,255,0.05); }
-        
-        /* 随机文本区域样式 */
-        .random-text-box {
-            margin-top: 24px;
-            padding: 20px;
-            border: 1px solid #eee;
-            border-radius: 12px;
-            background-color: rgba(249, 249, 249, 0.8);
-            transition: all 0.3s ease;
-        }
-        
-        body.dark-mode .random-text-box { 
-            border-color: #444; 
-            background-color: rgba(51, 51, 51, 0.8); 
-        }
-        
-        .random-text-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 16px;
-        }
-        
-        .random-text-content {
-            font-size: 16px;
-            line-height: 1.8;
-            min-height: 60px;
-            padding-right: 20px;
-            transition: all 0.3s ease;
-        }
-        
-        /* 访问统计样式 */
-        .visit-counter {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 14px;
-            color: #808080;
-            padding: 4px 10px;
-            border-radius: 15px;
-            background-color: rgba(0,0,0,0.03);
-            transition: all 0.3s ease;
-        }
-        
-        .visit-counter:hover { background-color: rgba(0,0,0,0.05); }
-        
-        body.dark-mode .visit-counter {
-            color: #aaa;
-            background-color: rgba(255,255,255,0.03);
-        }
-        
-        body.dark-mode .visit-counter:hover { background-color: rgba(255,255,255,0.05); }
-        
-        /* 卡片头部样式 */
-        .card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-        
         /* 响应式样式 */
         @media (max-width: 768px) {
             .header { align-items: flex-start; padding: 12px 0; }
             .flex { flex-direction: column; gap: 16px; }
-            .card-header { flex-direction: column; align-items: flex-start; gap: 12px; }
+            .card-header { flex-direction: row; align-items: center; gap: 12px; }
             .contact-list { gap: 16px; }
             .download-list { gap: 16px; }
             .title { font-size: 18px; }
@@ -479,6 +540,7 @@
             .nav-card { min-height: 80px; padding: 12px 4px; }
             .nav-card-icon { font-size: 20px; }
             .nav-card-text { font-size: 13px; }
+            .text-center img { width: 60px; }
         }
     </style>
 </head>
@@ -496,7 +558,6 @@
         <section class="card">
             <div class="card-header">
                <h2 class="title"><i class="fa-solid fa-users"></i> 核心成员</h2>
-               <p class="subtitle"></p>
                <div class="visit-counter">                                                                     
                    <span><i class="fa fa-cog fa-spin"></i></span> 
                    在线<span id="aa"></span>
@@ -504,18 +565,18 @@
             </div>
             
             <div class="text-center" style="margin: 24px 0;">
-                <img src="http://q1.qlogo.cn/g?b=qq&nk=765931440&s=640" loading="lazy"/>
-                <img src="http://q1.qlogo.cn/g?b=qq&nk=1040458166&s=640" loading="lazy"/>
-                <img src="http://q1.qlogo.cn/g?b=qq&nk=2409495157&s=640" loading="lazy"/>
-                <img src="http://q1.qlogo.cn/g?b=qq&nk=2358429597&s=640" loading="lazy"/>
+                <img src="http://q1.qlogo.cn/g?b=qq&nk=765931440&s=640" loading="lazy" alt="核心成员1"/>
+                <img src="http://q1.qlogo.cn/g?b=qq&nk=1040458166&s=640" loading="lazy" alt="核心成员2"/>
+                <img src="http://q1.qlogo.cn/g?b=qq&nk=2409495157&s=640" loading="lazy" alt="核心成员3"/>
+                <img src="http://q1.qlogo.cn/g?b=qq&nk=2358429597&s=640" loading="lazy" alt="核心成员4"/>
             </div> 
 
             <center>		
-                <a href="https://hits.sh/ttbb1978.github.io">
-                    <img alt="点击数" src="https://hits.sh/ttbb1978.github.io.svg?style=flat-square&label=%E8%AE%BF%E9%97%AE%E9%87%8F&extraCount=4896&color=007ec6"/>
+                <a href="https://hits.sh/ttbb1978.github.io" target="_blank">
+                    <img alt="点击数" src="https://hits.sh/ttbb1978.github.io.svg?style=flat-square&label=%E8%AE%BF%E9%97%AE%E9%87%8F&extraCount=4896&color=007ec6" loading="lazy"/>
                 </a>
             </center>
-        <div class="contact-list">
+            <div class="contact-list">
                 <div class="contact-item">
                     <i class="fa-solid fa-envelope contact-icon"></i>
                     <span><a href="mailto:hsjr@tb90.de5.net">hsjr@tb90.de5.net</a></span>                    
@@ -529,7 +590,7 @@
                 <h2 class="title"><i class="fa-solid fa-compass"></i> 快速导航</h2>
                 <p class="subtitle">带你快速了解这个世界 ...</p>
                 
-                <!-- 【优化】重构后的快速导航 - 卡片式网格布局 -->
+                <!-- 快速导航 - 卡片式网格布局 -->
                 <div class="nav-grid">
                     <a href="https://tb90.de5.net" class="nav-card" target="_blank">
                         <i class="fa-solid fa-cloud nav-card-icon"></i>
@@ -543,7 +604,7 @@
                         <i class="fa-solid fa-cloud nav-card-icon"></i>
                         <span class="nav-card-text">CM优选</span>
                     </a>
-                        <a href="https://check-proxyip.ssss.nyc.mn" class="nav-card" target="_blank">
+                    <a href="https://check-proxyip.ssss.nyc.mn" class="nav-card" target="_blank">
                         <i class="fa-solid fa-star nav-card-icon"></i>
                         <span class="nav-card-text">Proxyip 检测</span>
                     </a>                    
@@ -573,7 +634,7 @@
                 <h2 class="title"><i class="fa-solid fa-image"></i> 在线美图</h2>
                 <p class="subtitle">一处美景，邂逅一次，便会万劫不复地爱上 ...</p>
                 <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                    <img src="https://cdn.seovx.com/?mom=302" alt="Banner" style="width: 100%; height: auto;" loading="lazy">
+                    <img src="https://cdn.seovx.com/?mom=302" alt="每日美图" style="width: 100%; height: auto;" loading="lazy">
                 </div>
             </div>
         </section>
@@ -642,7 +703,7 @@
         // 网站运行时间计算
         function showDateTime() {
             setInterval(() => {
-                const timeOld = new Date() - new Date("2021-04-24T00:00:00"); // 优化：ISO标准日期格式，提升兼容性
+                const timeOld = new Date() - new Date("2021-04-24T00:00:00");
                 const days = Math.floor(timeOld / (24 * 60 * 60 * 1000));
                 const hours = Math.floor((timeOld % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
                 const mins = Math.floor((timeOld % (60 * 60 * 1000)) / (60 * 1000));
@@ -651,26 +712,7 @@
             }, 1000);
         }
 
-        // 【优化】本地备用文本（API请求失败时降级使用）
-        const backupTextList = [
-            "风儿你可别笑我，你又怎知我难过。",
-            "在我的心里 住着一个过客，万般想念我却不能说。",
-            "你转身走的利落，我却空守着寂寞。",
-            "多少次为你 喝到天快亮了，回忆为何不肯放过我。",
-            "你是我此生难渡的情劫，连梦里你都不肯见一面。",
-            "一边想要忘记你 一边放不下从前，这种痛苦始终缠绕心间。",
-            "你是我此生难渡的情劫，数不清为你失过多少眠。",
-            "既然结局是离别 当初又何必遇见，你这一走让我一生都挂牵。",
-            "爱一旦结冰一切都好平静，泪水它一旦流尽只剩决心。",
-            "放逐自己在黑夜的边境，任由黎明一步一步向我逼近。",
-            "想你的心化成灰烬，真的有点累了没什么力气。",
-            "有太多太多回忆哽住呼吸，爱你的心我无处投递。",
-            "如果可以飞檐走壁找到你。",
-            "爱的委屈不必澄清，只要你将我抱紧。",
-            "如果云知道,想你的夜慢慢熬。"
-        ];
-
-        // 【优化】从一言API获取动态文本（带过渡动画+降级处理）
+        // 从一言API获取动态文本（移除本地降级逻辑）
         async function getHitokoto() {
             const randomTextElement = document.getElementById('randomText');
             // 先添加淡出+下移动画
@@ -678,8 +720,15 @@
             randomTextElement.style.transform = "translateY(10px)";
 
             try {
-                // 调用一言API
-                const response = await fetch('https://v1.hitokoto.cn/');
+                // 调用一言API，添加超时控制
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 5000); // 5秒超时
+                
+                const response = await fetch('https://v1.hitokoto.cn/', {
+                    signal: controller.signal
+                });
+                clearTimeout(timeoutId);
+                
                 if (!response.ok) throw new Error("API请求失败");
                 const data = await response.json();
                 
@@ -690,14 +739,13 @@
                     randomTextElement.style.transform = "translateY(0)";
                 }, 300);
             } catch (error) {
-                // API失败时，使用本地备用文本随机切换
+                // API失败时仅显示提示文字，不使用本地备用文本
                 setTimeout(() => {
-                    const randomIndex = Math.floor(Math.random() * backupTextList.length);
-                    randomTextElement.textContent = backupTextList[randomIndex];
+                    randomTextElement.textContent = "获取一言失败，请稍后重试";
                     randomTextElement.style.opacity = "1";
                     randomTextElement.style.transform = "translateY(0)";
                 }, 300);
-                console.log("一言API请求失败，使用本地备用文本：", error);
+                console.log("一言API请求失败：", error);
             }
         }
         
