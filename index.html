@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>田兵个人网站</title>
     
     <!-- 引入外部资源 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
         
         body {
             font-family: 'Roboto', 'Noto Sans SC', sans-serif;
-            background: #eef7ff;
+            background: #efefef;
             color: #000;
             line-height: 1.6;
             padding: 20px;
@@ -38,32 +38,28 @@
         }
         
         img { 
-            border-radius: 12px; 
+            border-radius: 8px; 
             transition: all 0.3s ease; 
             object-fit: cover;
         }
         
         .text-center { text-align: center; }
         .text-center img { 
-            border-radius: 10%; 
-            border: 3px solid rgba(255, 255, 255, 0.8);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            width: 75px;
+            border-radius: 8%; 
             border: 1px solid #eee;
-            margin: 0 2px;
+            margin: 0 1px;
+            width: 80px;
+            /* 移除阴影效果 */
+            transition: transform 0.3s ease;
         }
         
         .text-center img:hover {
             transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         }
         
-        /* 卡片样式 */
+        /* 卡片样式 - 移除毛玻璃和阴影 */
         .card {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            background: #ffffff;
             border-radius: 16px;
             padding: 24px;
             margin-bottom: 24px;
@@ -86,7 +82,6 @@
         }
         
         .card:hover { 
-            box-shadow: 0 12px 24px rgba(0,0,0,0.1); 
             transform: translateY(-5px);
         }
         
@@ -116,7 +111,7 @@
         .card:hover .subtitle { color: #444; }
         .margin-b-8 { margin-bottom: 8px; }
         
-        /* 链接与按钮样式 */
+        /* 链接与按钮样式 - 移除阴影 */
         a { 
             color: #3366ff; 
             text-decoration: none; 
@@ -150,13 +145,18 @@
             border: none;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 2px 5px rgba(51, 102, 255, 0.3);
+            /* 关键：移除按钮的下划线 */
+            position: relative;
+        }
+        
+        /* 核心修改：移除按钮的下划线 */
+        .btn::after {
+            display: none !important;
         }
         
         .btn:hover { 
             background: #2855e6; 
             transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(51, 102, 255, 0.4);
         }
         
         /* 布局工具类 */
@@ -200,14 +200,44 @@
             align-items: center;
             justify-content: center;
             padding: 16px 8px;
-            background: rgba(249, 250, 251, 0.9);
+            background: #f9fafb;
             border-radius: 12px;
             transition: all 0.3s ease;
             border: 1px solid transparent;
             min-height: 90px;
         }
         
-        /* 暗黑模式样式 - 调整后的色调 */
+        .nav-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(51, 102, 255, 0.2);
+        }
+        
+        .nav-card-icon {
+            font-size: 24px;
+            color: #3366ff;
+            margin-bottom: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .nav-card:nth-child(odd) .nav-card-icon { color: #3ddc84; }
+        .nav-card:nth-child(3n) .nav-card-icon { color: #f59e0b; }
+        .nav-card:nth-child(4n) .nav-card-icon { color: #ec4899; }
+        
+        .nav-card:hover .nav-card-icon {
+            transform: scale(1.2);
+        }
+        
+        .nav-card-text {
+            font-size: 14px;
+            color: #666;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-card:hover .nav-card-text {
+            color: #3366ff;
+        }
+        
+        /* 暗黑模式样式 - 调整后的色调（移除阴影） */
         body.dark-mode { 
             background: #121212; 
             color: #e0e0e0; 
@@ -217,12 +247,7 @@
         }
         
         body.dark-mode .card { 
-            background: rgba(28, 28, 30, 0.9); 
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3); 
-        }
-        
-        body.dark-mode .card:hover { 
-            box-shadow: 0 12px 24px rgba(0,0,0,0.4); 
+            background: #1c1c1e; 
         }
         
         body.dark-mode .card::before { 
@@ -239,11 +264,10 @@
         }
         
         body.dark-mode .nav-card {
-            background: rgba(42, 42, 46, 0.9);
+            background: #2a2a2e;
         }
         
         body.dark-mode .nav-card:hover {
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
             border-color: rgba(96, 165, 250, 0.3);
         }
         
@@ -317,12 +341,10 @@
         
         body.dark-mode .btn {
             background: #60a5fa;
-            box-shadow: 0 2px 5px rgba(96, 165, 250, 0.3);
         }
         
         body.dark-mode .btn:hover { 
             background: #3b82f6; 
-            box-shadow: 0 4px 10px rgba(96, 165, 250, 0.4);
         }
         
         body.dark-mode .theme-toggle { 
@@ -368,13 +390,13 @@
             transform: rotate(30deg);
         }
         
-        /* 随机文本区域样式 */
+        /* 随机文本区域样式 - 移除阴影 */
         .random-text-box {
             margin-top: 24px;
             padding: 20px;
             border: 1px solid #eee;
             border-radius: 12px;
-            background-color: rgba(249, 249, 249, 0.8);
+            background-color: #f9f9f9;
             transition: all 0.3s ease;
         }
         
@@ -393,6 +415,14 @@
             transition: all 0.3s ease;
             opacity: 1;
             transform: translateY(0);
+        }
+        
+        .hitokoto-from {
+            margin-top: 8px;
+            color: #888;
+            font-style: italic;
+            font-size: 14px;
+            transition: opacity 0.3s ease;
         }
         
         /* 访问统计样式 */
@@ -422,7 +452,7 @@
             gap: 12px;
         }
         
-        /* 下载区样式 */
+        /* 下载区样式 - 移除阴影 */
         .download-list { 
             display: flex; 
             flex-wrap: wrap; 
@@ -461,7 +491,6 @@
         
         .download-card:hover { 
             transform: translateY(-5px); 
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
         }
         
         .download-title {
@@ -484,7 +513,7 @@
             transform: scale(1.2) rotate(10deg); 
         }
         
-        /* 联系与底部样式 */
+        /* 联系与底部样式 - 移除阴影 */
         .contact-list {
             display: flex;
             flex-wrap: wrap;
@@ -528,6 +557,37 @@
             margin-top: 40px;
         }
         
+        /* 返回顶部按钮样式 */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 48px;
+            height: 48px;
+            background-color: #3366ff;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 999;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background-color: #2855e6;
+            transform: translateY(-5px);
+        }
+        
         /* 响应式样式 */
         @media (max-width: 768px) {
             .header { align-items: flex-start; padding: 12px 0; }
@@ -541,6 +601,12 @@
             .nav-card-icon { font-size: 20px; }
             .nav-card-text { font-size: 13px; }
             .text-center img { width: 60px; }
+            .back-to-top {
+                width: 40px;
+                height: 40px;
+                bottom: 20px;
+                right: 20px;
+            }
         }
     </style>
 </head>
@@ -601,7 +667,7 @@
                         <span class="nav-card-text">TBAI</span>
                     </a>
                     <a href="https://cf.090227.xyz" class="nav-card" target="_blank">
-                        <i class="fa-solid fa-cloud nav-card-icon"></i>
+                        <i class="fa-solid fa-star nav-card-icon"></i>
                         <span class="nav-card-text">CM优选</span>
                     </a>
                     <a href="https://check-proxyip.ssss.nyc.mn" class="nav-card" target="_blank">
@@ -627,13 +693,14 @@
                         </button>
                     </div>
                     <div class="random-text-content" id="randomText">加载中...</div>
+                    <div class="hitokoto-from" id="hitokotoFrom"></div>
                 </div>
             </div>
 
             <div class="card flex-item">
                 <h2 class="title"><i class="fa-solid fa-image"></i> 在线美图</h2>
                 <p class="subtitle">一处美景，邂逅一次，便会万劫不复地爱上 ...</p>
-                <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <div style="border-radius: 12px; overflow: hidden;">
                     <img src="https://cdn.seovx.com/?mom=302" alt="每日美图" style="width: 100%; height: auto;" loading="lazy">
                 </div>
             </div>
@@ -651,7 +718,7 @@
                         编码工具（安卓）
                     </div>
                     <p class="margin-b-8">支持Base64文本编码/解码</p>
-                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/BASE64%E7%BC%96%E7%A0%81.apk" class="btn" download="BASE64编码工具.apk">
+                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/BASE64%E7%BC%96%E7%A0%81.apk" class="btn" download="BASE64编码工具.apk" onclick="handleDownload(this)">
                         <i class="fa-solid fa-download"></i> 下载
                     </a>
                 </div>
@@ -662,7 +729,7 @@
                         右键管理
                     </div>
                     <p class="margin-b-8">右键管理功能</p>
-                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/%E5%8F%B3%E9%94%AE%E7%AE%A1%E7%90%86.zip" class="btn" download="右键管理工具.zip">
+                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/%E5%8F%B3%E9%94%AE%E7%AE%A1%E7%90%86.zip" class="btn" download="右键管理工具.zip" onclick="handleDownload(this)">
                         <i class="fa-solid fa-download"></i> 下载
                     </a>
                 </div>
@@ -673,7 +740,7 @@
                         图片编码
                     </div>
                     <p class="margin-b-8">Base64图片编码功能</p>
-                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/Base64%E5%9B%BE%E7%89%87.zip" class="btn" download="Base64图片编码工具.zip">
+                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/Base64%E5%9B%BE%E7%89%87.zip" class="btn" download="Base64图片编码工具.zip" onclick="handleDownload(this)">
                         <i class="fa-solid fa-download"></i> 下载
                     </a>
                 </div>
@@ -684,7 +751,7 @@
                         TB记事本
                     </div>
                     <p class="margin-b-8">Base64编码功能</p>
-                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/TB%E8%AE%B0%E4%BA%8B%E6%9C%AC.zip" class="btn" download="TB记事本.zip">
+                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/TB%E8%AE%B0%E4%BA%8B%E6%9C%AC.zip" class="btn" download="TB记事本.zip" onclick="handleDownload(this)">
                         <i class="fa-solid fa-download"></i> 下载
                     </a>
                 </div>
@@ -692,32 +759,45 @@
         </section>
         
         <!-- 页脚信息 -->                      
-        <div class="footer-text">        
+        <center>
             <p style="font-size: 16px;">提供维护：TB HSJR</p>
             <p style="font-size: 16px;">四川省 德阳市 旌阳区（天元街道）</p>
             <p style="font-size: 16px;">&copy;&nbsp;2021-2026 TB🌱HSJR Copyright</p>
-        </div>
+        </center>
+    </div>
+    
+    <!-- 返回顶部按钮 -->
+    <div class="back-to-top" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
     </div>
 
     <script>
-        // 网站运行时间计算
+        // 网站运行时间计算（优化性能）
         function showDateTime() {
-            setInterval(() => {
+            function updateTime() {
                 const timeOld = new Date() - new Date("2021-04-24T00:00:00");
                 const days = Math.floor(timeOld / (24 * 60 * 60 * 1000));
                 const hours = Math.floor((timeOld % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
                 const mins = Math.floor((timeOld % (60 * 60 * 1000)) / (60 * 1000));
                 const secs = Math.floor((timeOld % (60 * 1000)) / 1000);
                 document.getElementById('aa').textContent = `${days}天 ${hours}小时 ${mins}分 ${secs}秒`;
-            }, 1000);
+                
+                requestAnimationFrame(() => {
+                    setTimeout(updateTime, 1000);
+                });
+            }
+            updateTime();
         }
 
-        // 从一言API获取动态文本（移除本地降级逻辑）
+        // 从一言API获取动态文本（优化版）
         async function getHitokoto() {
             const randomTextElement = document.getElementById('randomText');
+            const hitokotoFromElement = document.getElementById('hitokotoFrom');
+            
             // 先添加淡出+下移动画
             randomTextElement.style.opacity = "0";
             randomTextElement.style.transform = "translateY(10px)";
+            hitokotoFromElement.style.opacity = "0";
 
             try {
                 // 调用一言API，添加超时控制
@@ -735,15 +815,19 @@
                 // 延迟300ms（匹配动画时长），更新API返回的文本
                 setTimeout(() => {
                     randomTextElement.textContent = data.hitokoto;
+                    hitokotoFromElement.textContent = data.from ? `—— ${data.from}` : '';
                     randomTextElement.style.opacity = "1";
                     randomTextElement.style.transform = "translateY(0)";
+                    hitokotoFromElement.style.opacity = "1";
                 }, 300);
             } catch (error) {
-                // API失败时仅显示提示文字，不使用本地备用文本
+                // API失败时显示提示文字
                 setTimeout(() => {
                     randomTextElement.textContent = "获取一言失败，请稍后重试";
+                    hitokotoFromElement.textContent = "";
                     randomTextElement.style.opacity = "1";
                     randomTextElement.style.transform = "translateY(0)";
+                    hitokotoFromElement.style.opacity = "1";
                 }, 300);
                 console.log("一言API请求失败：", error);
             }
@@ -764,6 +848,48 @@
             localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
         }
         
+        // 下载按钮处理
+        function handleDownload(btn) {
+            // 添加加载状态
+            btn.classList.add('loading');
+            const originalIcon = btn.innerHTML;
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> 下载中...';
+            
+            // 5秒后恢复按钮状态（防止下载慢导致按钮一直显示加载）
+            setTimeout(() => {
+                if (btn.classList.contains('loading')) {
+                    btn.classList.remove('loading');
+                    btn.innerHTML = originalIcon;
+                }
+            }, 5000);
+            
+            // 监听下载完成/失败
+            btn.addEventListener('click', function() {
+                setTimeout(() => {
+                    btn.classList.remove('loading');
+                    btn.innerHTML = originalIcon;
+                }, 1000);
+            }, { once: true });
+        }
+        
+        // 返回顶部功能
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        
+        // 监听滚动显示返回顶部按钮
+        function handleScroll() {
+            const backToTopBtn = document.querySelector('.back-to-top');
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        }
+        
         // 页面加载完成后初始化
         window.addEventListener('DOMContentLoaded', () => {
             // 加载保存的主题设置
@@ -777,6 +903,9 @@
             // 初始化功能
             showDateTime();
             getHitokoto(); // 初始化每日一言
+            
+            // 监听滚动事件
+            window.addEventListener('scroll', handleScroll);
         });
     </script>
 </body>
