@@ -35,6 +35,8 @@
             margin: 0 auto; 
             position: relative; 
             z-index: 1; 
+            /* 增加容器左右内边距，让布局更宽松 */
+            padding: 0 10px;
         }
         
         img { 
@@ -49,7 +51,6 @@
             border: 1px solid #eee;
             margin: 0 1px;
             width: 80px;
-            /* 移除阴影效果 */
             transition: transform 0.3s ease;
         }
         
@@ -57,7 +58,7 @@
             transform: translateY(-5px) scale(1.05);
         }
         
-        /* 卡片样式 - 移除毛玻璃和阴影 */
+        /* 卡片样式 */
         .card {
             background: #ffffff;
             border-radius: 16px;
@@ -91,7 +92,7 @@
         .title {
             font-size: 20px;
             font-weight: 700;
-            color: #808080;
+            color: #f59e0b;
             margin-bottom: 8px;
             display: flex;
             align-items: center;
@@ -111,7 +112,7 @@
         .card:hover .subtitle { color: #444; }
         .margin-b-8 { margin-bottom: 8px; }
         
-        /* 链接与按钮样式 - 移除阴影 */
+        /* 链接与按钮样式 */
         a { 
             color: #3366ff; 
             text-decoration: none; 
@@ -145,11 +146,10 @@
             border: none;
             cursor: pointer;
             transition: all 0.3s ease;
-            /* 关键：移除按钮的下划线 */
             position: relative;
         }
         
-        /* 核心修改：移除按钮的下划线 */
+        /* 移除按钮的下划线 */
         .btn::after {
             display: none !important;
         }
@@ -157,6 +157,12 @@
         .btn:hover { 
             background: #2855e6; 
             transform: translateY(-2px);
+        }
+        
+        /* 加载中的按钮样式 */
+        .btn.loading {
+            background: #5a88ff;
+            cursor: wait;
         }
         
         /* 布局工具类 */
@@ -237,7 +243,7 @@
             color: #3366ff;
         }
         
-        /* 暗黑模式样式 - 调整后的色调（移除阴影） */
+        /* 暗黑模式样式 */
         body.dark-mode { 
             background: #121212; 
             color: #e0e0e0; 
@@ -390,7 +396,7 @@
             transform: rotate(30deg);
         }
         
-        /* 随机文本区域样式 - 移除阴影 */
+        /* 随机文本区域样式 */
         .random-text-box {
             margin-top: 24px;
             padding: 20px;
@@ -452,7 +458,7 @@
             gap: 12px;
         }
         
-        /* 下载区样式 - 移除阴影 */
+        /* 下载区样式 */
         .download-list { 
             display: flex; 
             flex-wrap: wrap; 
@@ -513,7 +519,7 @@
             transform: scale(1.2) rotate(10deg); 
         }
         
-        /* 联系与底部样式 - 移除阴影 */
+        /* 联系与底部样式 */
         .contact-list {
             display: flex;
             flex-wrap: wrap;
@@ -588,24 +594,92 @@
             transform: translateY(-5px);
         }
         
-        /* 响应式样式 */
+        /* 响应式样式 - 重点调整移动端布局 */
         @media (max-width: 768px) {
-            .header { align-items: flex-start; padding: 12px 0; }
-            .flex { flex-direction: column; gap: 16px; }
-            .card-header { flex-direction: row; align-items: center; gap: 12px; }
-            .contact-list { gap: 16px; }
-            .download-list { gap: 16px; }
-            .title { font-size: 18px; }
-            .nav-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
-            .nav-card { min-height: 80px; padding: 12px 4px; }
-            .nav-card-icon { font-size: 20px; }
-            .nav-card-text { font-size: 13px; }
-            .text-center img { width: 60px; }
+            /* 整体页面内边距加大，让布局更宽松 */
+            body {
+                padding: 15px 8px;
+            }
+            
+            .header { 
+                align-items: flex-start; 
+                padding: 12px 0; 
+                margin-bottom: 20px; /* 增加头部底部间距 */
+            }
+            
+            .flex { 
+                flex-direction: column; 
+                gap: 20px; /* 加大卡片之间的间距 */
+            }
+            
+            .card {
+                padding: 20px 18px; /* 加大卡片内边距 */
+                margin-bottom: 20px; /* 加大卡片底部间距 */
+            }
+            
+            .card-header { 
+                flex-direction: row; 
+                align-items: center; 
+                gap: 12px; 
+                margin-bottom: 25px; /* 加大卡片头部底部间距 */
+            }
+            
+            /* 移动端头像尺寸调大 */
+            .text-center img { 
+                width: 75px; /* 从60px调整为90px */
+                margin: 0 3px; /* 增加头像之间的间距 */
+            }
+            
+            .contact-list { 
+                gap: 20px; /* 加大联系项间距 */
+                margin: 30px 0; /* 加大联系区域上下间距 */
+            }
+            
+            .download-list { 
+                gap: 20px; /* 加大下载卡片间距 */
+            }
+            
+            .title { 
+                font-size: 19px; /* 稍微加大标题字体 */
+            }
+            
+            /* 导航网格调整，更宽松 */
+            .nav-grid { 
+                grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); 
+                gap: 20px; /* 加大导航卡片间距 */
+                margin-top: 15px;
+            }
+            
+            .nav-card { 
+                min-height: 90px; /* 加大导航卡片高度 */
+                padding: 18px 8px; /* 加大导航卡片内边距 */
+            }
+            
+            .nav-card-icon { 
+                font-size: 22px; 
+            }
+            
+            .nav-card-text { 
+                font-size: 14px; 
+            }
+            
+            /* 返回顶部按钮调整 */
             .back-to-top {
-                width: 40px;
-                height: 40px;
-                bottom: 20px;
-                right: 20px;
+                width: 45px;
+                height: 45px;
+                bottom: 25px;
+                right: 25px;
+            }
+            
+            /* 随机文本区域加大内边距 */
+            .random-text-box {
+                padding: 22px 18px;
+                margin-top: 28px;
+            }
+            
+            /* 下载按钮加大内边距，更易点击 */
+            .btn {
+                padding: 10px 20px;
             }
         }
     </style>
@@ -850,6 +924,9 @@
         
         // 下载按钮处理
         function handleDownload(btn) {
+            // 阻止重复点击
+            if (btn.classList.contains('loading')) return;
+            
             // 添加加载状态
             btn.classList.add('loading');
             const originalIcon = btn.innerHTML;
@@ -862,14 +939,6 @@
                     btn.innerHTML = originalIcon;
                 }
             }, 5000);
-            
-            // 监听下载完成/失败
-            btn.addEventListener('click', function() {
-                setTimeout(() => {
-                    btn.classList.remove('loading');
-                    btn.innerHTML = originalIcon;
-                }, 1000);
-            }, { once: true });
         }
         
         // 返回顶部功能
@@ -904,8 +973,12 @@
             showDateTime();
             getHitokoto(); // 初始化每日一言
             
-            // 监听滚动事件
-            window.addEventListener('scroll', handleScroll);
+            // 监听滚动事件（使用防抖优化性能）
+            let scrollTimer;
+            window.addEventListener('scroll', () => {
+                clearTimeout(scrollTimer);
+                scrollTimer = setTimeout(handleScroll, 10);
+            });
         });
     </script>
 </body>
