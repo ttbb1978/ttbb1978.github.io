@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>田兵个人网站</title>
+    <title></title>
     
     <!-- 引入外部资源 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +35,6 @@
             margin: 0 auto; 
             position: relative; 
             z-index: 1; 
-            /* 增加容器左右内边距，让布局更宽松 */
             padding: 0 10px;
         }
         
@@ -192,12 +191,13 @@
         
         .logo:hover { transform: scale(1.05); }
         
-        /* 快速导航样式 - 卡片式网格布局 */
+        /* 快速导航样式 - 卡片式网格布局【核心优化：通用样式适配移动端基础】 */
         .nav-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
             gap: 16px;
             margin-top: 8px;
+            width: 100%;
         }
         
         .nav-card {
@@ -211,6 +211,10 @@
             transition: all 0.3s ease;
             border: 1px solid transparent;
             min-height: 90px;
+            width: 100%;
+            text-align: center; /* 文字居中，适配换行 */
+            word-break: keep-all; /* 中文不随意换行，保持语义 */
+            white-space: normal; /* 允许正常换行，解决长文字溢出 */
         }
         
         .nav-card:hover {
@@ -223,6 +227,7 @@
             color: #3366ff;
             margin-bottom: 8px;
             transition: transform 0.3s ease;
+            line-height: 1; /* 消除图标行高影响 */
         }
         
         .nav-card:nth-child(odd) .nav-card-icon { color: #3ddc84; }
@@ -237,6 +242,8 @@
             font-size: 14px;
             color: #666;
             transition: color 0.3s ease;
+            line-height: 1.4; /* 换行后行高适中 */
+            padding: 0 4px; /* 左右留边，防止文字贴边 */
         }
         
         .nav-card:hover .nav-card-text {
@@ -361,11 +368,6 @@
             background-color: rgba(255,255,255,0.05); 
         }
         
-        body.dark-mode .random-text-box { 
-            border-color: #333; 
-            background-color: rgba(42, 42, 46, 0.8); 
-        }
-        
         body.dark-mode .visit-counter {
             color: #a0a0a0;
             background-color: rgba(255,255,255,0.03);
@@ -394,41 +396,6 @@
         .theme-toggle:hover {
             background-color: rgba(0,0,0,0.05);
             transform: rotate(30deg);
-        }
-        
-        /* 随机文本区域样式 */
-        .random-text-box {
-            margin-top: 24px;
-            padding: 20px;
-            border: 1px solid #eee;
-            border-radius: 12px;
-            background-color: #f9f9f9;
-            transition: all 0.3s ease;
-        }
-        
-        .random-text-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 16px;
-        }
-        
-        .random-text-content {
-            font-size: 16px;
-            line-height: 1.8;
-            min-height: 60px;
-            padding-right: 20px;
-            transition: all 0.3s ease;
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-        .hitokoto-from {
-            margin-top: 8px;
-            color: #888;
-            font-style: italic;
-            font-size: 14px;
-            transition: opacity 0.3s ease;
         }
 
         /* 卡片头部样式 */
@@ -553,7 +520,7 @@
             right: 30px;
             width: 48px;
             height: 48px;
-            background-color: #3366ff;
+            background-color: #f59e0b;
             color: white;
             border-radius: 50%;
             display: flex;
@@ -573,11 +540,11 @@
         }
         
         .back-to-top:hover {
-            background-color: #2855e6;
+            background-color: #f59e0b;
             transform: translateY(-5px);
         }
         
-        /* 响应式样式 - 重点调整移动端布局 */
+        /* 响应式样式 - 快速导航【移动端核心优化】 */
         @media (max-width: 768px) {
             /* 整体页面内边距加大，让布局更宽松 */
             body {
@@ -587,63 +554,66 @@
             .header { 
                 align-items: flex-start; 
                 padding: 12px 0; 
-                margin-bottom: 20px; /* 增加头部底部间距 */
+                margin-bottom: 20px;
             }
             
             .flex { 
                 flex-direction: column; 
-                gap: 20px; /* 加大卡片之间的间距 */
+                gap: 20px;
             }
             
             .card {
-                padding: 20px 18px; /* 加大卡片内边距 */
-                margin-bottom: 20px; /* 加大卡片底部间距 */
+                padding: 20px 18px;
+                margin-bottom: 20px;
             }
             
             .card-header { 
                 flex-direction: row; 
                 align-items: center; 
                 gap: 12px; 
-                margin-bottom: 25px; /* 加大卡片头部底部间距 */
+                margin-bottom: 25px;
             }
             
             /* 移动端头像尺寸调大 */
             .text-center img { 
-                width: 75px; /* 从60px调整为90px */
-                margin: 0 3px; /* 增加头像之间的间距 */
+                width: 75px; 
+                margin: 0 3px;
             }
             
             .contact-list { 
-                gap: 20px; /* 加大联系项间距 */
-                margin: 30px 0; /* 加大联系区域上下间距 */
+                gap: 20px; 
+                margin: 30px 0;
             }
             
             .download-list { 
-                gap: 20px; /* 加大下载卡片间距 */
+                gap: 20px;
             }
             
             .title { 
-                font-size: 19px; /* 稍微加大标题字体 */
+                font-size: 19px;
             }
             
-            /* 导航网格调整，更宽松 */
+            /* 快速导航移动端最佳适配【核心调整】 */
             .nav-grid { 
-                grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); 
-                gap: 20px; /* 加大导航卡片间距 */
-                margin-top: 15px;
+                grid-template-columns: repeat(2, 1fr); /* 固定2列，适配所有移动端宽度，显示最均衡 */
+                gap: 12px; /* 适中间距，不拥挤不松散 */
+                margin-top: 12px;
+                padding: 0 4px; /* 左右留边，贴合页面 */
             }
             
             .nav-card { 
-                min-height: 90px; /* 加大导航卡片高度 */
-                padding: 18px 8px; /* 加大导航卡片内边距 */
+                min-height: 100px; /* 加高卡片，提升点击区域 */
+                padding: 18px 6px; /* 上下内边距加大，左右适中 */
             }
             
             .nav-card-icon { 
-                font-size: 22px; 
+                font-size: 26px; /* 放大图标，移动端视觉更突出 */
+                margin-bottom: 10px; /* 加大图标与文字间距 */
             }
             
             .nav-card-text { 
-                font-size: 14px; 
+                font-size: 15px; /* 放大文字，提升可读性 */
+                font-weight: 500; /* 加粗文字，移动端更清晰 */
             }
             
             /* 返回顶部按钮调整 */
@@ -654,15 +624,26 @@
                 right: 25px;
             }
             
-            /* 随机文本区域加大内边距 */
-            .random-text-box {
-                padding: 22px 18px;
-                margin-top: 28px;
-            }
-            
             /* 下载按钮加大内边距，更易点击 */
             .btn {
                 padding: 10px 20px;
+            }
+        }
+
+        /* 小屏移动端额外适配（如320px窄屏） */
+        @media (max-width: 360px) {
+            .nav-grid {
+                gap: 10px;
+            }
+            .nav-card {
+                min-height: 90px;
+                padding: 16px 4px;
+            }
+            .nav-card-icon {
+                font-size: 24px;
+            }
+            .nav-card-text {
+                font-size: 14px;
             }
         }
     </style>
@@ -734,18 +715,6 @@
                         <i class="fa-solid fa-star nav-card-icon"></i>
                         <span class="nav-card-text">朝鲜TV</span>
                     </a>
-                </div>
-
-                <!-- 随机文本栏 -->
-                <div class="random-text-box">
-                    <div class="random-text-header">
-                        <h2 class="title" style="font-size: 18px;"> 每日一言</h2>
-                        <button class="btn" style="padding: 4px 10px; font-size: 14px;" onclick="getHitokoto()">
-                            <i class="fa-solid fa-rotate"></i> 换一条
-                        </button>
-                    </div>
-                    <div class="random-text-content" id="randomText">加载中...</div>
-                    <div class="hitokoto-from" id="hitokotoFrom"></div>
                 </div>
             </div>
 
@@ -840,50 +809,6 @@
             }
             updateTime();
         }
-
-        // 从一言API获取动态文本（优化版）
-        async function getHitokoto() {
-            const randomTextElement = document.getElementById('randomText');
-            const hitokotoFromElement = document.getElementById('hitokotoFrom');
-            
-            // 先添加淡出+下移动画
-            randomTextElement.style.opacity = "0";
-            randomTextElement.style.transform = "translateY(10px)";
-            hitokotoFromElement.style.opacity = "0";
-
-            try {
-                // 调用一言API，添加超时控制
-                const controller = new AbortController();
-                const timeoutId = setTimeout(() => controller.abort(), 5000); // 5秒超时
-                
-                const response = await fetch('https://v1.hitokoto.cn/', {
-                    signal: controller.signal
-                });
-                clearTimeout(timeoutId);
-                
-                if (!response.ok) throw new Error("API请求失败");
-                const data = await response.json();
-                
-                // 延迟300ms（匹配动画时长），更新API返回的文本
-                setTimeout(() => {
-                    randomTextElement.textContent = data.hitokoto;
-                    hitokotoFromElement.textContent = data.from ? `—— ${data.from}` : '';
-                    randomTextElement.style.opacity = "1";
-                    randomTextElement.style.transform = "translateY(0)";
-                    hitokotoFromElement.style.opacity = "1";
-                }, 300);
-            } catch (error) {
-                // API失败时显示提示文字
-                setTimeout(() => {
-                    randomTextElement.textContent = "获取一言失败，请稍后重试";
-                    hitokotoFromElement.textContent = "";
-                    randomTextElement.style.opacity = "1";
-                    randomTextElement.style.transform = "translateY(0)";
-                    hitokotoFromElement.style.opacity = "1";
-                }, 300);
-                console.log("一言API请求失败：", error);
-            }
-        }
         
         // 主题切换功能
         function toggleTheme() {
@@ -949,7 +874,6 @@
             
             // 初始化功能
             showDateTime();
-            getHitokoto(); // 初始化每日一言
             
             // 监听滚动事件（使用防抖优化性能）
             let scrollTimer;
