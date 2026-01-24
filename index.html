@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/tb.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/tb.ico" type="image/x-icon">
+
     <!-- 引入外部资源 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -187,6 +190,7 @@
             font-weight: 700;
             color: #000;
             transition: transform 0.3s ease;
+            cursor: pointer; /* 新增：鼠标悬浮显示手型，提示可点击 */
         }
         
         .logo:hover { transform: scale(1.05); }
@@ -650,9 +654,9 @@
 </head>
 <body>
     <div class="container">
-        <!-- 头部区域 -->
+        <!-- 头部区域 - 仅修改logo添加onclick刷新事件 -->
         <header class="header">
-            <div class="logo">🌱 田兵个人网站</div>
+            <div class="logo" onclick="window.location.reload()">🌱 田兵个人网站</div>
             <button class="theme-toggle" onclick="toggleTheme()">
                 <i class="fa-solid fa-moon"></i>
             </button>
