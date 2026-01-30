@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>田兵网站 TB.HSJR</title>
     
     <link rel="icon" href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/tb.ico" type="image/x-icon">
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/tb.ico" type="image/x-icon">
@@ -165,6 +165,7 @@
         .btn.loading {
             background: #5a88ff;
             cursor: wait;
+            pointer-events: none; /* 禁用点击事件 */
         }
         
         /* 布局工具类 */
@@ -194,6 +195,22 @@
         }
         
         .logo:hover { transform: scale(1.05); }
+        
+        /* 访问计数器样式 */
+        .visit-counter {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.6);
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        
+        .visit-counter:hover {
+            background-color: rgba(51, 102, 255, 0.1);
+        }
         
         /* 快速导航样式 - 卡片式网格布局【核心优化：通用样式适配移动端基础】 */
         .nav-grid {
@@ -632,6 +649,15 @@
             .btn {
                 padding: 10px 20px;
             }
+            
+            /* 访问计数器适配 */
+            .visit-counter {
+                font-size: 13px;
+                padding: 5px 10px;
+                margin-top: 8px;
+                width: 100%;
+                justify-content: center;
+            }
         }
 
         /* 小屏移动端额外适配（如320px窄屏） */
@@ -656,8 +682,8 @@
     <div class="container">
         <!-- 头部区域 - 仅修改logo添加onclick刷新事件 -->
         <header class="header">
-            <div class="logo" onclick="window.location.reload()">🌱 田兵网站 TB.HSJR</div>
-            <button class="theme-toggle" onclick="toggleTheme()">
+            <div class="logo" onclick="window.location.reload()" aria-label="刷新页面">🌱 田兵网站 TB.HSJR</div>
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="切换主题">
                 <i class="fa-solid fa-moon"></i>
             </button>
         </header>
@@ -667,23 +693,23 @@
             <div class="card-header">
                <h2 class="title"><i class="fa-solid fa-users"></i> 核心成员</h2>
                <div class="visit-counter">
-               <a><img alt="Hits" src="https://hits.sh/ttbb1978.github.io.svg?label=%E8%AE%BF%E9%97%AE%E9%87%8F&extraCount=2021&color=007ec6"/></a>
+                   <img alt="访问量统计" src="https://hits.sh/ttbb1978.github.io.svg?label=%E8%AE%BF%E9%97%AE%E9%87%8F&extraCount=2021&color=007ec6"/>
                    <span><i class="fa fa-cog fa-spin"></i></span> 
                    在线<span id="aa"></span>
                </div>
             </div>
             
             <div class="text-center" style="margin: 24px 0;">
-                <img src="http://q1.qlogo.cn/g?b=qq&nk=765931440&s=640" loading="lazy" alt="成员1"/>
-                <img src="http://q1.qlogo.cn/g?b=qq&nk=1040458166&s=640" loading="lazy" alt="成员2"/>
-                <img src="http://q1.qlogo.cn/g?b=qq&nk=2409495157&s=640" loading="lazy" alt="成员3"/>
-                <img src="http://q1.qlogo.cn/g?b=qq&nk=2358429597&s=640" loading="lazy" alt="成员4"/>
+                <img src="http://q1.qlogo.cn/g?b=qq&nk=765931440&s=640" loading="lazy" alt="成员1" aria-label="核心成员1"/>
+                <img src="http://q1.qlogo.cn/g?b=qq&nk=1040458166&s=640" loading="lazy" alt="成员2" aria-label="核心成员2"/>
+                <img src="http://q1.qlogo.cn/g?b=qq&nk=2409495157&s=640" loading="lazy" alt="成员3" aria-label="核心成员3"/>
+                <img src="http://q1.qlogo.cn/g?b=qq&nk=2358429597&s=640" loading="lazy" alt="成员4" aria-label="核心成员4"/>
             </div> 
  
             <div class="contact-list">
                 <div class="contact-item">
                     <i class="fa-solid fa-envelope contact-icon"></i>
-                    <span><a href="mailto:hsjr@tb90.de5.net">hsjr@tb90.de5.net</a></span>                    
+                    <span><a href="mailto:hsjr@tb90.de5.net" aria-label="发送邮件到hsjr@tb90.de5.net">hsjr@tb90.de5.net</a></span>                    
                 </div>
             </div>
 
@@ -699,27 +725,27 @@
                 
                 <!-- 快速导航 - 卡片式网格布局 -->
                 <div class="nav-grid">
-                    <a href="https://tb90.de5.net" class="nav-card" target="_blank">
+                    <a href="https://tb90.de5.net" class="nav-card" target="_blank" rel="noopener noreferrer" aria-label="缩短网址">
                         <i class="fa-solid fa-cloud nav-card-icon"></i>
                         <span class="nav-card-text">缩短网址</span>
                     </a>
-                    <a href="https://ai.tb80.de5.net" class="nav-card" target="_blank">
+                    <a href="https://ai.tb80.de5.net" class="nav-card" target="_blank" rel="noopener noreferrer" aria-label="TBAI">
                         <i class="fa-solid fa-robot nav-card-icon"></i>
                         <span class="nav-card-text">TBAI</span>
                     </a>
-                    <a href="https://cf.090227.xyz" class="nav-card" target="_blank">
+                    <a href="https://cf.090227.xyz" class="nav-card" target="_blank" rel="noopener noreferrer" aria-label="CM优选">
                         <i class="fa-solid fa-star nav-card-icon"></i>
                         <span class="nav-card-text">CM优选</span>
                     </a>
-                    <a href="https://check-proxyip.ssss.nyc.mn" class="nav-card" target="_blank">
+                    <a href="https://check-proxyip.ssss.nyc.mn" class="nav-card" target="_blank" rel="noopener noreferrer" aria-label="Proxyip 检测">
                         <i class="fa-solid fa-shield-halved nav-card-icon"></i>
                         <span class="nav-card-text">Proxyip 检测</span>
                     </a>                    
-                    <a href="https://www.zzzzz688.com" class="nav-card" target="_blank">
+                    <a href="https://www.zzzzz688.com" class="nav-card" target="_blank" rel="noopener noreferrer" aria-label="PC游戏">
                         <i class="fa-solid fa-gamepad nav-card-icon"></i>
                         <span class="nav-card-text">PC游戏</span>
                     </a>
-                    <a href="https://kcnawatch.org/korea-central-tv-livestream" class="nav-card" target="_blank">
+                    <a href="https://kcnawatch.org/korea-central-tv-livestream" class="nav-card" target="_blank" rel="noopener noreferrer" aria-label="朝鲜TV">
                         <i class="fa-solid fa-tv nav-card-icon"></i>
                         <span class="nav-card-text">朝鲜TV</span>
                     </a>					
@@ -730,7 +756,7 @@
                 <h2 class="title"><i class="fa-solid fa-image"></i> 在线美图</h2>
                 <p class="subtitle">一处美景，邂逅一次，便会万劫不复地爱上 ...</p>
                 <div style="border-radius: 12px; overflow: hidden;">
-                    <img src="https://cdn.seovx.com/?mom=302" alt="每日美图" style="width: 100%; height: auto;" loading="lazy">
+                    <img src="https://cdn.seovx.com/?mom=302" alt="每日美图" loading="lazy" style="width: 100%; height: auto;" aria-label="每日美图">
                 </div>
             </div>
         </section>
@@ -746,8 +772,8 @@
                         <i class="fa-brands fa-android download-icon" style="color: #3ddc84;"></i>
                         编码工具（安卓）
                     </div>
-                    <p class="margin-b-8">支持Base64文本编码/解码</p>
-                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/BASE64%E7%BC%96%E7%A0%81.apk" class="btn" download="BASE64编码工具.apk" onclick="handleDownload(this)">
+                    <p class="margin-b-8">Base64文本编码/解码</p>
+                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/BASE64%E7%BC%96%E7%A0%81.apk" class="btn" download="BASE64编码工具.apk" onclick="handleDownload(this)" aria-label="下载编码工具（安卓）">
                         <i class="fa-solid fa-download"></i> 下载
                     </a>
                 </div>
@@ -758,7 +784,7 @@
                         右键管理
                     </div>
                     <p class="margin-b-8">右键管理功能</p>
-                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/%E5%8F%B3%E9%94%AE%E7%AE%A1%E7%90%86.zip" class="btn" download="右键管理工具.zip" onclick="handleDownload(this)">
+                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/%E5%8F%B3%E9%94%AE%E7%AE%A1%E7%90%86.zip" class="btn" download="右键管理工具.zip" onclick="handleDownload(this)" aria-label="下载右键管理工具">
                         <i class="fa-solid fa-download"></i> 下载
                     </a>
                 </div>
@@ -769,7 +795,7 @@
                         图片编码
                     </div>
                     <p class="margin-b-8">Base64图片编码功能</p>
-                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/Base64%E5%9B%BE%E7%89%87.zip" class="btn" download="Base64图片编码工具.zip" onclick="handleDownload(this)">
+                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/Base64%E5%9B%BE%E7%89%87.zip" class="btn" download="Base64图片编码工具.zip" onclick="handleDownload(this)" aria-label="下载Base64图片编码工具">
                         <i class="fa-solid fa-download"></i> 下载
                     </a>
                 </div>
@@ -780,7 +806,7 @@
                         TB记事本
                     </div>
                     <p class="margin-b-8">Base64编码功能</p>
-                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/TB%E8%AE%B0%E4%BA%8B%E6%9C%AC.zip" class="btn" download="TB记事本.zip" onclick="handleDownload(this)">
+                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/TB%E8%AE%B0%E4%BA%8B%E6%9C%AC.zip" class="btn" download="TB记事本.zip" onclick="handleDownload(this)" aria-label="下载TB记事本">
                         <i class="fa-solid fa-download"></i> 下载
                     </a>
                 </div>
@@ -796,26 +822,33 @@
     </div>
     
     <!-- 返回顶部按钮 -->
-    <div class="back-to-top" onclick="scrollToTop()">
+    <div class="back-to-top" onclick="scrollToTop()" aria-label="返回顶部">
         <i class="fa-solid fa-arrow-up"></i>
     </div>
 
     <script>
         // 网站运行时间计算（优化性能）
         function showDateTime() {
+            const startTime = new Date("2021-04-24T00:00:00").getTime();
+            const timeElement = document.getElementById('aa');
+            
+            // 优化时间更新逻辑
             function updateTime() {
-                const timeOld = new Date() - new Date("2021-04-24T00:00:00");
-                const days = Math.floor(timeOld / (24 * 60 * 60 * 1000));
-                const hours = Math.floor((timeOld % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
-                const mins = Math.floor((timeOld % (60 * 60 * 1000)) / (60 * 1000));
-                const secs = Math.floor((timeOld % (60 * 1000)) / 1000);
-                document.getElementById('aa').textContent = `${days}天 ${hours}小时 ${mins}分 ${secs}秒`;
+                const now = Date.now();
+                const timeDiff = now - startTime;
                 
-                requestAnimationFrame(() => {
-                    setTimeout(updateTime, 1000);
-                });
+                const days = Math.floor(timeDiff / (24 * 60 * 60 * 1000));
+                const hours = Math.floor((timeDiff % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+                const mins = Math.floor((timeDiff % (60 * 60 * 1000)) / (60 * 1000));
+                const secs = Math.floor((timeDiff % (60 * 1000)) / 1000);
+                
+                timeElement.textContent = `${days}天 ${hours}小时 ${mins}分 ${secs}秒`;
             }
+            
+            // 立即执行一次
             updateTime();
+            // 每秒更新一次
+            setInterval(updateTime, 1000);
         }
         
         // 主题切换功能
@@ -838,18 +871,30 @@
             // 阻止重复点击
             if (btn.classList.contains('loading')) return;
             
+            // 保存原始内容
+            const originalHTML = btn.innerHTML;
+            
             // 添加加载状态
             btn.classList.add('loading');
-            const originalIcon = btn.innerHTML;
             btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> 下载中...';
             
-            // 5秒后恢复按钮状态（防止下载慢导致按钮一直显示加载）
+            // 监听下载完成事件（优化方案）
+            const resetButton = () => {
+                btn.classList.remove('loading');
+                btn.innerHTML = originalHTML;
+                // 移除事件监听，避免内存泄漏
+                btn.removeEventListener('click', resetButton);
+            };
+            
+            // 5秒后恢复（兜底方案）
+            setTimeout(resetButton, 5000);
+            
+            // 点击后短时间内恢复（用户触发下载后）
             setTimeout(() => {
                 if (btn.classList.contains('loading')) {
-                    btn.classList.remove('loading');
-                    btn.innerHTML = originalIcon;
+                    resetButton();
                 }
-            }, 5000);
+            }, 1500);
         }
         
         // 返回顶部功能
@@ -871,25 +916,28 @@
         }
         
         // 页面加载完成后初始化
-        window.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener('DOMContentLoaded', () => {
             // 加载保存的主题设置
             const savedTheme = localStorage.getItem('theme');
-            const icon = document.querySelector('.theme-toggle i');
+            const themeToggleIcon = document.querySelector('.theme-toggle i');
+            
             if (savedTheme === 'dark') {
                 document.body.classList.add('dark-mode');
-                icon.className = 'fa-solid fa-sun';
+                themeToggleIcon.className = 'fa-solid fa-sun';
             }
             
             // 初始化功能
             showDateTime();
             
-            // 监听滚动事件（使用防抖优化性能）
-            let scrollTimer;
-            window.addEventListener('scroll', () => {
-                clearTimeout(scrollTimer);
-                scrollTimer = setTimeout(handleScroll, 10);
-            });
+            // 优化滚动监听 - 使用被动事件监听提升性能
+            window.addEventListener('scroll', handleScroll, { passive: true });
+            
+            // 初始化时执行一次滚动检查
+            handleScroll();
         });
+        
+        // 窗口大小变化时重新检查布局
+        window.addEventListener('resize', handleScroll);
     </script>
 </body>
 </html>
