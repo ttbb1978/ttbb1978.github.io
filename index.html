@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>田兵网站</title>
-    
     <link rel="icon" href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/tb.ico" type="image/x-icon">
     <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/tb.ico" type="image/x-icon">
-
-    <!-- 引入外部资源 -->
+    
+    <!-- 外部资源 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
     
     <style>
-        /* 基础样式重置 */
+        /* 基础重置 */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
@@ -24,7 +23,7 @@
             color: #000;
             line-height: 1.6;
             padding: 20px;
-            transition: background-color 0.3s ease, color 0.3s ease;
+            transition: all 0.3s ease;
             min-height: 100vh;
             overflow-x: hidden;
             background-image: 
@@ -47,6 +46,7 @@
             object-fit: cover;
         }
         
+        /* 通用样式 */
         .text-center { text-align: center; }
         .text-center img { 
             border-radius: 8%; 
@@ -56,13 +56,11 @@
             transition: transform 0.3s ease;
         }
         
-        .text-center img:hover {
-            transform: translateY(-5px) scale(1.05);
-        }
+        .text-center img:hover { transform: translateY(-5px) scale(1.05); }
         
         /* 卡片样式 */
         .card {
-            background: #ffffff;
+            background: #fff;
             border-radius: 16px;
             padding: 24px;
             margin-bottom: 24px;
@@ -84,13 +82,10 @@
             transition: transform 0.3s ease;
         }
         
-        .card:hover { 
-            transform: translateY(-5px);
-        }
-        
+        .card:hover { transform: translateY(-5px); }
         .card:hover::before { transform: scaleX(1); }
         
-        /* 文本样式 黄 #f59e0b 绿 #3ddc84 蓝 #3366ff */
+        /* 文本样式 */
         .title {
             font-size: 20px;
             font-weight: 700;
@@ -111,10 +106,9 @@
             transition: color 0.3s ease;
         }
         
-        .card:hover .subtitle { color: #444; }
         .margin-b-8 { margin-bottom: 8px; }
         
-        /* 链接与按钮样式 */
+        /* 链接与按钮 */
         a { 
             color: #3366ff; 
             text-decoration: none; 
@@ -144,35 +138,24 @@
             color: #fff !important;
             border-radius: 6px;
             font-weight: 500;
-            text-decoration: none !important;
             border: none;
             cursor: pointer;
             transition: all 0.3s ease;
-            position: relative;
         }
         
-        /* 移除按钮的下划线 */
-        .btn::after {
-            display: none !important;
-        }
-        
-        .btn:hover { 
-            background: #2855e6; 
-            transform: translateY(-2px);
-        }
-        
-        /* 加载中的按钮样式 */
+        .btn::after { display: none !important; }
+        .btn:hover { background: #2855e6; transform: translateY(-2px); }
         .btn.loading {
             background: #5a88ff;
             cursor: wait;
-            pointer-events: none; /* 禁用点击事件 */
+            pointer-events: none;
         }
         
-        /* 布局工具类 */
+        /* 布局工具 */
         .flex { display: flex; gap: 24px; flex-wrap: wrap; }
         .flex-item { flex: 1; min-width: 280px; }
         
-        /* 头部与导航样式 */
+        /* 头部样式 */
         .header {
             display: flex;
             justify-content: space-between;
@@ -191,12 +174,12 @@
             font-weight: 700;
             color: #000;
             transition: transform 0.3s ease;
-            cursor: pointer; /* 新增：鼠标悬浮显示手型，提示可点击 */
+            cursor: pointer;
         }
         
         .logo:hover { transform: scale(1.05); }
         
-        /* 访问计数器样式 */
+        /* 访问计数器 */
         .visit-counter {
             display: flex;
             align-items: center;
@@ -208,11 +191,9 @@
             transition: all 0.3s ease;
         }
         
-        .visit-counter:hover {
-            background-color: rgba(51, 102, 255, 0.1);
-        }
+        .visit-counter:hover { background-color: rgba(51, 102, 255, 0.1); }
         
-        /* 快速导航样式 - 卡片式网格布局【核心优化：通用样式适配移动端基础】 */
+        /* 快速导航 */
         .nav-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
@@ -233,9 +214,9 @@
             border: 1px solid transparent;
             min-height: 90px;
             width: 100%;
-            text-align: center; /* 文字居中，适配换行 */
-            word-break: keep-all; /* 中文不随意换行，保持语义 */
-            white-space: normal; /* 允许正常换行，解决长文字溢出 */
+            text-align: center;
+            word-break: keep-all;
+            white-space: normal;
         }
         
         .nav-card:hover {
@@ -248,30 +229,26 @@
             color: #3366ff;
             margin-bottom: 8px;
             transition: transform 0.3s ease;
-            line-height: 1; /* 消除图标行高影响 */
+            line-height: 1;
         }
         
         .nav-card:nth-child(odd) .nav-card-icon { color: #3ddc84; }
         .nav-card:nth-child(3n) .nav-card-icon { color: #f59e0b; }
         .nav-card:nth-child(4n) .nav-card-icon { color: #ec4899; }
         
-        .nav-card:hover .nav-card-icon {
-            transform: scale(1.2);
-        }
+        .nav-card:hover .nav-card-icon { transform: scale(1.2); }
         
         .nav-card-text {
             font-size: 14px;
             color: #666;
             transition: color 0.3s ease;
-            line-height: 1.4; /* 换行后行高适中 */
-            padding: 0 4px; /* 左右留边，防止文字贴边 */
+            line-height: 1.4;
+            padding: 0 4px;
         }
         
-        .nav-card:hover .nav-card-text {
-            color: #3366ff;
-        }
+        .nav-card:hover .nav-card-text { color: #3366ff; }
         
-        /* 暗黑模式样式 */
+        /* 暗黑模式 */
         body.dark-mode { 
             background: #121212; 
             color: #e0e0e0; 
@@ -280,122 +257,35 @@
                 radial-gradient(circle at 90% 80%, rgba(51, 102, 255, 0.02) 0%, transparent 20%);
         }
         
-        body.dark-mode .card { 
-            background: #1c1c1e; 
-        }
-        
-        body.dark-mode .card::before { 
-            background: linear-gradient(90deg, #4ade80, #60a5fa); 
-        }
-        
-        body.dark-mode .subtitle, 
-        body.dark-mode .footer-text { 
-            color: #a0a0a0; 
-        }
-        
-        body.dark-mode .card:hover .subtitle { 
-            color: #c0c0c0; 
-        }
-        
-        body.dark-mode .nav-card {
-            background: #2a2a2e;
-        }
-        
-        body.dark-mode .nav-card:hover {
-            border-color: rgba(96, 165, 250, 0.3);
-        }
-        
-        body.dark-mode .nav-card-icon { 
-            color: #60a5fa; 
-        }
-        
-        body.dark-mode .nav-card:nth-child(odd) .nav-card-icon { 
-            color: #4ade80; 
-        }
-        
-        body.dark-mode .nav-card:nth-child(3n) .nav-card-icon { 
-            color: #f59e0b; 
-        }
-        
-        body.dark-mode .nav-card:nth-child(4n) .nav-card-icon { 
-            color: #ec4899; 
-        }
-        
-        body.dark-mode .nav-card-text { 
-            color: #d0d0d0; 
-        }
-        
-        body.dark-mode .nav-card:hover .nav-card-text { 
-            color: #60a5fa; 
-        }
-        
-        body.dark-mode .download-card:nth-child(1) { 
-            background-color: rgba(74, 222, 128, 0.08); 
-        }
-        
-        body.dark-mode .download-card:nth-child(2) { 
-            background-color: rgba(96, 165, 250, 0.08); 
-        }
-        
-        body.dark-mode .download-card:nth-child(3) { 
-            background-color: rgba(245, 158, 11, 0.08); 
-        }
-        
-        body.dark-mode .download-card:nth-child(4) { 
-            background-color: rgba(236, 72, 153, 0.08); 
-        }
-        
-        body.dark-mode .logo { 
-            color: #e0e0e0; 
-        }
-        
-        body.dark-mode a { 
-            color: #60a5fa; 
-        }
-        
-        body.dark-mode a::after { 
-            background-color: #60a5fa; 
-        }
-        
-        body.dark-mode .contact-icon { 
-            color: #60a5fa; 
-        }
-        
-        body.dark-mode .contact-item { 
-            background-color: rgba(42, 42, 46, 0.6); 
-        }
-        
-        body.dark-mode .contact-item:hover { 
-            background-color: rgba(96, 165, 250, 0.1); 
-        }
-        
-        body.dark-mode .footer-text { 
-            border-top: 1px solid #333; 
-        }
-        
-        body.dark-mode .btn {
-            background: #60a5fa;
-        }
-        
-        body.dark-mode .btn:hover { 
-            background: #3b82f6; 
-        }
-        
-        body.dark-mode .theme-toggle { 
-            color: #a0a0a0; 
-        }
-        
-        body.dark-mode .theme-toggle:hover { 
-            background-color: rgba(255,255,255,0.05); 
-        }
-        
+        body.dark-mode .card { background: #1c1c1e; }
+        body.dark-mode .card::before { background: linear-gradient(90deg, #4ade80, #60a5fa); }
+        body.dark-mode .subtitle { color: #a0a0a0; }
+        body.dark-mode .card:hover .subtitle { color: #c0c0c0; }
+        body.dark-mode .nav-card { background: #2a2a2e; }
+        body.dark-mode .nav-card:hover { border-color: rgba(96, 165, 250, 0.3); }
+        body.dark-mode .nav-card-icon { color: #60a5fa; }
+        body.dark-mode .nav-card:nth-child(odd) .nav-card-icon { color: #4ade80; }
+        body.dark-mode .nav-card:nth-child(3n) .nav-card-icon { color: #f59e0b; }
+        body.dark-mode .nav-card:nth-child(4n) .nav-card-icon { color: #ec4899; }
+        body.dark-mode .nav-card-text { color: #d0d0d0; }
+        body.dark-mode .nav-card:hover .nav-card-text { color: #60a5fa; }
+        body.dark-mode .download-card:nth-child(1) { background-color: rgba(74, 222, 128, 0.08); }
+        body.dark-mode .download-card:nth-child(2) { background-color: rgba(96, 165, 250, 0.08); }
+        body.dark-mode .download-card:nth-child(3) { background-color: rgba(245, 158, 11, 0.08); }
+        body.dark-mode .download-card:nth-child(4) { background-color: rgba(236, 72, 153, 0.08); }
+        body.dark-mode .logo { color: #e0e0e0; }
+        body.dark-mode a { color: #60a5fa; }
+        body.dark-mode a::after { background-color: #60a5fa; }
+        body.dark-mode .contact-icon { color: #60a5fa; }
+        body.dark-mode .contact-item { background-color: rgba(42, 42, 46, 0.6); }
+        body.dark-mode .contact-item:hover { background-color: rgba(96, 165, 250, 0.1); }
+        body.dark-mode .btn { background: #60a5fa; }
+        body.dark-mode .btn:hover { background: #3b82f6; }
+        body.dark-mode .theme-toggle { color: #a0a0a0; }
+        body.dark-mode .theme-toggle:hover { background-color: rgba(255,255,255,0.05); }
         body.dark-mode .visit-counter {
             color: #a0a0a0;
             background-color: rgba(255,255,255,0.03);
-        }
-        
-        body.dark-mode .visit-counter:hover { 
-            background-color: rgba(255,255,255,0.05); 
         }
         
         /* 主题切换按钮 */
@@ -419,7 +309,7 @@
             transform: rotate(30deg);
         }
 
-        /* 卡片头部样式 */
+        /* 卡片头部 */
         .card-header {
             display: flex;
             justify-content: space-between;
@@ -429,12 +319,8 @@
             gap: 12px;
         }
         
-        /* 下载区样式 */
-        .download-list { 
-            display: flex; 
-            flex-wrap: wrap; 
-            gap: 20px; 
-        }
+        /* 下载区 */
+        .download-list { display: flex; flex-wrap: wrap; gap: 20px; }
         
         .download-card {
             flex: 1;
@@ -466,9 +352,7 @@
             background-color: rgba(233, 30, 99, 0.05); 
         }
         
-        .download-card:hover { 
-            transform: translateY(-5px); 
-        }
+        .download-card:hover { transform: translateY(-5px); }
         
         .download-title {
             font-weight: 500;
@@ -486,11 +370,9 @@
             transition: transform 0.3s ease;
         }
         
-        .download-card:hover .download-icon { 
-            transform: scale(1.2) rotate(10deg); 
-        }
+        .download-card:hover .download-icon { transform: scale(1.2) rotate(10deg); }
         
-        /* 联系与底部样式 */
+        /* 联系样式 */
         .contact-list {
             display: flex;
             flex-wrap: wrap;
@@ -521,20 +403,9 @@
             transition: transform 0.3s ease;
         }
         
-        .contact-item:hover .contact-icon { 
-            transform: rotate(15deg); 
-        }
+        .contact-item:hover .contact-icon { transform: rotate(15deg); }
         
-        .footer-text {
-            text-align: center;
-            padding: 24px 0;
-            color: #666;
-            font-size: 14px;
-            border-top: 1px solid #eee;
-            margin-top: 40px;
-        }
-        
-        /* 返回顶部按钮样式 */
+        /* 返回顶部 */
         .back-to-top {
             position: fixed;
             bottom: 30px;
@@ -555,22 +426,12 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
-        .back-to-top.show {
-            opacity: 1;
-            visibility: visible;
-        }
+        .back-to-top.show { opacity: 1; visibility: visible; }
+        .back-to-top:hover { background-color: #0080ff; transform: translateY(-5px); }
         
-        .back-to-top:hover {
-            background-color: #0080ff;
-            transform: translateY(-5px);
-        }
-        
-        /* 响应式样式 - 快速导航【移动端核心优化】 */
+        /* 响应式 */
         @media (max-width: 768px) {
-            /* 整体页面内边距加大，让布局更宽松 */
-            body {
-                padding: 15px 8px;
-            }
+            body { padding: 15px 8px; }
             
             .header { 
                 align-items: flex-start; 
@@ -578,10 +439,7 @@
                 margin-bottom: 20px;
             }
             
-            .flex { 
-                flex-direction: column; 
-                gap: 20px;
-            }
+            .flex { flex-direction: column; gap: 20px; }
             
             .card {
                 padding: 20px 18px;
@@ -595,49 +453,38 @@
                 margin-bottom: 25px;
             }
             
-            /* 移动端头像尺寸调大 */
             .text-center img { 
                 width: 75px; 
                 margin: 0 3px;
             }
             
-            .contact-list { 
-                gap: 20px; 
-                margin: 30px 0;
-            }
+            .contact-list { gap: 20px; margin: 30px 0; }
+            .download-list { gap: 20px; }
+            .title { font-size: 19px; }
             
-            .download-list { 
-                gap: 20px;
-            }
-            
-            .title { 
-                font-size: 19px;
-            }
-            
-            /* 快速导航移动端最佳适配【核心调整】 */
+            /* 导航适配 */
             .nav-grid { 
-                grid-template-columns: repeat(2, 1fr); /* 固定2列，适配所有移动端宽度，显示最均衡 */
-                gap: 12px; /* 适中间距，不拥挤不松散 */
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
                 margin-top: 12px;
-                padding: 0 4px; /* 左右留边，贴合页面 */
+                padding: 0 4px;
             }
             
             .nav-card { 
-                min-height: 100px; /* 加高卡片，提升点击区域 */
-                padding: 18px 6px; /* 上下内边距加大，左右适中 */
+                min-height: 100px;
+                padding: 18px 6px;
             }
             
             .nav-card-icon { 
-                font-size: 26px; /* 放大图标，移动端视觉更突出 */
-                margin-bottom: 10px; /* 加大图标与文字间距 */
+                font-size: 26px;
+                margin-bottom: 10px;
             }
             
             .nav-card-text { 
-                font-size: 15px; /* 放大文字，提升可读性 */
-                font-weight: 500; /* 加粗文字，移动端更清晰 */
+                font-size: 15px;
+                font-weight: 500;
             }
             
-            /* 返回顶部按钮调整 */
             .back-to-top {
                 width: 45px;
                 height: 45px;
@@ -645,12 +492,8 @@
                 right: 25px;
             }
             
-            /* 下载按钮加大内边距，更易点击 */
-            .btn {
-                padding: 10px 20px;
-            }
+            .btn { padding: 10px 20px; }
             
-            /* 访问计数器适配 */
             .visit-counter {
                 font-size: 13px;
                 padding: 5px 10px;
@@ -660,27 +503,21 @@
             }
         }
 
-        /* 小屏移动端额外适配（如320px窄屏） */
+        /* 小屏适配 */
         @media (max-width: 360px) {
-            .nav-grid {
-                gap: 10px;
-            }
+            .nav-grid { gap: 10px; }
             .nav-card {
                 min-height: 90px;
                 padding: 16px 4px;
             }
-            .nav-card-icon {
-                font-size: 24px;
-            }
-            .nav-card-text {
-                font-size: 14px;
-            }
+            .nav-card-icon { font-size: 24px; }
+            .nav-card-text { font-size: 14px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- 头部区域 - 仅修改logo添加onclick刷新事件 -->
+        <!-- 头部 -->
         <header class="header">
             <div class="logo" onclick="window.location.reload()" aria-label="刷新页面">🌱 <font color="#f59e0b">田兵网站 TB.HSJR</font></div>
             <button class="theme-toggle" onclick="toggleTheme()" aria-label="切换主题">
@@ -688,64 +525,62 @@
             </button>
         </header>
         
-        <!-- 个人信息区域 -->
+        <!-- 核心成员 -->
         <section class="card">
             <div class="card-header">
                <h2 class="title"><i class="fa-solid fa-users"></i> 核心成员</h2>
                <div class="visit-counter">
                    <img alt="访问量统计" src="https://hits.sh/ttbb1978.github.io.svg?label=%E8%AE%BF%E9%97%AE%E9%87%8F&extraCount=2021&color=007ec6"/>
-                   <span><i class="fa fa-cog fa-spin"></i></span> 
+                   <span><i class="fa-solid fa-cog fa-spin"></i></span> 
                    在线<span id="aa"></span>
                </div>
             </div>
             
             <div class="text-center" style="margin: 24px 0;">
-                <img src="http://q1.qlogo.cn/g?b=qq&nk=765931440&s=640"/>
-                <img src="http://q1.qlogo.cn/g?b=qq&nk=1040458166&s=640"/>
-                <img src="http://q1.qlogo.cn/g?b=qq&nk=2409495157&s=640"/>
-                <img src="http://q1.qlogo.cn/g?b=qq&nk=2358429597&s=640"/>
+                <img src="http://q1.qlogo.cn/g?b=qq&nk=765931440&s=640" alt="成员1"/>
+                <img src="http://q1.qlogo.cn/g?b=qq&nk=1040458166&s=640" alt="成员2"/>
+                <img src="http://q1.qlogo.cn/g?b=qq&nk=2409495157&s=640" alt="成员3"/>
+                <img src="http://q1.qlogo.cn/g?b=qq&nk=2358429597&s=640" alt="成员4"/>
             </div> 
  
             <div class="contact-list">
                 <div class="contact-item">
                     <i class="fa-solid fa-envelope contact-icon"></i>
-                    <span><a href="mailto:hsjr@tb90.de5.net" aria-label="发送邮件到hsjr@tb90.de5.net">hsjr@tb90.de5.net</a></span>                    
+                    <span><a href="mailto:hsjr@tb90.de5.net" aria-label="发送邮件">hsjr@tb90.de5.net</a></span>                    
                 </div>
             </div>
 
             <font color="#808080"><p>优选域名：jp.anzjr.dynv6.net<br>PROXYIP：cf.hsjr.ndjp.net</p></font>
-
         </section>
         
-        <!-- 导航与Banner区域 -->
+        <!-- 导航与美图 -->
         <section class="flex">
             <div class="card flex-item">
                 <h2 class="title"><i class="fa-solid fa-compass"></i> 快速导航</h2>
                 <p class="subtitle">带你快速了解这个世界 ...</p>
                 
-                <!-- 快速导航 - 卡片式网格布局 -->
                 <div class="nav-grid">
-                    <a href="https://www.fofoyy.com" class="nav-card" target="_blank" rel="noopener noreferrer" aria-label="缩短网址">
+                    <a href="https://www.fofoyy.com" class="nav-card" target="_blank" rel="noopener noreferrer">
                         <i class="fa-solid fa-cloud nav-card-icon"></i>
                         <span class="nav-card-text">FoFo影院</span>
                     </a>
-                    <a href="https://ai.tb80.de5.net" class="nav-card" target="_blank" rel="noopener noreferrer" aria-label="TBAI">
+                    <a href="https://ai.tb80.de5.net" class="nav-card" target="_blank" rel="noopener noreferrer">
                         <i class="fa-solid fa-robot nav-card-icon"></i>
                         <span class="nav-card-text">TBAI</span>
                     </a>
-                    <a href="https://cf.090227.xyz" class="nav-card" target="_blank" rel="noopener noreferrer" aria-label="CM优选">
+                    <a href="https://cf.090227.xyz" class="nav-card" target="_blank" rel="noopener noreferrer">
                         <i class="fa-solid fa-star nav-card-icon"></i>
                         <span class="nav-card-text">CM优选</span>
                     </a>
-                    <a href="https://check-proxyip.ssss.nyc.mn" class="nav-card" target="_blank" rel="noopener noreferrer" aria-label="Proxyip 检测">
+                    <a href="https://check-proxyip.ssss.nyc.mn" class="nav-card" target="_blank" rel="noopener noreferrer">
                         <i class="fa-solid fa-shield-halved nav-card-icon"></i>
                         <span class="nav-card-text">Proxyip 检测</span>
                     </a>                    
-                    <a href="https://www.zzzzz688.com" class="nav-card" target="_blank" rel="noopener noreferrer" aria-label="PC游戏">
+                    <a href="https://www.zzzzz688.com" class="nav-card" target="_blank" rel="noopener noreferrer">
                         <i class="fa-solid fa-gamepad nav-card-icon"></i>
                         <span class="nav-card-text">PC游戏</span>
                     </a>
-                    <a href="https://kcnawatch.org/korea-central-tv-livestream" class="nav-card" target="_blank" rel="noopener noreferrer" aria-label="朝鲜TV">
+                    <a href="https://kcnawatch.org/korea-central-tv-livestream" class="nav-card" target="_blank" rel="noopener noreferrer">
                         <i class="fa-solid fa-tv nav-card-icon"></i>
                         <span class="nav-card-text">朝鲜TV</span>
                     </a>					
@@ -756,12 +591,12 @@
                 <h2 class="title"><i class="fa-solid fa-image"></i> 在线美图</h2>
                 <p class="subtitle">一处美景，邂逅一次，便会万劫不复地爱上 ...</p>
                 <div style="border-radius: 12px; overflow: hidden;">
-                    <img src="https://cdn.seovx.com/?mom=302" alt="每日美图" loading="lazy" style="width: 100%; height: auto;" aria-label="每日美图">
+                    <img src="https://cdn.seovx.com/?mom=302" alt="每日美图" loading="lazy" style="width: 100%; height: auto;">
                 </div>
             </div>
         </section>
         
-        <!-- 下载资源区域 -->
+        <!-- 下载区 -->
         <section class="card">
             <h2 class="title"><i class="fa-solid fa-download"></i> 工具下载</h2>
             <p class="subtitle">本地工具，无需联网即可使用</p>
@@ -773,7 +608,7 @@
                         编码工具（安卓）
                     </div>
                     <p class="margin-b-8">Base64文本编码/解码</p>
-                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/BASE64%E7%BC%96%E7%A0%81.apk" class="btn" download="BASE64编码工具.apk" onclick="handleDownload(this)" aria-label="下载编码工具（安卓）">
+                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/BASE64%E7%BC%96%E7%A0%81.apk" class="btn" download="BASE64编码工具.apk" onclick="handleDownload(this)">
                         <i class="fa-solid fa-download"></i> 下载
                     </a>
                 </div>
@@ -784,7 +619,7 @@
                         右键管理
                     </div>
                     <p class="margin-b-8">右键管理功能</p>
-                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/%E5%8F%B3%E9%94%AE%E7%AE%A1%E7%90%86.zip" class="btn" download="右键管理工具.zip" onclick="handleDownload(this)" aria-label="下载右键管理工具">
+                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/%E5%8F%B3%E9%94%AE%E7%AE%A1%E7%90%86.zip" class="btn" download="右键管理工具.zip" onclick="handleDownload(this)">
                         <i class="fa-solid fa-download"></i> 下载
                     </a>
                 </div>
@@ -795,7 +630,7 @@
                         图片编码
                     </div>
                     <p class="margin-b-8">Base64图片编码功能</p>
-                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/Base64%E5%9B%BE%E7%89%87.zip" class="btn" download="Base64图片编码工具.zip" onclick="handleDownload(this)" aria-label="下载Base64图片编码工具">
+                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/Base64%E5%9B%BE%E7%89%87.zip" class="btn" download="Base64图片编码工具.zip" onclick="handleDownload(this)">
                         <i class="fa-solid fa-download"></i> 下载
                     </a>
                 </div>
@@ -806,37 +641,34 @@
                         TB记事本
                     </div>
                     <p class="margin-b-8">Base64编码功能</p>
-                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/TB%E8%AE%B0%E4%BA%8B%E6%9C%AC.zip" class="btn" download="TB记事本.zip" onclick="handleDownload(this)" aria-label="下载TB记事本">
+                    <a href="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/TB%E8%AE%B0%E4%BA%8B%E6%9C%AC.zip" class="btn" download="TB记事本.zip" onclick="handleDownload(this)">
                         <i class="fa-solid fa-download"></i> 下载
                     </a>
                 </div>
             </div>
         </section>
         
-        <!-- 页脚信息 -->                      
-        <center>
+        <!-- 页脚 -->                      
+        <center style="margin: 20px 0;">
             <p style="font-size: 16px;">提供维护：<font color="#0080c0">TB.HSJR</font></p>
             <p style="font-size: 16px;">四川省 德阳市 旌阳区（天元街道）</p>
             <p style="font-size: 16px;">&copy;&nbsp;2021-2026 TB🌱HSJR Copyright</p>
         </center>
     </div>
     
-    <!-- 返回顶部按钮 -->
+    <!-- 返回顶部 -->
     <div class="back-to-top" onclick="scrollToTop()" aria-label="返回顶部">
         <i class="fa-solid fa-arrow-up"></i>
     </div>
 
     <script>
-        // 网站运行时间计算（优化性能）
+        // 运行时间计算
         function showDateTime() {
             const startTime = new Date("2021-04-24T00:00:00").getTime();
             const timeElement = document.getElementById('aa');
             
-            // 优化时间更新逻辑
             function updateTime() {
-                const now = Date.now();
-                const timeDiff = now - startTime;
-                
+                const timeDiff = Date.now() - startTime;
                 const days = Math.floor(timeDiff / (24 * 60 * 60 * 1000));
                 const hours = Math.floor((timeDiff % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
                 const mins = Math.floor((timeDiff % (60 * 60 * 1000)) / (60 * 1000));
@@ -845,98 +677,67 @@
                 timeElement.textContent = `${days}天 ${hours}小时 ${mins}分 ${secs}秒`;
             }
             
-            // 立即执行一次
             updateTime();
-            // 每秒更新一次
             setInterval(updateTime, 1000);
         }
         
-        // 主题切换功能
+        // 主题切换
         function toggleTheme() {
             const body = document.body;
             body.classList.toggle('dark-mode');
             const icon = document.querySelector('.theme-toggle i');
             
-            if (body.classList.contains('dark-mode')) {
-                icon.className = 'fa-solid fa-sun';
-            } else {
-                icon.className = 'fa-solid fa-moon';
-            }
-            
+            icon.className = body.classList.contains('dark-mode') 
+                ? 'fa-solid fa-sun' 
+                : 'fa-solid fa-moon';
+                
             localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
         }
         
         // 下载按钮处理
         function handleDownload(btn) {
-            // 阻止重复点击
             if (btn.classList.contains('loading')) return;
             
-            // 保存原始内容
             const originalHTML = btn.innerHTML;
-            
-            // 添加加载状态
             btn.classList.add('loading');
             btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> 下载中...';
             
-            // 监听下载完成事件（优化方案）
             const resetButton = () => {
-                btn.classList.remove('loading');
-                btn.innerHTML = originalHTML;
-                // 移除事件监听，避免内存泄漏
-                btn.removeEventListener('click', resetButton);
+                if (btn.classList.contains('loading')) {
+                    btn.classList.remove('loading');
+                    btn.innerHTML = originalHTML;
+                }
             };
             
-            // 5秒后恢复（兜底方案）
-            setTimeout(resetButton, 5000);
-            
-            // 点击后短时间内恢复（用户触发下载后）
-            setTimeout(() => {
-                if (btn.classList.contains('loading')) {
-                    resetButton();
-                }
-            }, 1500);
+            btn.addEventListener('mouseleave', () => setTimeout(resetButton, 1000), { once: true });
+            setTimeout(resetButton, 3000);
         }
         
-        // 返回顶部功能
+        // 返回顶部
         function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
         
-        // 监听滚动显示返回顶部按钮
+        // 滚动监听
         function handleScroll() {
             const backToTopBtn = document.querySelector('.back-to-top');
-            if (window.scrollY > 300) {
-                backToTopBtn.classList.add('show');
-            } else {
-                backToTopBtn.classList.remove('show');
-            }
+            backToTopBtn.classList.toggle('show', window.scrollY > 300);
         }
         
-        // 页面加载完成后初始化
+        // 初始化
         document.addEventListener('DOMContentLoaded', () => {
-            // 加载保存的主题设置
-            const savedTheme = localStorage.getItem('theme');
-            const themeToggleIcon = document.querySelector('.theme-toggle i');
-            
-            if (savedTheme === 'dark') {
+            // 加载主题
+            if (localStorage.getItem('theme') === 'dark') {
                 document.body.classList.add('dark-mode');
-                themeToggleIcon.className = 'fa-solid fa-sun';
+                document.querySelector('.theme-toggle i').className = 'fa-solid fa-sun';
             }
             
-            // 初始化功能
             showDateTime();
-            
-            // 优化滚动监听 - 使用被动事件监听提升性能
             window.addEventListener('scroll', handleScroll, { passive: true });
-            
-            // 初始化时执行一次滚动检查
             handleScroll();
         });
         
-        // 窗口大小变化时重新检查布局
+        // 窗口调整
         window.addEventListener('resize', handleScroll);
     </script>
 </body>
