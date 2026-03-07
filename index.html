@@ -45,6 +45,21 @@
             transition: all 0.3s ease; 
             object-fit: cover;
         }
+
+        /* 新增：标题图片样式 */
+        .header-banner {
+            width: 100%;
+            border-radius: 2px;
+            margin: 15px 0 25px 0;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .header-banner img {
+            width: 100%;
+            height: auto;
+            border-radius: 0;
+            display: block;
+        }
         
         /* 通用样式 */
         .text-center { text-align: center; }
@@ -287,6 +302,10 @@
             color: #c0c0c0;
             background-color: rgba(255,255,255,0.03);
         }
+        /* 暗黑模式下标题图片容器样式 */
+        body.dark-mode .header-banner {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
         
         /* 主题切换按钮 */
         .theme-toggle {
@@ -348,8 +367,8 @@
         }
         
         .download-card:nth-child(4) { 
-            border-left: 4px solid #e91e63; 
-            background-color: rgba(233, 30, 99, 0.05); 
+            border-left: 4px solid #ec4899; 
+            background-color: rgba(236, 72, 153, 0.05); 
         }
         
         .download-card:hover { transform: translateY(-5px); }
@@ -438,6 +457,10 @@
                 padding: 12px 0; 
                 margin-bottom: 20px;
             }
+            /* 响应式适配标题图片 */
+            .header-banner {
+                margin: 10px 0 20px 0;
+            }
             
             .flex { flex-direction: column; gap: 20px; }
             
@@ -524,6 +547,13 @@
                 <i class="fa-solid fa-moon"></i>
             </button>
         </header>
+
+        <!-- 新增：标题图片模块 -->
+        <div class="header-banner">
+            <!-- 这里替换成你自己的标题图片链接 -->
+            <!-- <img src="https://picsum.photos/1200/250" > -->
+            <img src="https://cdn.jsdelivr.net/gh/ttbb1978/ttbb1978.github.io@tb01/img/78.jpg" >
+        </div>
         
         <!-- 核心成员 -->
         <section class="card">
@@ -532,7 +562,7 @@
                <div class="visit-counter">
                    <img alt="访问量统计" src="https://hits.sh/ttbb1978.github.io.svg?label=%E8%AE%BF%E9%97%AE%E9%87%8F&extraCount=2021&color=007ec6"/>
                    <span><i class="fa-solid fa-cog fa-spin"></i></span> 
-                   在线<span id="aa"></span>
+                   运行时长<span id="aa"></span>
                </div>
             </div>
             
@@ -637,7 +667,7 @@
                 
                 <div class="download-card">
                     <div class="download-title">
-                        <i class="fa-solid fa-desktop download-icon" style="color: #e91e63;"></i>
+                        <i class="fa-solid fa-desktop download-icon" style="color: #ec4899;"></i>
                         TB记事本
                     </div>
                     <p class="margin-b-8">Base64编码功能</p>
