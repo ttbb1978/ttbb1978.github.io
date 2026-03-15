@@ -26,55 +26,10 @@
             transition: all 0.3s ease;
             min-height: 100vh;
             overflow-x: hidden;
-            /* 新增：动态渐变背景 */
-            background: linear-gradient(-45deg, #ffffff, #f8f9fa, #e8f4f8, #f5fafe);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
-        }
-        
-        /* 新增：背景渐变动画 */
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        
-        /* 新增：元素入场动画 */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        /* 新增：脉冲动画 */
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-        
-        /* 新增：呼吸动画 */
-        @keyframes breathe {
-            0% { opacity: 0.7; transform: scale(1); }
-            50% { opacity: 1; transform: scale(1.02); }
-            100% { opacity: 0.7; transform: scale(1); }
-        }
-        
-        /* 新增：旋转动画 */
-        @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-        
-        /* 新增：流光效果 */
-        @keyframes shine {
-            0% { background-position: -100px; }
-            100% { background-position: 200px; }
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(61, 220, 132, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(51, 102, 255, 0.05) 0%, transparent 20%);
+            background-attachment: fixed;
         }
         
         .container { 
@@ -98,37 +53,21 @@
             border: 1px solid #eee;
             margin: 0 1px;
             width: 80px;
-            /* 增强：更炫酷的hover效果 */
-            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
         }
         
-        .text-center img:hover { 
-            transform: translateY(-8px) scale(1.1) rotate(3deg); 
-            box-shadow: 0 10px 20px rgba(51, 102, 255, 0.2);
-        }
+        .text-center img:hover { transform: translateY(-5px) scale(1.05); }
         
-        /* 卡片样式 - 增强动画 */
+        /* 卡片样式 */
         .card {
             background: #efefef;
             border-radius: 16px;
             padding: 24px;
             margin-bottom: 24px;
-            /* 新增：入场动画 */
-            animation: fadeInUp 0.6s ease forwards;
-            opacity: 0;
+            transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
-            /* 增强：卡片阴影 */
-            box-shadow: 0 8px 16px rgba(0,0,0,0.05);
-            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
-        
-        /* 为不同卡片设置不同的入场延迟 */
-        .card:nth-child(1) { animation-delay: 0.1s; }
-        .card:nth-child(2) { animation-delay: 0.2s; }
-        .card:nth-child(3) { animation-delay: 0.3s; }
-        .card:nth-child(4) { animation-delay: 0.4s; }
         
         .card::before {
             content: '';
@@ -137,24 +76,14 @@
             left: 0;
             width: 100%;
             height: 4px;
-            background: linear-gradient(90deg, #3ddc84, #3366ff, #ec4899);
-            background-size: 200% 100%;
-            /* 新增：流光效果 */
-            animation: shine 2s linear infinite;
+            background: linear-gradient(90deg, #3ddc84, #3366ff);
             transform: scaleX(0);
             transform-origin: left;
-            transition: transform 0.5s ease;
+            transition: transform 0.3s ease;
         }
         
-        .card:hover { 
-            transform: translateY(-10px) scale(1.02); 
-            box-shadow: 0 15px 30px rgba(51, 102, 255, 0.1);
-        }
-        
-        .card:hover::before { 
-            transform: scaleX(1); 
-            animation: shine 2s linear infinite, gradientBG 3s ease infinite;
-        }
+        .card:hover { transform: translateY(-5px); }
+        .card:hover::before { transform: scaleX(1); }
         
         /* 文本样式 */
         .title {
@@ -167,33 +96,19 @@
             gap: 8px;
         }
         
-        .title i { 
-            /* 增强：图标动画 */
-            transition: all 0.5s ease; 
-            display: inline-block;
-        }
-        
-        .card:hover .title i { 
-            transform: rotate(15deg) scale(1.2); 
-            /* 新增：呼吸效果 */
-            animation: breathe 1.5s ease infinite;
-        }
+        .title i { transition: transform 0.3s ease; }
+        .card:hover .title i { transform: rotate(10deg) scale(1.1); }
         
         .subtitle { 
             font-size: 16px; 
             color: #444; 
             margin-bottom: 16px; 
-            transition: all 0.3s ease;
-        }
-        
-        .card:hover .subtitle {
-            color: #3366ff;
-            transform: translateX(5px);
+            transition: color 0.3s ease;
         }
         
         .margin-b-8 { margin-bottom: 8px; }
         
-        /* 链接与按钮 - 增强动画 */
+        /* 链接与按钮 */
         a { 
             color: #3366ff; 
             text-decoration: none; 
@@ -208,8 +123,8 @@
             left: 0;
             width: 0;
             height: 2px;
-            background: linear-gradient(90deg, #3366ff, #ec4899);
-            transition: width 0.5s ease;
+            background-color: #3366ff;
+            transition: width 0.3s ease;
         }
         
         a:hover::after { width: 100%; }
@@ -219,46 +134,19 @@
             align-items: center;
             gap: 6px;
             padding: 8px 16px;
-            /* 新增：渐变背景 */
-            background: linear-gradient(90deg, #3366ff, #60a5fa);
+            background: #3366ff;
             color: #fff !important;
             border-radius: 6px;
             font-weight: 500;
             border: none;
             cursor: pointer;
-            /* 增强：按钮阴影和过渡 */
-            box-shadow: 0 4px 12px rgba(51, 102, 255, 0.2);
-            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        /* 新增：按钮流光效果 */
-        .btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transition: all 0.6s ease;
-        }
-        
-        .btn:hover::before {
-            left: 100%;
+            transition: all 0.3s ease;
         }
         
         .btn::after { display: none !important; }
-        
-        .btn:hover { 
-            background: linear-gradient(90deg, #2855e6, #3b82f6);
-            transform: translateY(-5px) scale(1.05); 
-            box-shadow: 0 8px 20px rgba(51, 102, 255, 0.3);
-        }
-        
+        .btn:hover { background: #2855e6; transform: translateY(-2px); }
         .btn.loading {
-            background: linear-gradient(90deg, #5a88ff, #81b4ff);
+            background: #5a88ff;
             cursor: wait;
             pointer-events: none;
         }
@@ -285,33 +173,11 @@
             font-size: 26px;
             font-weight: 700;
             color: #000;
-            /* 增强：logo动画 */
-            transition: all 0.5s ease;
+            transition: transform 0.3s ease;
             cursor: pointer;
-            position: relative;
         }
         
-        /* 新增：logo文字渐变 */
-        .logo::after {
-            content: '🌱 田兵网站 TB.HSJR';
-            position: absolute;
-            left: 0;
-            top: 0;
-            background: linear-gradient(90deg, #3366ff, #ec4899);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-        
-        .logo:hover { 
-            transform: scale(1.1) rotate(1deg); 
-        }
-        
-        .logo:hover::after {
-            opacity: 1;
-        }
+        .logo:hover { transform: scale(1.05); }
         
         /* 访问计数器 */
         .visit-counter {
@@ -323,17 +189,11 @@
             background-color: rgba(255, 255, 255, 0.6);
             font-size: 14px;
             transition: all 0.3s ease;
-            /* 新增：脉冲动画 */
-            animation: pulse 3s ease-in-out infinite;
         }
         
-        .visit-counter:hover { 
-            background-color: rgba(51, 102, 255, 0.1);
-            animation: none;
-            transform: scale(1.05);
-        }
+        .visit-counter:hover { background-color: rgba(51, 102, 255, 0.1); }
         
-        /* 快速导航 - 增强动画 */
+        /* 快速导航 */
         .nav-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
@@ -350,87 +210,57 @@
             padding: 16px 8px;
             background: #f9fafb;
             border-radius: 12px;
-            /* 增强：导航卡片动画 */
-            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: all 0.3s ease;
             border: 1px solid transparent;
             min-height: 90px;
             width: 100%;
             text-align: center;
             word-break: keep-all;
             white-space: normal;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.03);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        /* 新增：导航卡片背景光效 */
-        .nav-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, rgba(51, 102, 255, 0.02), rgba(61, 220, 132, 0.02));
-            opacity: 0;
-            transition: opacity 0.3s ease;
         }
         
         .nav-card:hover {
-            transform: translateY(-8px) scale(1.05);
+            transform: translateY(-3px);
             border-color: rgba(51, 102, 255, 0.2);
-            box-shadow: 0 10px 20px rgba(51, 102, 255, 0.1);
-        }
-        
-        .nav-card:hover::before {
-            opacity: 1;
         }
         
         .nav-card-icon {
             font-size: 24px;
             color: #3366ff;
-            /* 增强：图标动画 */
-            transition: all 0.5s ease;
-            line-height: 1;
             margin-bottom: 8px;
+            transition: transform 0.3s ease;
+            line-height: 1;
         }
         
         .nav-card:nth-child(odd) .nav-card-icon { color: #3ddc84; }
         .nav-card:nth-child(3n) .nav-card-icon { color: #f59e0b; }
         .nav-card:nth-child(4n) .nav-card-icon { color: #ec4899; }
         
-        .nav-card:hover .nav-card-icon { 
-            transform: scale(1.3) rotate(15deg); 
-            /* 新增：呼吸效果 */
-            animation: breathe 1.5s ease infinite;
-        }
+        .nav-card:hover .nav-card-icon { transform: scale(1.2); }
         
         .nav-card-text {
             font-size: 14px;
             color: #666;
-            transition: all 0.3s ease;
+            transition: color 0.3s ease;
             line-height: 1.4;
             padding: 0 4px;
         }
         
-        .nav-card:hover .nav-card-text { 
-            color: #3366ff;
-            font-weight: 500;
-            transform: translateY(-2px);
-        }
+        .nav-card:hover .nav-card-text { color: #3366ff; }
         
-        /* 暗黑模式 - 同步更新动画 */
+        /* 暗黑模式 */
         body.dark-mode { 
-            background: linear-gradient(-45deg, #0b0b0b, #121212, #1a1a1a, #202020);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
+            background: #0b0b0b; 
             color: #bebebe; 
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(61, 220, 132, 0.02) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(51, 102, 255, 0.02) 0%, transparent 20%);
         }
         
         body.dark-mode .card { background: #1f1f1f; }
-        body.dark-mode .card::before { background: linear-gradient(90deg, #4ade80, #60a5fa, #ec4899); }
+        body.dark-mode .card::before { background: linear-gradient(90deg, #4ade80, #60a5fa); }
         body.dark-mode .subtitle { color: #a0a0a0; }
-        body.dark-mode .card:hover .subtitle { color: #60a5fa; }
+        body.dark-mode .card:hover .subtitle { color: #c0c0c0; }
         body.dark-mode .nav-card { background: #2a2a2e; }
         body.dark-mode .nav-card:hover { border-color: rgba(96, 165, 250, 0.3); }
         body.dark-mode .nav-card-icon { color: #60a5fa; }
@@ -445,18 +275,12 @@
         body.dark-mode .download-card:nth-child(4) { background-color: rgba(236, 72, 153, 0.08); }
         body.dark-mode .logo { color: #e0e0e0; }
         body.dark-mode a { color: #60a5fa; }
-        body.dark-mode a::after { background: linear-gradient(90deg, #60a5fa, #ec4899); }
+        body.dark-mode a::after { background-color: #60a5fa; }
         body.dark-mode .contact-icon { color: #60a5fa; }
         body.dark-mode .contact-item { background-color: rgba(42, 42, 46, 0.6); }
         body.dark-mode .contact-item:hover { background-color: rgba(96, 165, 250, 0.1); }
-        body.dark-mode .btn { 
-            background: linear-gradient(90deg, #60a5fa, #81b4ff);
-            box-shadow: 0 4px 12px rgba(96, 165, 250, 0.2);
-        }
-        body.dark-mode .btn:hover { 
-            background: linear-gradient(90deg, #3b82f6, #60a5fa);
-            box-shadow: 0 8px 20px rgba(96, 165, 250, 0.3);
-        }
+        body.dark-mode .btn { background: #60a5fa; }
+        body.dark-mode .btn:hover { background: #3b82f6; }
         body.dark-mode .theme-toggle { color: #a0a0a0; }
         body.dark-mode .theme-toggle:hover { background-color: rgba(255,255,255,0.05); }
         body.dark-mode .visit-counter {
@@ -464,15 +288,14 @@
             background-color: rgba(255,255,255,0.03);
         }
         
-        /* 主题切换按钮 - 增强动画 */
+        /* 主题切换按钮 */
         .theme-toggle {
             background: none;
             border: none;
             color: #808080;
             font-size: 22px;
             cursor: pointer;
-            /* 增强：过渡效果 */
-            transition: all 0.5s ease;
+            transition: all 0.3s ease;
             width: 40px;
             height: 40px;
             border-radius: 50%;
@@ -483,7 +306,7 @@
         
         .theme-toggle:hover {
             background-color: rgba(0,0,0,0.05);
-            transform: rotate(60deg) scale(1.2);
+            transform: rotate(30deg);
         }
 
         /* 卡片头部 */
@@ -496,7 +319,7 @@
             gap: 12px;
         }
         
-        /* 下载区 - 增强动画 */
+        /* 下载区 */
         .download-list { display: flex; flex-wrap: wrap; gap: 20px; }
         
         .download-card {
@@ -504,24 +327,32 @@
             min-width: 250px;
             padding: 20px;
             border-radius: 12px;
-            /* 新增：入场动画 */
-            animation: fadeInUp 0.7s ease forwards;
-            opacity: 0;
-            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
         }
         
-        /* 下载卡片延迟入场 */
-        .download-card:nth-child(1) { animation-delay: 0.5s; border-left: 4px solid #3ddc84; background-color: rgba(61, 220, 132, 0.05); }
-        .download-card:nth-child(2) { animation-delay: 0.6s; border-left: 4px solid #2196f3; background-color: rgba(33, 150, 243, 0.05); }
-        .download-card:nth-child(3) { animation-delay: 0.7s; border-left: 4px solid #ff9800; background-color: rgba(255, 152, 0, 0.05); }
-        .download-card:nth-child(4) { animation-delay: 0.8s; border-left: 4px solid #e91e63; background-color: rgba(233, 30, 99, 0.05); }
-        
-        .download-card:hover { 
-            transform: translateY(-8px) scale(1.03); 
-            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+        .download-card:nth-child(1) { 
+            border-left: 4px solid #3ddc84; 
+            background-color: rgba(61, 220, 132, 0.05); 
         }
+        
+        .download-card:nth-child(2) { 
+            border-left: 4px solid #2196f3; 
+            background-color: rgba(33, 150, 243, 0.05); 
+        }
+        
+        .download-card:nth-child(3) { 
+            border-left: 4px solid #ff9800; 
+            background-color: rgba(255, 152, 0, 0.05); 
+        }
+        
+        .download-card:nth-child(4) { 
+            border-left: 4px solid #e91e63; 
+            background-color: rgba(233, 30, 99, 0.05); 
+        }
+        
+        .download-card:hover { transform: translateY(-5px); }
         
         .download-title {
             font-weight: 500;
@@ -536,15 +367,12 @@
             font-size: 20px; 
             width: 28px; 
             text-align: center; 
-            transition: all 0.5s ease;
+            transition: transform 0.3s ease;
         }
         
-        .download-card:hover .download-icon { 
-            transform: scale(1.4) rotate(15deg); 
-            animation: breathe 1.5s ease infinite;
-        }
+        .download-card:hover .download-icon { transform: scale(1.2) rotate(10deg); }
         
-        /* 联系样式 - 增强动画 */
+        /* 联系样式 */
         .contact-list {
             display: flex;
             flex-wrap: wrap;
@@ -561,64 +389,45 @@
             padding: 6px 12px;
             border-radius: 20px;
             background-color: rgba(255, 255, 255, 0.6);
-            /* 增强：过渡效果 */
-            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
         }
         
         .contact-item:hover {
             background-color: rgba(51, 102, 255, 0.1);
-            transform: translateY(-5px) scale(1.1);
-            box-shadow: 0 8px 16px rgba(51, 102, 255, 0.15);
+            transform: translateY(-3px);
         }
         
         .contact-icon { 
             font-size: 20px; 
             color: #3366ff; 
-            transition: all 0.5s ease;
+            transition: transform 0.3s ease;
         }
         
-        .contact-item:hover .contact-icon { 
-            transform: rotate(30deg) scale(1.3); 
-            animation: pulse 1s ease infinite;
-        }
+        .contact-item:hover .contact-icon { transform: rotate(15deg); }
         
-        /* 返回顶部 - 增强动画 */
+        /* 返回顶部 */
         .back-to-top {
             position: fixed;
             bottom: 30px;
             right: 30px;
             width: 48px;
             height: 48px;
-            /* 新增：渐变背景 */
-            background: linear-gradient(135deg, #0080ff, #3366ff);
+            background-color: #0080ff;
             color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            /* 增强：过渡和阴影 */
-            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: all 0.3s ease;
             opacity: 0;
             visibility: hidden;
             z-index: 999;
-            box-shadow: 0 4px 12px rgba(0, 128, 255, 0.3);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
-        .back-to-top.show { 
-            opacity: 1; 
-            visibility: visible; 
-            /* 新增：呼吸动画 */
-            animation: breathe 2s ease infinite;
-        }
-        
-        .back-to-top:hover { 
-            background: linear-gradient(135deg, #0066cc, #0080ff);
-            transform: translateY(-5px) scale(1.1); 
-            box-shadow: 0 8px 20px rgba(0, 128, 255, 0.4);
-            animation: none;
-        }
+        .back-to-top.show { opacity: 1; visibility: visible; }
+        .back-to-top:hover { background-color: #0080ff; transform: translateY(-5px); }
         
         /* 响应式 */
         @media (max-width: 768px) {
@@ -781,8 +590,7 @@
                 <h2 class="title"><i class="fa-solid fa-image"></i> 在线美图</h2>
                 <p class="subtitle">一处美景，邂逅一次，便会万劫不复地爱上 ...</p>
                 <div style="border-radius: 12px; overflow: hidden;">
-                    <!-- 新增：图片加载动画 -->
-                    <img src="https://t.alcy.cc/ycy" alt="每日美图" loading="lazy" style="width: 100%; height: auto; transition: all 0.8s ease;" onload="this.style.opacity=1" style="opacity: 0;">
+                    <img src="https://t.alcy.cc/ycy" alt="每日美图" loading="lazy" style="width: 100%; height: auto;">
                 </div>
             </div>
         </section>
@@ -840,7 +648,7 @@
         </section>
         
         <!-- 页脚 -->                      
-        <center style="margin: 0px 0; animation: fadeInUp 1s ease 0.9s forwards; opacity: 0;">
+        <center style="margin: 0px 0;">
             <p style="font-size: 16px;">提供维护：<font color="#0080c0">TB.HSJR</font></p>
             <p style="font-size: 16px;">四川省 德阳市 旌阳区（天元街道）</p>
             <p style="font-size: 16px;">&copy;&nbsp;2021-2026 TB🌱HSJR Copyright</p>
@@ -906,36 +714,13 @@
         
         // 返回顶部
         function scrollToTop() {
-            // 新增：平滑滚动动画
-            window.scrollTo({ 
-                top: 0, 
-                behavior: 'smooth' 
-            });
-            
-            // 新增：返回顶部按钮动画反馈
-            const backToTop = document.querySelector('.back-to-top');
-            backToTop.style.transform = 'scale(0.8)';
-            setTimeout(() => {
-                backToTop.style.transform = '';
-            }, 300);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
         
         // 滚动监听
         function handleScroll() {
             const backToTopBtn = document.querySelector('.back-to-top');
             backToTopBtn.classList.toggle('show', window.scrollY > 300);
-            
-            // 新增：滚动时元素渐显效果
-            const cards = document.querySelectorAll('.card');
-            cards.forEach(card => {
-                const cardTop = card.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-                
-                if (cardTop < windowHeight * 0.85) {
-                    card.style.opacity = 1;
-                    card.style.transform = 'translateY(0)';
-                }
-            });
         }
         
         // 初始化
@@ -949,20 +734,10 @@
             showDateTime();
             window.addEventListener('scroll', handleScroll, { passive: true });
             handleScroll();
-            
-            // 新增：页面加载完成后的入场动画
-            document.body.style.opacity = 1;
         });
         
         // 窗口调整
         window.addEventListener('resize', handleScroll);
-        
-        // 新增：页面加载时的淡入效果
-        document.body.style.opacity = 0;
-        document.body.style.transition = 'opacity 1s ease';
-        setTimeout(() => {
-            document.body.style.opacity = 1;
-        }, 100);
     </script>
 </body>
 </html>
